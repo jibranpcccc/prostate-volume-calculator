@@ -6,6 +6,7 @@ import TreatmentGuide from "@/components/treatment-guide";
 import IPSSQuestionnaire from "@/components/ipss-questionnaire";
 import MedicalCharts from "@/components/medical-charts";
 import ComprehensiveCalculator from "@/components/comprehensive-calculator";
+import SEOHead from "@/components/seo-head";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -31,9 +32,16 @@ export default function AdvancedTools() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <Breadcrumb />
+    <>
+      <SEOHead 
+        title="Advanced Clinical Assessment Tools - BPH & Prostate Analysis | ProstateVolumeCalc"
+        description="Comprehensive suite of validated medical calculators including PSA density, IPSS assessment, treatment decision support, and risk stratification tools for healthcare professionals."
+        canonical="https://prostatevolumecalc.com/tools"
+        pageType="tools"
+      />
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <Breadcrumb />
       
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-indigo-600 to-purple-800 text-white py-16">
@@ -273,7 +281,8 @@ export default function AdvancedTools() {
         </div>
       </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }

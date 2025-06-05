@@ -90,11 +90,31 @@ export default function FAQ() {
   };
 
   return (
-    <div className="space-y-4">
-      {faqItems.map((item) => {
-        const isOpen = openItems.includes(item.id);
-        
-        return (
+    <>
+      {/* FAQPage Schema */}
+      <script 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqItems.map(item => ({
+              "@type": "Question",
+              "name": item.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+              }
+            }))
+          })
+        }}
+      />
+      
+      <div className="space-y-4">
+        {faqItems.map((item) => {
+          const isOpen = openItems.includes(item.id);
+          
+          return (
           <Card key={item.id} className="border border-gray-200">
             <button
               className="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg hover:bg-gray-50 transition-colors"
@@ -120,6 +140,7 @@ export default function FAQ() {
           </Card>
         );
       })}
-    </div>
+      </div>
+    </>
   );
 }
