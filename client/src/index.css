@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Medical-focused color palette */
+  --background: 0 0% 100%;
+  --foreground: 222 84% 4.9%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 222 84% 4.9%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 84% 4.9%;
+  
+  --primary: 221 83% 53%; /* Medical blue */
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222 47% 11%;
+  
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  
+  --accent: 210 40% 96%;
+  --accent-foreground: 222 47% 11%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 221 83% 53%;
+  
+  --radius: 0.5rem;
+  
+  /* Medical-specific custom properties */
+  --medical-blue: 221 83% 53%;
+  --health-green: 142 76% 36%;
+  --alert-red: 0 84% 60%;
+  --warning-orange: 25 95% 53%;
+}
+
+.dark {
+  --background: 222 84% 4.9%;
+  --foreground: 210 40% 98%;
+  
+  --card: 222 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  
+  --popover: 222 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  
+  --primary: 217 92% 60%;
+  --primary-foreground: 222 47% 11%;
+  
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 224 72% 58%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Medical calculator specific styles */
+  .medical-input {
+    @apply font-mono;
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus styles for accessibility */
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible {
+    @apply ring-2 ring-primary ring-offset-2;
+  }
+  
+  /* Medical result styling */
+  .result-volume {
+    @apply text-2xl font-bold font-mono text-primary;
+  }
+  
+  .result-normal {
+    @apply text-green-600;
+  }
+  
+  .result-warning {
+    @apply text-yellow-600;
+  }
+  
+  .result-danger {
+    @apply text-red-600;
+  }
+  
+  /* Print styles */
+  @media print {
+    body {
+      @apply bg-white text-black;
+    }
+    
+    .no-print {
+      display: none !important;
+    }
+    
+    .print-break {
+      page-break-before: always;
+    }
+  }
+  
+  /* Medical reference ranges */
+  .range-normal {
+    @apply bg-green-100 text-green-800 border-green-200;
+  }
+  
+  .range-mild {
+    @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+  }
+  
+  .range-moderate {
+    @apply bg-orange-100 text-orange-800 border-orange-200;
+  }
+  
+  .range-severe {
+    @apply bg-red-100 text-red-800 border-red-200;
+  }
+}
+
+@layer components {
+  /* Medical calculator card styling */
+  .calculator-card {
+    @apply bg-white rounded-xl shadow-lg border border-gray-200 p-6;
+  }
+  
+  /* Medical form styling */
+  .medical-form {
+    @apply space-y-6;
+  }
+  
+  .medical-input-group {
+    @apply space-y-2;
+  }
+  
+  .medical-label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+  
+  .medical-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary font-mono;
+  }
+  
+  .medical-button {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 font-semibold py-2 px-4 rounded-lg transition-colors focus:ring-4 focus:ring-primary/20;
+  }
+  
+  /* Medical disclaimer styling */
+  .medical-disclaimer {
+    @apply bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg;
+  }
+  
+  /* Results styling */
+  .results-card {
+    @apply bg-blue-50 border border-blue-200 rounded-xl p-6;
+  }
+  
+  .volume-display {
+    @apply text-3xl font-bold font-mono text-primary;
+  }
+  
+  /* FAQ styling */
+  .faq-item {
+    @apply border border-gray-200 rounded-lg overflow-hidden;
+  }
+  
+  .faq-question {
+    @apply w-full text-left p-4 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+  
+  .faq-answer {
+    @apply p-4 bg-white border-t border-gray-100 text-gray-600;
+  }
+}
+
+@layer utilities {
+  /* Medical-specific utilities */
+  .text-medical-blue {
+    color: hsl(var(--medical-blue));
+  }
+  
+  .text-health-green {
+    color: hsl(var(--health-green));
+  }
+  
+  .text-alert-red {
+    color: hsl(var(--alert-red));
+  }
+  
+  .bg-medical-blue {
+    background-color: hsl(var(--medical-blue));
+  }
+  
+  .bg-health-green {
+    background-color: hsl(var(--health-green));
+  }
+  
+  .bg-alert-red {
+    background-color: hsl(var(--alert-red));
+  }
+  
+  .border-medical-blue {
+    border-color: hsl(var(--medical-blue));
+  }
+  
+  /* Font utilities for medical context */
+  .font-medical {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+  
+  .font-medical-mono {
+    font-family: "JetBrains Mono", "Consolas", monospace;
+  }
+  
+  /* Spacing utilities for medical forms */
+  .space-medical > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.5rem;
+  }
+  
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Accessibility utilities */
+  .sr-only-focusable:focus {
+    @apply not-sr-only;
+  }
+  
+  /* Medical layout utilities */
+  .medical-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .medical-section {
+    @apply py-16;
+  }
+  
+  .medical-grid {
+    @apply grid gap-8 md:grid-cols-2 lg:grid-cols-3;
+  }
+}
