@@ -11,7 +11,7 @@ export default function Education() {
     {
       id: 1,
       title: "Understanding Benign Prostatic Hyperplasia (BPH)",
-      description: "Comprehensive overview of BPH pathophysiology, symptoms, and natural progression.",
+      description: "Comprehensive overview of BPH pathophysiology, histologic changes, and natural progression patterns. Includes epidemiological data from the Baltimore Longitudinal Study and Olmsted County Study, covering age-specific prevalence rates and risk factors.",
       readTime: "8 min read",
       category: "Fundamentals",
       topics: ["Anatomy", "Pathophysiology", "Symptoms", "Epidemiology"],
@@ -20,7 +20,7 @@ export default function Education() {
     {
       id: 2,
       title: "Prostate Volume Measurement Techniques",
-      description: "Evidence-based methods for accurate prostate volume assessment using ultrasound and MRI.",
+      description: "Evidence-based methods for accurate prostate volume assessment using TRUS, MRI, and CT imaging. Detailed protocols for ellipsoid formula application, measurement standardization, and quality assurance. Validation studies comparing imaging modalities with pathological specimens.",
       readTime: "12 min read",
       category: "Diagnostics",
       topics: ["TRUS", "Abdominal US", "MRI", "Accuracy"],
@@ -29,7 +29,7 @@ export default function Education() {
     {
       id: 3,
       title: "PSA Density in Clinical Practice",
-      description: "Clinical significance of PSA density in cancer detection and BPH management.",
+      description: "Clinical significance of PSA density in cancer detection and BPH management. Analysis of 50,000+ patient datasets demonstrating improved cancer detection specificity. Age-adjusted and ethnicity-specific PSA density thresholds based on international guidelines.",
       readTime: "10 min read",
       category: "Laboratory",
       topics: ["PSA", "Cancer Detection", "Risk Stratification"],
@@ -38,7 +38,7 @@ export default function Education() {
     {
       id: 4,
       title: "IPSS Scoring and Interpretation",
-      description: "International Prostate Symptom Score assessment and clinical decision-making.",
+      description: "International Prostate Symptom Score assessment methodology and clinical decision-making algorithms. Validation studies across 45 countries, linguistic adaptations, and correlation with objective measures including uroflowmetry and post-void residual volumes.",
       readTime: "6 min read",
       category: "Assessment",
       topics: ["Symptom Scoring", "Quality of Life", "Follow-up"],
@@ -47,7 +47,7 @@ export default function Education() {
     {
       id: 5,
       title: "Medical Management of BPH",
-      description: "Evidence-based pharmacological approaches to BPH treatment.",
+      description: "Evidence-based pharmacological approaches to BPH treatment based on AUA/EAU guidelines. Comprehensive review of alpha-blockers, 5-alpha reductase inhibitors, and combination therapy. Meta-analyses of major clinical trials including MTOPS, CombAT, and CONDUCT studies.",
       readTime: "15 min read",
       category: "Treatment",
       topics: ["Alpha-blockers", "5-ARI", "Combination Therapy"],
@@ -56,11 +56,29 @@ export default function Education() {
     {
       id: 6,
       title: "Surgical Options for BPH",
-      description: "Comprehensive review of surgical interventions and patient selection criteria.",
+      description: "Comprehensive review of surgical interventions and evidence-based patient selection criteria. Modern techniques including HoLEP, Aquablation, UroLift, and Rezūm procedures. Five-year outcomes data from international multi-center studies and volume-based selection algorithms.",
       readTime: "18 min read",
       category: "Surgery",
       topics: ["TURP", "Laser Therapy", "Minimally Invasive"],
       level: "Advanced"
+    },
+    {
+      id: 7,
+      title: "Advanced Imaging in Prostate Assessment",
+      description: "Multi-parametric MRI protocols for prostate volume assessment and cancer detection. PI-RADS scoring systems, transition zone analysis, and integration with clinical parameters. Cost-effectiveness analysis and institutional implementation strategies.",
+      readTime: "14 min read",
+      category: "Advanced Imaging",
+      topics: ["mpMRI", "PI-RADS", "Transition Zone", "Cost Analysis"],
+      level: "Advanced"
+    },
+    {
+      id: 8,
+      title: "Machine Learning Applications in Urology",
+      description: "Artificial intelligence applications in prostate volume calculation and cancer detection. Deep learning algorithms for automated imaging analysis, predictive modeling for BPH progression, and clinical decision support systems. Validation studies and implementation protocols.",
+      readTime: "16 min read",
+      category: "Technology",
+      topics: ["AI", "Machine Learning", "Automation", "Predictive Models"],
+      level: "Expert"
     }
   ];
 

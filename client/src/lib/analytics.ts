@@ -59,3 +59,40 @@ export const trackEvent = (
     value: value,
   });
 };
+
+// Track calculator usage for medical analytics
+export const trackCalculatorUsage = (
+  calculatorType: string,
+  inputValues: Record<string, any>,
+  calculationTime: number
+) => {
+  if (typeof window === 'undefined' || !window.gtag) return;
+  
+  window.gtag('event', 'calculator_used', {
+    event_category: 'medical_tools',
+    event_label: calculatorType,
+    value: Math.round(calculationTime),
+    custom_parameters: {
+      calculator_type: calculatorType,
+      medical_category: 'urology'
+    }
+  });
+};
+
+// Track medical professional interactions
+export const trackMedicalInteraction = (
+  interactionType: string,
+  toolName: string,
+  userCategory: 'healthcare_professional' | 'student' | 'researcher' | 'other' = 'other'
+) => {
+  if (typeof window === 'undefined' || !window.gtag) return;
+  
+  window.gtag('event', 'medical_interaction', {
+    event_category: 'healthcare_engagement',
+    event_label: `${toolName}_${interactionType}`,
+    custom_parameters: {
+      user_type: userCategory,
+      tool_name: toolName
+    }
+  });
+};
