@@ -425,6 +425,14 @@ export default function Home() {
 
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Volume-Based Treatment Algorithm</h3>
+            <div className="text-center mb-6">
+              <Link href="/case-studies">
+                <Button variant="outline" size="sm" className="text-green-600 border-green-600 hover:bg-green-50">
+                  <FileText className="w-4 h-4 mr-2" />
+                  View Clinical Case Studies
+                </Button>
+              </Link>
+            </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">Medical Management</h4>
