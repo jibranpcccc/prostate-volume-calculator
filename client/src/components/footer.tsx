@@ -135,28 +135,49 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleLinkClick('legal', 'privacy_policy')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/about"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('support', 'about')}
                 >
-                  Privacy Policy
-                </button>
+                  About Us
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleLinkClick('legal', 'medical_disclaimer')}
-                  className="hover:text-white transition-colors text-left"
-                >
-                  Medical Disclaimer
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleLinkClick('legal', 'contact')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/contact"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('support', 'contact')}
                 >
                   Contact Support
-                </button>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/privacy-policy"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('legal', 'privacy_policy')}
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/terms-of-service"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('legal', 'terms')}
+                >
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/disclaimer"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('legal', 'medical_disclaimer')}
+                >
+                  Medical Disclaimer
+                </a>
               </li>
             </ul>
           </div>

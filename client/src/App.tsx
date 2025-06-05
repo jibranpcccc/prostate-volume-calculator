@@ -19,6 +19,7 @@ import Contact from "@/pages/contact";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import Disclaimer from "@/pages/disclaimer";
+import Sitemap from "@/pages/sitemap";
 import NotFound from "@/pages/not-found";
 
 function Router() {
