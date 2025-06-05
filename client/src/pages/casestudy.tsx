@@ -252,7 +252,7 @@ export default function CaseStudy() {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">PSA Density Accuracy</h3>
                   <p className="text-gray-600 mb-4">
-                    PSA density >0.15 ng/mL/cc correctly identified cancer in 85% of cases, reducing unnecessary biopsies by 40%.
+                    PSA density &gt;0.15 ng/mL/cc correctly identified cancer in 85% of cases, reducing unnecessary biopsies by 40%.
                   </p>
                   <div className="text-2xl font-bold text-blue-600">85%</div>
                   <div className="text-sm text-gray-500">Detection Rate</div>

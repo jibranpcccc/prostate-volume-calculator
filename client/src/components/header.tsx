@@ -57,27 +57,27 @@ export default function Header() {
             >
               Clinical Tools
             </Link>
-            <button
-              onClick={() => handleNavClick('about')}
-              className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+            <Link
+              href="/education"
+              className={`text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium ${location === '/education' || location === '/bph-education' ? 'border-b-2 border-blue-600 text-blue-600' : ''}`}
               aria-label="Learn about BPH and prostate volume measurement"
             >
               BPH Education
-            </button>
-            <button
-              onClick={() => handleNavClick('faq')}
-              className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+            </Link>
+            <Link
+              href="/faq"
+              className={`text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium ${location === '/faq' || location === '/medical-faq' ? 'border-b-2 border-blue-600 text-blue-600' : ''}`}
               aria-label="Frequently asked questions about prostate volume"
             >
               Medical FAQ
-            </button>
-            <button
-              onClick={() => handleNavClick('resources')}
-              className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+            </Link>
+            <Link
+              href="/resources"
+              className={`text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium ${location === '/resources' || location === '/clinical-resources' ? 'border-b-2 border-blue-600 text-blue-600' : ''}`}
               aria-label="Professional medical resources and guidelines"
             >
               Clinical Resources
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
