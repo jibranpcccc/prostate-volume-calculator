@@ -344,8 +344,122 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TRUS Measurement Guide */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">TRUS Measurement Protocol</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Standardized transrectal ultrasound measurement techniques for accurate prostate volume assessment
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <Card className="border-blue-200 shadow-lg">
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                    <Microscope className="text-blue-600 mr-3 w-6 h-6" />
+                    Measurement Protocol
+                  </h3>
+                  
+                  <div className="space-y-6">
+                    <div className="border-l-4 border-blue-400 pl-4">
+                      <h4 className="font-semibold text-gray-900 mb-2">1. Patient Preparation</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Moderate bladder filling (150-200 mL)</li>
+                        <li>• Left lateral decubitus position</li>
+                        <li>• Adequate lubrication and probe insertion</li>
+                        <li>• Patient comfort and communication</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border-l-4 border-green-400 pl-4">
+                      <h4 className="font-semibold text-gray-900 mb-2">2. Sagittal View (Length)</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Anterior-posterior dimension</li>
+                        <li>• Measure from base to apex</li>
+                        <li>• Include entire gland outline</li>
+                        <li>• Typical range: 30-45 mm</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border-l-4 border-orange-400 pl-4">
+                      <h4 className="font-semibold text-gray-900 mb-2">3. Axial View (Width)</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Transverse dimension</li>
+                        <li>• Maximum lateral extent</li>
+                        <li>• Perpendicular to urethra</li>
+                        <li>• Typical range: 25-35 mm</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-400 pl-4">
+                      <h4 className="font-semibold text-gray-900 mb-2">4. Coronal View (Height)</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Superior-inferior dimension</li>
+                        <li>• From base to apex</li>
+                        <li>• Exclude seminal vesicles</li>
+                        <li>• Typical range: 20-30 mm</li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="space-y-6">
+              <Card className="border-yellow-200">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <AlertTriangle className="text-yellow-600 mr-3 w-5 h-5" />
+                    Quality Assurance Tips
+                  </h3>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <p><strong>Probe Pressure:</strong> Minimize compression to avoid measurement distortion</p>
+                    <p><strong>Image Optimization:</strong> Adjust gain and focus for clear capsule visualization</p>
+                    <p><strong>Measurement Consistency:</strong> Use electronic calipers at maximum dimensions</p>
+                    <p><strong>Documentation:</strong> Record all three measurements with image archival</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="border-red-200">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <AlertTriangle className="text-red-600 mr-3 w-5 h-5" />
+                    Common Measurement Errors
+                  </h3>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <p><strong>Incomplete Visualization:</strong> Ensure entire gland is within field of view</p>
+                    <p><strong>Oblique Measurements:</strong> Maintain perpendicular measurement angles</p>
+                    <p><strong>Bladder Effects:</strong> Overfull bladder can compress prostate</p>
+                    <p><strong>Calcification Artifacts:</strong> Measure around calcified areas when possible</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="border-green-200">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <UserCheck className="text-green-600 mr-3 w-5 h-5" />
+                    Inter-observer Reliability
+                  </h3>
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <p><strong>Experienced Operators:</strong> Intraclass correlation &gt;0.90</p>
+                    <p><strong>Training Requirements:</strong> Minimum 50 supervised studies</p>
+                    <p><strong>Quality Control:</strong> Regular calibration and double reading</p>
+                    <p><strong>Variation Range:</strong> ±5-10% between experienced operators</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
-      <section id="faq" className="py-16 bg-gray-50">
+      <section id="faq" className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
@@ -550,6 +664,127 @@ export default function Home() {
               </div>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* PSA Density Section */}
+      <section className="py-16 bg-gradient-to-br from-indigo-50 to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">PSA Density Calculator Integration</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Combine prostate volume with PSA levels for enhanced diagnostic accuracy and cancer risk stratification
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div>
+              <Card className="border-purple-200 shadow-lg">
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-6 flex items-center">
+                    <CalculatorIcon className="text-purple-600 mr-3 w-6 h-6" />
+                    PSA Density Formula
+                  </h3>
+                  
+                  <div className="bg-white border-2 border-purple-200 rounded-lg p-6 mb-6">
+                    <p className="text-center text-xl font-mono font-bold text-purple-600 mb-3">
+                      PSA Density = PSA (ng/mL) ÷ Volume (mL)
+                    </p>
+                    <p className="text-sm text-center text-gray-600">
+                      Normalizes PSA for prostate size to improve cancer detection
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-gray-900">Clinical Interpretation:</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between p-3 bg-green-50 rounded border-l-4 border-green-400">
+                        <span className="text-sm"><strong>&lt;0.10 ng/mL/cc:</strong> Low cancer risk</span>
+                        <span className="text-xs text-green-600 font-medium">Reassurance</span>
+                      </div>
+                      <div className="flex items-center justify-between p-3 bg-yellow-50 rounded border-l-4 border-yellow-400">
+                        <span className="text-sm"><strong>0.10-0.15 ng/mL/cc:</strong> Intermediate risk</span>
+                        <span className="text-xs text-yellow-600 font-medium">Consider biopsy</span>
+                      </div>
+                      <div className="flex items-center justify-between p-3 bg-red-50 rounded border-l-4 border-red-400">
+                        <span className="text-sm"><strong>&gt;0.15 ng/mL/cc:</strong> High cancer risk</span>
+                        <span className="text-xs text-red-600 font-medium">Biopsy indicated</span>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="space-y-6">
+              <Card className="border-blue-200">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <Microscope className="text-blue-600 mr-3 w-5 h-5" />
+                    Clinical Applications
+                  </h3>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <p><strong>Screening Enhancement:</strong> Reduces false-positive PSA elevations due to BPH</p>
+                    <p><strong>Biopsy Decision:</strong> Helps determine need for prostate biopsy in gray zone PSA (4-10 ng/mL)</p>
+                    <p><strong>Active Surveillance:</strong> Monitors patients with low-risk prostate cancer</p>
+                    <p><strong>Treatment Planning:</strong> Guides selection of BPH therapies based on cancer risk</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="border-orange-200">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <FileText className="text-orange-600 mr-3 w-5 h-5" />
+                    Evidence Base
+                  </h3>
+                  <div className="space-y-3 text-sm text-gray-600">
+                    <p><strong>Sensitivity:</strong> 95% for detecting clinically significant cancer at 0.15 ng/mL/cc threshold</p>
+                    <p><strong>Specificity:</strong> 70% reduction in unnecessary biopsies compared to PSA alone</p>
+                    <p><strong>Validation:</strong> Multiple large cohort studies confirm diagnostic value</p>
+                    <p><strong>Guidelines:</strong> Recommended by EAU and AUA for risk stratification</p>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="border-green-200">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
+                    <UserCheck className="text-green-600 mr-3 w-5 h-5" />
+                    Age-Adjusted Considerations
+                  </h3>
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <p><strong>50-59 years:</strong> Lower threshold (0.10) due to smaller expected prostate size</p>
+                    <p><strong>60-69 years:</strong> Standard threshold (0.15) appropriate for most patients</p>
+                    <p><strong>70+ years:</strong> Consider higher threshold (0.20) given larger prostates</p>
+                    <p><strong>Family History:</strong> Lower thresholds for high-risk patients</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          
+          <div className="mt-12">
+            <Card className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white border-0">
+              <CardContent className="p-8">
+                <h3 className="text-xl font-bold mb-4 text-center">Integrated Clinical Decision Support</h3>
+                <div className="grid md:grid-cols-3 gap-6 text-sm">
+                  <div className="text-center">
+                    <p className="font-semibold mb-2">Volume + PSA = Risk Assessment</p>
+                    <p className="opacity-90">Combines structural and biochemical markers for comprehensive evaluation</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="font-semibold mb-2">Evidence-Based Thresholds</p>
+                    <p className="opacity-90">Uses validated cutoffs from large-scale clinical studies</p>
+                  </div>
+                  <div className="text-center">
+                    <p className="font-semibold mb-2">Personalized Medicine</p>
+                    <p className="opacity-90">Accounts for age, race, and individual risk factors</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 

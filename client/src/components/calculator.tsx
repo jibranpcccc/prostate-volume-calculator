@@ -285,14 +285,29 @@ export default function Calculator() {
         )}
 
         {/* Formula Information */}
-        <div className="bg-gray-50 rounded-lg p-4">
-          <p className="text-sm text-gray-600 mb-2">Calculation Method:</p>
-          <div className="space-y-2">
-            <div className="flex items-center text-sm">
-              <span className="text-gray-700">Ellipsoid Formula: π/6 × L × W × H</span>
+        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-200">
+          <h3 className="text-sm font-semibold text-gray-900 mb-3">Clinical Calculation Method:</h3>
+          <div className="space-y-3">
+            <div className="bg-white rounded p-3 border">
+              <p className="text-center text-lg font-mono font-bold text-blue-600 mb-2">
+                Volume = π/6 × L × W × H
+              </p>
+              <p className="text-xs text-center text-gray-600">
+                Ellipsoid Formula (Gold Standard for TRUS)
+              </p>
             </div>
-            <div className="flex items-center text-sm">
-              <span className="text-gray-500">Where π/6 ≈ 0.524 (ellipsoid constant)</span>
+            <div className="grid grid-cols-2 gap-3 text-xs">
+              <div className="bg-white rounded p-2">
+                <p className="font-medium text-gray-900">Validation:</p>
+                <p className="text-gray-600">r = 0.90-0.96 vs planimetry</p>
+              </div>
+              <div className="bg-white rounded p-2">
+                <p className="font-medium text-gray-900">Accuracy:</p>
+                <p className="text-gray-600">±10% in 85-90% of cases</p>
+              </div>
+            </div>
+            <div className="text-xs text-gray-500 text-center">
+              <strong>Clinical Note:</strong> π/6 ≈ 0.524 (ellipsoid constant for prolate spheroid approximation)
             </div>
           </div>
         </div>

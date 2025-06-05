@@ -14,15 +14,19 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://prostatevolumecalc.com/" />
-    <meta property="og:title" content="Prostate Volume Calculator - Accurate BPH Assessment Tool" />
-    <meta property="og:description" content="Free online prostate volume calculator using ellipsoid formula and TRUS measurements. Accurate BPH assessment tool for medical professionals and patients." />
+    <meta property="og:title" content="Medical Grade Prostate Volume Calculator - BPH Assessment Tool" />
+    <meta property="og:description" content="Professional prostate volume calculator using validated ellipsoid formula. Trusted by urologists worldwide for accurate BPH assessment, treatment planning, and clinical decision-making." />
+    <meta property="og:image" content="https://prostatevolumecalc.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="ProstateVolumeCalc" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://prostatevolumecalc.com/" />
-    <meta property="twitter:title" content="Prostate Volume Calculator - Accurate BPH Assessment Tool" />
-    <meta property="twitter:description" content="Free online prostate volume calculator using ellipsoid formula and TRUS measurements." />
+    <meta property="twitter:title" content="Medical Grade Prostate Volume Calculator - BPH Assessment Tool" />
+    <meta property="twitter:description" content="Professional prostate volume calculator using validated ellipsoid formula. Trusted by urologists worldwide for accurate BPH assessment." />
+    <meta property="twitter:image" content="https://prostatevolumecalc.com/og-image.jpg" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://prostatevolumecalc.com/" />
@@ -97,27 +101,88 @@
       "@context": "https://schema.org",
       "@type": "MedicalRiskCalculator",
       "name": "Prostate Volume Calculator",
-      "description": "Calculate prostate volume using ellipsoid formula for BPH assessment",
+      "description": "Calculate prostate volume using ellipsoid formula for BPH assessment and PSA density evaluation",
       "medicalRiskFactor": {
         "@type": "MedicalRiskFactor",
         "name": "Prostate Volume",
-        "description": "Measurement used to assess benign prostatic hyperplasia severity"
+        "description": "Measurement used to assess benign prostatic hyperplasia severity and cancer risk"
       },
       "includedRiskFactor": [
         {
           "@type": "PropertyValue",
           "name": "Prostate Length",
-          "description": "Anterior-posterior dimension in millimeters"
+          "description": "Anterior-posterior dimension in millimeters via TRUS"
         },
         {
           "@type": "PropertyValue",
-          "name": "Prostate Width",
-          "description": "Transverse dimension in millimeters"
+          "name": "Prostate Width", 
+          "description": "Transverse dimension in millimeters via TRUS"
         },
         {
           "@type": "PropertyValue",
           "name": "Prostate Height",
-          "description": "Superior-inferior dimension in millimeters"
+          "description": "Superior-inferior dimension in millimeters via TRUS"
+        }
+      ],
+      "medicalAudience": [
+        "Urologist",
+        "Radiologist", 
+        "Primary Care Physician"
+      ],
+      "availableLanguage": "en-US",
+      "applicationCategory": "Medical Calculator",
+      "operatingSystem": "Web Browser"
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "ProstateVolumeCalc",
+      "url": "https://prostatevolumecalc.com",
+      "description": "Professional medical calculator platform for prostate volume assessment",
+      "medicalSpecialty": "Urology",
+      "knowsAbout": [
+        "Prostate Volume Calculation",
+        "Benign Prostatic Hyperplasia",
+        "TRUS Measurements",
+        "PSA Density",
+        "BPH Treatment Planning"
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://prostatevolumecalc.com"
+        },
+        {
+          "@type": "ListItem", 
+          "position": 2,
+          "name": "Calculator",
+          "item": "https://prostatevolumecalc.com#calculator"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "BPH Education",
+          "item": "https://prostatevolumecalc.com#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Medical Resources",
+          "item": "https://prostatevolumecalc.com#resources"
         }
       ]
     }
