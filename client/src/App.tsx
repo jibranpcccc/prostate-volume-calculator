@@ -45,6 +45,13 @@ import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
 
 // Blog Posts
 import ProstateVolumeMeasurementGuide from "@/pages/blog-posts/prostate-volume-measurement-guide";
+import PSADensityCalculatorGuide from "@/pages/blog-posts/psa-density-calculator-guide";
+import IPSSAssessmentGuide from "@/pages/blog-posts/ipss-assessment-guide";
+import BPHTreatmentAlgorithms from "@/pages/blog-posts/bph-treatment-algorithms";
+import AgeRelatedProstateGrowth from "@/pages/blog-posts/age-related-prostate-growth";
+import MinimallyInvasiveBPHProcedures from "@/pages/blog-posts/minimally-invasive-bph-procedures";
+import MachineLearningProstateAssessment from "@/pages/blog-posts/machine-learning-prostate-assessment";
+import VolumeAdjustedPSAScreening from "@/pages/blog-posts/volume-adjusted-psa-screening";
 
 function Router() {
   // Track page views when routes change
@@ -108,13 +115,13 @@ function Router() {
       
       {/* Blog Posts */}
       <Route path="/blog/prostate-volume-measurement-guide" component={ProstateVolumeMeasurementGuide} />
-      <Route path="/blog/psa-density-calculator-guide" component={Blog} />
-      <Route path="/blog/ipss-assessment-guide" component={Blog} />
-      <Route path="/blog/bph-treatment-algorithms" component={Blog} />
-      <Route path="/blog/age-related-prostate-growth" component={Blog} />
-      <Route path="/blog/minimally-invasive-bph-procedures" component={Blog} />
-      <Route path="/blog/machine-learning-prostate-assessment" component={Blog} />
-      <Route path="/blog/volume-adjusted-psa-screening" component={Blog} />
+      <Route path="/blog/psa-density-calculator-guide" component={PSADensityCalculatorGuide} />
+      <Route path="/blog/ipss-assessment-guide" component={IPSSAssessmentGuide} />
+      <Route path="/blog/bph-treatment-algorithms" component={BPHTreatmentAlgorithms} />
+      <Route path="/blog/age-related-prostate-growth" component={AgeRelatedProstateGrowth} />
+      <Route path="/blog/minimally-invasive-bph-procedures" component={MinimallyInvasiveBPHProcedures} />
+      <Route path="/blog/machine-learning-prostate-assessment" component={MachineLearningProstateAssessment} />
+      <Route path="/blog/volume-adjusted-psa-screening" component={VolumeAdjustedPSAScreening} />
       
       {/* Case Studies */}
       <Route path="/case-studies/large-prostate-bph-management" component={CaseStudy} />
