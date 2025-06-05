@@ -91,8 +91,8 @@ export default function PSAVelocityCalculatorPage() {
                         <ul className="space-y-1 text-sm">
                           <li>• <strong>&lt;0.35 ng/mL/year:</strong> Low concern</li>
                           <li>• <strong>0.35-0.75 ng/mL/year:</strong> Monitor closely</li>
-                          <li>• <strong>&gt;0.75 ng/mL/year:</strong> Consider intervention</li>
-                          <li>• <strong>&gt;2.0 ng/mL/year:</strong> High suspicion for cancer</li>
+                          <li>• <strong>{'>'} 0.75 ng/mL/year:</strong> Consider intervention</li>
+                          <li>• <strong>{'>'} 2.0 ng/mL/year:</strong> High suspicion for cancer</li>
                         </ul>
                       </div>
                       

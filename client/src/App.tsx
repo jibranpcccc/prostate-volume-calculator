@@ -14,6 +14,7 @@ import Resources from "@/pages/resources";
 import Blog from "@/pages/blog";
 import CaseStudy from "@/pages/casestudy";
 import PSACalculators from "@/pages/psa-calculators";
+import MensHealthCalculators from "@/pages/mens-health-calculators";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
 import PrivacyPolicy from "@/pages/privacy-policy";
@@ -21,6 +22,17 @@ import TermsOfService from "@/pages/terms-of-service";
 import Disclaimer from "@/pages/disclaimer";
 import Sitemap from "@/pages/sitemap";
 import NotFound from "@/pages/not-found";
+
+// Individual Calculator Pages
+import PSADensityCalculator from "@/pages/individual-calculators/psa-density-calculator";
+import PSAVelocityCalculator from "@/pages/individual-calculators/psa-velocity-calculator";
+import ErectileDysfunctionCalculator from "@/pages/individual-calculators/erectile-dysfunction-calculator";
+
+// Educational Articles
+import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
+
+// Blog Posts
+import ProstateVolumeMeasurementGuide from "@/pages/blog-posts/prostate-volume-measurement-guide";
 
 function Router() {
   // Track page views when routes change
@@ -48,6 +60,57 @@ function Router() {
       
       {/* PSA Calculator Suite */}
       <Route path="/psa-calculators" component={PSACalculators} />
+      <Route path="/psa-calculators/psa-density-calculator" component={PSADensityCalculator} />
+      <Route path="/psa-calculators/psa-velocity-calculator" component={PSAVelocityCalculator} />
+      <Route path="/psa-calculators/psa-doubling-time-calculator" component={PSACalculators} />
+      <Route path="/psa-calculators/free-psa-ratio-calculator" component={PSACalculators} />
+      <Route path="/psa-calculators/age-specific-psa-calculator" component={PSACalculators} />
+      
+      {/* Men's Health Calculators */}
+      <Route path="/mens-health-calculators" component={MensHealthCalculators} />
+      <Route path="/mens-health-calculators/erectile-dysfunction-calculator" component={ErectileDysfunctionCalculator} />
+      <Route path="/mens-health-calculators/testosterone-deficiency-calculator" component={MensHealthCalculators} />
+      <Route path="/mens-health-calculators/free-testosterone-calculator" component={MensHealthCalculators} />
+      <Route path="/mens-health-calculators/cardiovascular-risk-calculator" component={MensHealthCalculators} />
+      <Route path="/mens-health-calculators/bmi-calculator" component={MensHealthCalculators} />
+      <Route path="/mens-health-calculators/waist-hip-ratio-calculator" component={MensHealthCalculators} />
+      
+      {/* Individual Tool Routes */}
+      <Route path="/tools/ipss-questionnaire" component={AdvancedTools} />
+      <Route path="/tools/comprehensive-prostate-assessment" component={AdvancedTools} />
+      <Route path="/tools/treatment-decision-guide" component={AdvancedTools} />
+      <Route path="/tools/prostate-cancer-risk-calculator" component={AdvancedTools} />
+      <Route path="/tools/post-void-residual-calculator" component={AdvancedTools} />
+      <Route path="/tools/bladder-capacity-calculator" component={AdvancedTools} />
+      <Route path="/tools/voiding-diary-analyzer" component={AdvancedTools} />
+      
+      {/* Educational Articles */}
+      <Route path="/education/understanding-bph" component={UnderstandingBPH} />
+      <Route path="/education/prostate-volume-measurement-techniques" component={Education} />
+      <Route path="/education/psa-density-clinical-practice" component={Education} />
+      <Route path="/education/ipss-scoring-interpretation" component={Education} />
+      <Route path="/education/medical-management-bph" component={Education} />
+      <Route path="/education/surgical-options-bph" component={Education} />
+      <Route path="/education/advanced-imaging-prostate" component={Education} />
+      <Route path="/education/machine-learning-urology" component={Education} />
+      
+      {/* Blog Posts */}
+      <Route path="/blog/prostate-volume-measurement-guide" component={ProstateVolumeMeasurementGuide} />
+      <Route path="/blog/psa-density-calculator-guide" component={Blog} />
+      <Route path="/blog/ipss-assessment-guide" component={Blog} />
+      <Route path="/blog/bph-treatment-algorithms" component={Blog} />
+      <Route path="/blog/age-related-prostate-growth" component={Blog} />
+      <Route path="/blog/minimally-invasive-bph-procedures" component={Blog} />
+      <Route path="/blog/machine-learning-prostate-assessment" component={Blog} />
+      <Route path="/blog/volume-adjusted-psa-screening" component={Blog} />
+      
+      {/* Case Studies */}
+      <Route path="/case-studies/large-prostate-bph-management" component={CaseStudy} />
+      <Route path="/case-studies/psa-density-guided-biopsy" component={CaseStudy} />
+      <Route path="/case-studies/surgical-planning-moderate-bph" component={CaseStudy} />
+      <Route path="/case-studies/young-patient-enlarged-prostate" component={CaseStudy} />
+      
+      {/* Legacy redirects */}
       <Route path="/psa-velocity-calculator" component={PSACalculators} />
       <Route path="/psa-doubling-time-calculator" component={PSACalculators} />
       <Route path="/free-psa-ratio-calculator" component={PSACalculators} />
