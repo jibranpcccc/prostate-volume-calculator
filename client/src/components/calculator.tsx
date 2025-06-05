@@ -71,25 +71,33 @@ export default function Calculator() {
     let interpretation: string;
     let assessmentClass: string;
 
-    if (volume < 20) {
+    if (volume < 15) {
       assessment = "Below Normal Range";
-      interpretation = "This volume is below the typical range. This may be normal for younger individuals or could indicate other conditions. Consult with a healthcare provider for proper evaluation.";
-      assessmentClass = "text-yellow-600";
-    } else if (volume <= 30) {
-      assessment = "Normal Range";
-      interpretation = "This volume falls within the normal range for adult males. Normal prostate volume typically ranges from 20-30 mL.";
+      interpretation = "Volume below typical range. May be normal for younger adults (<30 years) or indicate measurement error. Clinical correlation with age and symptoms recommended.";
+      assessmentClass = "text-blue-600";
+    } else if (volume <= 25) {
+      assessment = "Normal Range (Young Adult)";
+      interpretation = "Normal prostate volume for men under 40 years. No intervention typically required unless symptomatic. Annual monitoring after age 50 recommended.";
       assessmentClass = "text-green-600";
-    } else if (volume <= 50) {
-      assessment = "Mild Enlargement";
-      interpretation = "This indicates mild prostatic enlargement, which may be age-related. Consider monitoring and consultation with a urologist if symptoms are present.";
+    } else if (volume <= 40) {
+      assessment = "Normal to Mildly Enlarged";
+      interpretation = "Age-appropriate volume for men 40-60 years. Monitor symptoms with IPSS questionnaire. Consider alpha-blocker therapy if symptomatic (IPSS >7).";
+      assessmentClass = "text-green-600";
+    } else if (volume <= 60) {
+      assessment = "Moderate Enlargement (BPH)";
+      interpretation = "Moderate BPH. Combination therapy (alpha-blocker + 5-ARI) recommended if symptomatic. PSA density calculation advised to exclude malignancy.";
       assessmentClass = "text-yellow-600";
     } else if (volume <= 80) {
-      assessment = "Moderate Enlargement (BPH)";
-      interpretation = "This indicates moderate prostatic enlargement consistent with benign prostatic hyperplasia (BPH). Urological evaluation and potential treatment should be considered.";
+      assessment = "Significant Enlargement (BPH)";
+      interpretation = "Significant BPH with high likelihood of progression. Medical therapy optimization indicated. Consider minimally invasive procedures if medication fails.";
       assessmentClass = "text-orange-600";
+    } else if (volume <= 100) {
+      assessment = "Large Prostate (Surgical Candidate)";
+      interpretation = "Large prostate suitable for surgical intervention. TURP, HoLEP, or other procedures indicated based on symptoms and patient factors.";
+      assessmentClass = "text-red-600";
     } else {
-      assessment = "Severe Enlargement (BPH)";
-      interpretation = "This indicates significant prostatic enlargement. Urological evaluation and treatment planning are strongly recommended.";
+      assessment = "Very Large Prostate";
+      interpretation = "Very large prostate (>100 mL). Simple prostatectomy or advanced endoscopic techniques indicated. Multidisciplinary evaluation recommended.";
       assessmentClass = "text-red-600";
     }
 
@@ -323,25 +331,51 @@ export default function Calculator() {
             </div>
             
             {/* Volume Range Reference */}
-            <div className="bg-white rounded border p-3">
-              <h4 className="font-semibold text-gray-900 mb-2 text-sm">Reference Ranges:</h4>
-              <div className="space-y-1 text-xs">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                  <span>Normal: ≤ 30 mL</span>
+            <div className="bg-white rounded border p-4">
+              <h4 className="font-semibold text-gray-900 mb-3 text-sm">Clinical Reference Ranges:</h4>
+              <div className="space-y-2 text-xs">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full mr-2"></div>
+                    <span>Below Normal: &lt;15 mL</span>
+                  </div>
+                  <span className="text-gray-500">Young adults</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
-                  <span>Mild Enlargement: 30-50 mL</span>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                    <span>Normal: 15-40 mL</span>
+                  </div>
+                  <span className="text-gray-500">Age-appropriate</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>
-                  <span>Moderate Enlargement: 50-80 mL</span>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
+                    <span>Moderate BPH: 40-80 mL</span>
+                  </div>
+                  <span className="text-gray-500">Medical therapy</span>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
-                  <span>Severe Enlargement: ≥ 80 mL</span>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-orange-500 rounded-full mr-2"></div>
+                    <span>Large: 80-100 mL</span>
+                  </div>
+                  <span className="text-gray-500">Surgical candidate</span>
                 </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <div className="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                    <span>Very Large: &gt;100 mL</span>
+                  </div>
+                  <span className="text-gray-500">Complex surgery</span>
+                </div>
+              </div>
+              
+              <div className="mt-3 pt-3 border-t border-gray-100">
+                <p className="text-xs text-gray-500">
+                  <strong>Clinical Note:</strong> Treatment decisions should consider symptoms (IPSS), 
+                  PSA levels, patient age, and comorbidities in addition to volume measurements.
+                </p>
               </div>
             </div>
             
