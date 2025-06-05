@@ -14,7 +14,7 @@
     <priority>1.0</priority>
   </url>
   
-  <!-- Core Calculator Tools -->
+  <!-- Core Calculator Category Pages -->
   <url>
     <loc>https://prostatevolumecalc.com/tools</loc>
     <lastmod>2024-12-05</lastmod>
@@ -35,8 +35,137 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Individual PSA Calculator Pages -->
+  <url>
+    <loc>https://prostatevolumecalc.com/psa-calculators/psa-density-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   
-  <!-- Educational Content -->
+  <url>
+    <loc>https://prostatevolumecalc.com/psa-calculators/psa-velocity-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/psa-calculators/psa-doubling-time-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/psa-calculators/free-psa-ratio-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/psa-calculators/age-specific-psa-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Advanced Clinical Tools -->
+  <url>
+    <loc>https://prostatevolumecalc.com/tools/ipss-questionnaire</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/tools/comprehensive-prostate-assessment</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/tools/treatment-decision-guide</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/tools/prostate-cancer-risk-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/tools/post-void-residual-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/tools/bladder-capacity-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/tools/voiding-diary-analyzer</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Men's Health Calculators -->
+  <url>
+    <loc>https://prostatevolumecalc.com/mens-health-calculators/erectile-dysfunction-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/mens-health-calculators/testosterone-deficiency-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/mens-health-calculators/free-testosterone-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/mens-health-calculators/cardiovascular-risk-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/mens-health-calculators/bmi-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/mens-health-calculators/waist-hip-ratio-calculator</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Educational Content Hub Pages -->
   <url>
     <loc>https://prostatevolumecalc.com/education</loc>
     <lastmod>2024-12-05</lastmod>
@@ -64,7 +193,150 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Individual Educational Articles -->
+  <url>
+    <loc>https://prostatevolumecalc.com/education/understanding-bph</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
+  <url>
+    <loc>https://prostatevolumecalc.com/education/prostate-volume-measurement-techniques</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/education/psa-density-clinical-practice</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/education/ipss-scoring-interpretation</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/education/medical-management-bph</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/education/surgical-options-bph</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/education/advanced-imaging-prostate</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/education/machine-learning-urology</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Individual Blog Articles -->
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/prostate-volume-measurement-guide</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/psa-density-calculator-guide</loc>
+    <lastmod>2024-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/ipss-assessment-guide</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/bph-treatment-algorithms</loc>
+    <lastmod>2024-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/age-related-prostate-growth</loc>
+    <lastmod>2024-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/minimally-invasive-bph-procedures</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/machine-learning-prostate-assessment</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/blog/volume-adjusted-psa-screening</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Case Studies -->
+  <url>
+    <loc>https://prostatevolumecalc.com/case-studies/large-prostate-bph-management</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/case-studies/psa-density-guided-biopsy</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/case-studies/surgical-planning-moderate-bph</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/case-studies/young-patient-enlarged-prostate</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Support & Information -->
   <url>
     <loc>https://prostatevolumecalc.com/faq</loc>
@@ -86,7 +358,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  
+
   <!-- Legal & Compliance -->
   <url>
     <loc>https://prostatevolumecalc.com/privacy-policy</loc>
@@ -108,7 +380,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
+
   <!-- Navigation -->
   <url>
     <loc>https://prostatevolumecalc.com/sitemap</loc>

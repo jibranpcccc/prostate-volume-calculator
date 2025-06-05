@@ -5,13 +5,17 @@ interface SEOHeadProps {
   description?: string;
   canonical?: string;
   pageType?: "homepage" | "tools" | "calculator";
+  keywords?: string[];
+  medicalCondition?: string;
 }
 
 export default function SEOHead({ 
   title, 
   description, 
   canonical,
-  pageType = "homepage" 
+  pageType = "homepage",
+  keywords = [],
+  medicalCondition
 }: SEOHeadProps) {
   const [location] = useLocation();
 
