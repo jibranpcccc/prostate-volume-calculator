@@ -21,6 +21,30 @@ export default function Breadcrumb() {
         href: "/tools", 
         current: true 
       });
+    } else if (location === "/calculator") {
+      breadcrumbs.push({ 
+        label: "Prostate Volume Calculator", 
+        href: "/calculator", 
+        current: true 
+      });
+    } else if (location === "/ipss") {
+      breadcrumbs.push({ 
+        label: "IPSS Assessment", 
+        href: "/ipss", 
+        current: true 
+      });
+    } else if (location === "/psa-density") {
+      breadcrumbs.push({ 
+        label: "PSA Density Calculator", 
+        href: "/psa-density", 
+        current: true 
+      });
+    } else if (location === "/treatment-guide") {
+      breadcrumbs.push({ 
+        label: "Treatment Decision Guide", 
+        href: "/treatment-guide", 
+        current: true 
+      });
     } else if (location === "/") {
       breadcrumbs[0].current = true;
     }

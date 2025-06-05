@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import Breadcrumb from "@/components/breadcrumb";
 import Calculator from "@/components/calculator";
 import FAQ from "@/components/faq";
+import SEOHead from "@/components/seo-head";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -20,9 +21,16 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
-      <Breadcrumb />
+    <>
+      <SEOHead 
+        title="Prostate Volume Calculator - Medical Grade Tool | ProstateVolumeCalc"
+        description="Professional prostate volume calculator using validated ellipsoid formula. Trusted by urologists and radiologists worldwide for BPH assessment, treatment planning, and clinical decision-making with TRUS measurements."
+        canonical="https://prostatevolumecalc.com/"
+        pageType="homepage"
+      />
+      <div className="min-h-screen bg-gray-50">
+        <Header />
+        <Breadcrumb />
       
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
@@ -937,7 +945,8 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
