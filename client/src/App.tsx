@@ -14,6 +14,11 @@ import Resources from "@/pages/resources";
 import Blog from "@/pages/blog";
 import CaseStudy from "@/pages/casestudy";
 import PSACalculators from "@/pages/psa-calculators";
+import About from "@/pages/about";
+import Contact from "@/pages/contact";
+import PrivacyPolicy from "@/pages/privacy-policy";
+import TermsOfService from "@/pages/terms-of-service";
+import Disclaimer from "@/pages/disclaimer";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -90,6 +95,18 @@ function Router() {
       <Route path="/benign-prostatic-hyperplasia" component={Education} />
       <Route path="/lower-urinary-tract-symptoms" component={Education} />
       
+      {/* Core Website Pages */}
+      <Route path="/about" component={About} />
+      <Route path="/about-us" component={About} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/contact-us" component={Contact} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
+      <Route path="/privacy" component={PrivacyPolicy} />
+      <Route path="/terms-of-service" component={TermsOfService} />
+      <Route path="/terms" component={TermsOfService} />
+      <Route path="/disclaimer" component={Disclaimer} />
+      <Route path="/medical-disclaimer" component={Disclaimer} />
+
       {/* 404 Not Found */}
       <Route component={NotFound} />
     </Switch>
