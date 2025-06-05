@@ -5,8 +5,9 @@ import FAQ from "@/components/faq";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { AlertTriangle, Shield, UserCheck, Smartphone, Calculator as CalculatorIcon, FileText, Microscope, University } from "lucide-react";
+import { AlertTriangle, Shield, UserCheck, Smartphone, Calculator as CalculatorIcon, FileText, Microscope, University, TrendingUp, ClipboardList, Brain, ArrowRight } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { Link } from "wouter";
 
 export default function Home() {
   const handleLearnMoreClick = (section: string) => {
@@ -51,6 +52,23 @@ export default function Home() {
             
             <div className="bg-white rounded-2xl shadow-2xl p-8 text-gray-900">
               <Calculator />
+              
+              {/* Advanced Tools CTA */}
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <div className="text-center">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Need More Advanced Assessment?</h3>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Access our comprehensive clinical tools including PSA density calculation, IPSS assessment, and treatment decision support.
+                  </p>
+                  <Link href="/tools">
+                    <Button className="bg-indigo-600 hover:bg-indigo-700 text-white">
+                      <Brain className="mr-2 w-4 h-4" />
+                      Advanced Clinical Tools
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,6 +116,97 @@ export default function Home() {
               <h3 className="font-semibold text-gray-900 mb-2">Mobile Optimized</h3>
               <p className="text-sm text-gray-600">Access anywhere, any device</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Tools Preview */}
+      <section className="py-16 bg-gradient-to-br from-indigo-50 to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Complete Clinical Assessment Suite</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Beyond basic volume calculation - access comprehensive tools for complete urological assessment and clinical decision support
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-4 gap-6 mb-12">
+            <Card className="hover:shadow-lg transition-shadow border-purple-200 bg-white">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="w-6 h-6 text-purple-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">PSA Density Calculator</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Calculate PSA density for enhanced cancer risk stratification and diagnostic accuracy
+                </p>
+                <Badge variant="outline" className="text-purple-600 border-purple-200">
+                  Cancer Risk Assessment
+                </Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-blue-200 bg-white">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <ClipboardList className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">IPSS Assessment</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  International Prostate Symptom Score questionnaire for comprehensive symptom evaluation
+                </p>
+                <Badge variant="outline" className="text-blue-600 border-blue-200">
+                  Symptom Evaluation
+                </Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-green-200 bg-white">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <FileText className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Treatment Guide</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Evidence-based treatment recommendations tailored to patient-specific factors
+                </p>
+                <Badge variant="outline" className="text-green-600 border-green-200">
+                  Clinical Decision Support
+                </Badge>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-orange-200 bg-white">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Brain className="w-6 h-6 text-orange-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Comprehensive Risk</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Multi-factor risk assessment combining clinical, imaging, and laboratory data
+                </p>
+                <Badge variant="outline" className="text-orange-600 border-orange-200">
+                  Integrated Assessment
+                </Badge>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Link href="/tools">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-3"
+                onClick={() => trackEvent('advanced_tools_cta_clicked', 'navigation', 'main_cta')}
+              >
+                <Brain className="mr-2 w-5 h-5" />
+                Access Advanced Clinical Tools
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            <p className="text-sm text-gray-500 mt-3">
+              Professional-grade tools for comprehensive urological assessment
+            </p>
           </div>
         </div>
       </section>

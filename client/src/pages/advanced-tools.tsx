@@ -9,6 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
 import { 
   Calculator, 
   TrendingUp, 
@@ -21,6 +22,7 @@ import {
   BarChart3
 } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { Link } from "wouter";
 
 export default function AdvancedTools() {
   const handleTabChange = (tab: string) => {
@@ -42,6 +44,14 @@ export default function AdvancedTools() {
               Comprehensive suite of validated medical calculators and assessment tools for 
               enhanced BPH diagnosis, risk stratification, and treatment planning.
             </p>
+            <div className="flex justify-center mb-8">
+              <Link href="/">
+                <Button variant="outline" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+                  <Calculator className="mr-2 w-4 h-4" />
+                  Back to Basic Calculator
+                </Button>
+              </Link>
+            </div>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Badge variant="secondary" className="bg-green-100 text-green-800 hover:bg-green-200">
                 <Brain className="w-4 h-4 mr-2" />
