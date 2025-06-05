@@ -46,32 +46,37 @@ export default function Header() {
             <button
               onClick={() => handleNavClick('calculator')}
               className={`text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium ${location === '/' ? 'border-b-2 border-blue-600 text-blue-600' : ''}`}
+              aria-label="Navigate to prostate volume calculator tool"
             >
-              Calculator
+              Volume Calculator
             </button>
             <Link
               href="/tools"
               className={`text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium ${location === '/tools' || location === '/advanced-tools' ? 'border-b-2 border-blue-600 text-blue-600' : ''}`}
+              aria-label="Access advanced BPH assessment tools"
             >
-              Advanced Tools
+              Clinical Tools
             </Link>
             <button
               onClick={() => handleNavClick('about')}
               className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+              aria-label="Learn about BPH and prostate volume measurement"
             >
-              About
+              BPH Education
             </button>
             <button
               onClick={() => handleNavClick('faq')}
               className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+              aria-label="Frequently asked questions about prostate volume"
             >
-              FAQ
+              Medical FAQ
             </button>
             <button
               onClick={() => handleNavClick('resources')}
               className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+              aria-label="Professional medical resources and guidelines"
             >
-              Resources
+              Clinical Resources
             </button>
           </div>
 

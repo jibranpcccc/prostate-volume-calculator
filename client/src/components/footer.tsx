@@ -35,41 +35,45 @@ export default function Footer() {
             </div>
           </div>
           
-          {/* Quick Links */}
+          {/* Calculator Tools */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4">Calculator Tools</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
                 <button 
                   onClick={() => handleNavClick('calculator')}
                   className="hover:text-white transition-colors text-left"
+                  aria-label="Use prostate volume calculator"
                 >
-                  Calculator
+                  Prostate Volume Calculator
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick('about')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/tools"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('tools', 'psa_density')}
                 >
-                  About
-                </button>
+                  PSA Density Calculator
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick('faq')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/tools"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('tools', 'ipss_assessment')}
                 >
-                  FAQ
-                </button>
+                  IPSS Assessment Tool
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleNavClick('resources')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/tools"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('tools', 'treatment_guide')}
                 >
-                  Resources
-                </button>
+                  BPH Treatment Guide
+                </a>
               </li>
             </ul>
           </div>

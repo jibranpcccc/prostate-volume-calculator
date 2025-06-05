@@ -18,8 +18,14 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/home" component={Home} />
+      <Route path="/calculator" component={Home} />
+      <Route path="/prostate-volume-calculator" component={Home} />
       <Route path="/tools" component={AdvancedTools} />
       <Route path="/advanced-tools" component={AdvancedTools} />
+      <Route path="/psa-density-calculator" component={AdvancedTools} />
+      <Route path="/ipss-assessment" component={AdvancedTools} />
+      <Route path="/treatment-decision-guide" component={AdvancedTools} />
+      <Route path="/bph-assessment-tools" component={AdvancedTools} />
       <Route component={NotFound} />
     </Switch>
   );
