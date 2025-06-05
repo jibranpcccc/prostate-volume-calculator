@@ -38,6 +38,7 @@ import WaistHipRatioCalculator from "@/pages/individual-calculators/waist-hip-ra
 import PostVoidResidualCalculator from "@/pages/individual-calculators/post-void-residual-calculator";
 import VoidingDiaryAnalyzer from "@/pages/individual-calculators/voiding-diary-analyzer";
 import BladderCapacityCalculator from "@/pages/individual-calculators/bladder-capacity-calculator";
+import ProstateCancerRiskCalculatorPage from "@/pages/individual-calculators/prostate-cancer-risk-calculator";
 
 // Educational Articles
 import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
@@ -81,19 +82,19 @@ function Router() {
       <Route path="/mens-health-calculators" component={MensHealthCalculators} />
       <Route path="/mens-health-calculators/erectile-dysfunction-calculator" component={ErectileDysfunctionCalculator} />
       <Route path="/mens-health-calculators/testosterone-deficiency-calculator" component={TestosteroneDeficiencyCalculator} />
-      <Route path="/mens-health-calculators/free-testosterone-calculator" component={MensHealthCalculators} />
-      <Route path="/mens-health-calculators/cardiovascular-risk-calculator" component={MensHealthCalculators} />
-      <Route path="/mens-health-calculators/bmi-calculator" component={MensHealthCalculators} />
-      <Route path="/mens-health-calculators/waist-hip-ratio-calculator" component={MensHealthCalculators} />
+      <Route path="/mens-health-calculators/free-testosterone-calculator" component={FreeTestosteroneCalculator} />
+      <Route path="/mens-health-calculators/cardiovascular-risk-calculator" component={CardiovascularRiskCalculator} />
+      <Route path="/mens-health-calculators/bmi-calculator" component={BMICalculator} />
+      <Route path="/mens-health-calculators/waist-hip-ratio-calculator" component={WaistHipRatioCalculator} />
       
       {/* Individual Tool Routes */}
       <Route path="/tools/ipss-questionnaire" component={AdvancedTools} />
       <Route path="/tools/comprehensive-prostate-assessment" component={AdvancedTools} />
       <Route path="/tools/treatment-decision-guide" component={AdvancedTools} />
-      <Route path="/tools/prostate-cancer-risk-calculator" component={AdvancedTools} />
-      <Route path="/tools/post-void-residual-calculator" component={AdvancedTools} />
-      <Route path="/tools/bladder-capacity-calculator" component={AdvancedTools} />
-      <Route path="/tools/voiding-diary-analyzer" component={AdvancedTools} />
+      <Route path="/tools/prostate-cancer-risk-calculator" component={ProstateCancerRiskCalculatorPage} />
+      <Route path="/tools/post-void-residual-calculator" component={PostVoidResidualCalculator} />
+      <Route path="/tools/bladder-capacity-calculator" component={BladderCapacityCalculator} />
+      <Route path="/tools/voiding-diary-analyzer" component={VoidingDiaryAnalyzer} />
       
       {/* Educational Articles */}
       <Route path="/education/understanding-bph" component={UnderstandingBPH} />

@@ -365,7 +365,7 @@ export default function WaistHipRatioCalculator() {
                     <li>• Low risk: ≤0.90</li>
                     <li>• Moderate risk: 0.91-0.95</li>
                     <li>• High risk: 0.96-1.0</li>
-                    <li>• Very high risk: >1.0</li>
+                    <li>• Very high risk: &gt;1.0</li>
                   </ul>
                 </div>
                 <div>
@@ -374,7 +374,7 @@ export default function WaistHipRatioCalculator() {
                     <li>• Low risk: ≤0.80</li>
                     <li>• Moderate risk: 0.81-0.85</li>
                     <li>• High risk: 0.86-0.90</li>
-                    <li>• Very high risk: >0.90</li>
+                    <li>• Very high risk: &gt;0.90</li>
                   </ul>
                 </div>
               </div>
