@@ -31,6 +31,13 @@ import FreePSARatioCalculator from "@/pages/individual-calculators/free-psa-rati
 import AgeSpecificPSACalculator from "@/pages/individual-calculators/age-specific-psa-calculator";
 import ErectileDysfunctionCalculator from "@/pages/individual-calculators/erectile-dysfunction-calculator";
 import TestosteroneDeficiencyCalculator from "@/pages/individual-calculators/testosterone-deficiency-calculator";
+import FreeTestosteroneCalculator from "@/pages/individual-calculators/free-testosterone-calculator";
+import CardiovascularRiskCalculator from "@/pages/individual-calculators/cardiovascular-risk-calculator";
+import BMICalculator from "@/pages/individual-calculators/bmi-calculator";
+import WaistHipRatioCalculator from "@/pages/individual-calculators/waist-hip-ratio-calculator";
+import PostVoidResidualCalculator from "@/pages/individual-calculators/post-void-residual-calculator";
+import VoidingDiaryAnalyzer from "@/pages/individual-calculators/voiding-diary-analyzer";
+import BladderCapacityCalculator from "@/pages/individual-calculators/bladder-capacity-calculator";
 
 // Educational Articles
 import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
