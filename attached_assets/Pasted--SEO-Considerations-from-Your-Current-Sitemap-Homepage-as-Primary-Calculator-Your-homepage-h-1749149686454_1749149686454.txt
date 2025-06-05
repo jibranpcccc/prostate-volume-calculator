@@ -1,0 +1,262 @@
+ SEO Considerations from Your Current Sitemap:
+
+    Homepage as Primary Calculator: Your homepage (https://prostatevolumecalc.com/) being the Prostate Volume Calculator itself is a specific choice. This can work, especially if direct traffic to the domain expects this calculator. However, for broader SEO and user experience, a dedicated homepage that acts as a portal is often more effective. I will structure with your current approach but also offer a suggestion if you want to evolve.
+    URL Redundancy/Alternatives: You have several URLs that might point to similar content or are variations (e.g., /calculator, /prostate-volume-calculator vs. /; /tools vs. /advanced-tools; /psa-density vs. /psa-density-calculator). This can cause duplicate content issues and dilute SEO. You should choose ONE canonical URL for each piece of content and 301 redirect the alternatives to it.
+    Flat Structure: Many of your current URLs are top-level. The silo structure will introduce more hierarchy, which is generally better for SEO organization.
+    <mobile:mobile/> Tag: This tag is deprecated by Google. A responsive design is the standard and preferred approach.
+
+Updated Comprehensive Site Structure (Integrating Your Sitemap):
+
+Let's assume prostatevolumecalc.com/ remains the Prostate Volume Calculator for now.
+
+I. Homepage (Primary Calculator - As per your sitemap)
+
+    URL: https://prostatevolumecalc.com/
+        Content: The Prostate Volume Calculator itself.
+        Title: Prostate Volume Calculator - Accurate & Easy | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Priority: 1.0
+        Crucial Additions to this page:
+            Clear navigation menu leading to other sections/silos (Tools/Calculators, Education, Resources, Blog, About, etc.).
+            A brief section below the calculator: "Explore More Prostate Health Tools & Information" linking to key silo pillar pages or the main /tools (calculator directory) page.
+            Footer with all essential links.
+
+II. Main Calculator & Tools Hub (Silo Pillar)
+
+    This will consolidate your /tools, /advanced-tools, and serve as the primary entry for users looking for any calculator.
+    Canonical URL: https://prostatevolumecalc.com/tools/ (or choose /calculators/ if you prefer)
+        Redirect: https://prostatevolumecalc.com/advanced-tools -> https://prostatevolumecalc.com/tools/
+        Redirect: https://prostatevolumecalc.com/calculator -> https://prostatevolumecalc.com/tools/ (if /calculator isn't a specific, different tool).
+        Title: Comprehensive Prostate & Men's Health Calculators | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Content:
+            Introduction to the range of calculators available.
+            Categorized listing of ALL calculators, linking to their individual pages.
+                Prostate & PSA Calculators
+                Prostate Cancer Risk & Monitoring Calculators
+                BPH & LUTS Symptom Calculators
+                Men's Urological & Sexual Health Calculators
+                General Health & Lifestyle Calculators
+            Search/filter functionality for calculators.
+        Priority: 0.9
+
+III. Silo 1: Prostate & PSA Insights
+(This silo focuses on foundational prostate measurements & PSA understanding)
+
+    A. Pillar Page / Sub-Hub: (Could be a section within /tools/ or its own page if content warrants)
+        URL: https://prostatevolumecalc.com/tools/prostate-psa-insights/
+        Title: Prostate & PSA Assessment Tools & Calculators | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Content: Overview of basic prostate health metrics, importance of PSA. Links to calculators and relevant articles below.
+    B. Calculator Pages (each a separate page/post):
+        Prostate Volume Calculator (Canonical if homepage isn't it, or as an alternative access point):
+            Your current homepage is: https://prostatevolumecalc.com/
+            Existing Alternative: https://prostatevolumecalc.com/prostate-volume-calculator (Should 301 redirect to / or its new canonical URL if the homepage changes).
+            Existing SEO Term Page: https://prostatevolumecalc.com/prostate-volume-measurement (This should be an article linking to the calculator, or redirect to the calculator if it's just a keyword variant).
+            Existing SEO Term Page: https://prostatevolumecalc.com/bph-volume-calculator (This could be the Prostate Volume Calculator page itself, framed for BPH context, or an article. If it's the same calculator, choose one URL, e.g., / and redirect this one, or make it an article).
+        PSA Density (PSAd) Calculator:
+            Canonical URL: https://prostatevolumecalc.com/tools/psa-density-calculator/ (This establishes a clear hierarchy under "tools")
+            Your Existing: https://prostatevolumecalc.com/psa-density-calculator (Keep this, or redirect if you adopt the /tools/ hierarchy consistently).
+            Your Existing SEO Term Pages:
+                https://prostatevolumecalc.com/psa-density (Should 301 redirect to the canonical calculator page or be an article about PSA density linking to the calculator).
+                https://prostatevolumecalc.com/prostate-specific-antigen-density (Should 301 redirect to the canonical calculator page or be an article).
+            Title: PSA Density (PSAd) Calculator for Prostate Health | https://www.google.com/search?q=ProstateVolumeCalc.com
+        PSA Velocity (PSAV) Calculator:
+            URL: https://prostatevolumecalc.com/tools/psa-velocity-calculator/
+        PSA Doubling Time (PSADT) Calculator (General):
+            URL: https://prostatevolumecalc.com/tools/psa-doubling-time-calculator/
+        Age-Specific PSA Range Calculator:
+            URL: https://prostatevolumecalc.com/tools/age-specific-psa-range-calculator/
+        Free-to-Total PSA Ratio Calculator:
+            URL: https://prostatevolumecalc.com/tools/free-total-psa-ratio-calculator/
+        Prostate Volume Change Calculator:
+            URL: https://prostatevolumecalc.com/tools/prostate-volume-change-calculator/
+    C. Supporting Articles (under /education/ or /blog/):
+        Link these articles to the relevant calculators and the pillar page.
+        Example: https://prostatevolumecalc.com/education/understanding-psa-density (linking to /tools/psa-density-calculator/)
+        Example: https://prostatevolumecalc.com/education/interpreting-prostate-volume (linking to / and other relevant volume pages)
+
+IV. Silo 2: Prostate Cancer Risk, Detection & Management
+
+    A. Pillar Page / Sub-Hub:
+        URL: https://prostatevolumecalc.com/tools/prostate-cancer-assessment/
+        Title: Prostate Cancer Risk & Monitoring Calculators | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Content: Overview of risk factors, screening, staging, and monitoring. Links to calculators and relevant guides/articles.
+    B. Calculator/Guide Pages:
+        Prostate Cancer Risk Calculator (General):
+            URL: https://prostatevolumecalc.com/tools/prostate-cancer-risk-calculator/
+        Prostate Biopsy Gleason Score Predictor (Pre-biopsy):
+            URL: https://prostatevolumecalc.com/tools/pre-biopsy-gleason-predictor/
+        Treatment Decision Guide (Existing):
+            URL: https://prostatevolumecalc.com/treatment-decision-guide/ (Keep this URL if it's well-established. Ensure it's internally linked within this silo).
+            This could be a calculator-like interactive tool or a detailed content page.
+            Title: Prostate Cancer Treatment Decision Guide | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Post-Prostatectomy PSA Doubling Time Calculator:
+            URL: https://prostatevolumecalc.com/tools/post-prostatectomy-psadt-calculator/
+        Post-Radiation Therapy PSA Nadir + Rise Calculator:
+            URL: https://prostatevolumecalc.com/tools/post-radiation-psa-calculator/
+        Life Expectancy Estimator for Prostate Cancer (Simplified):
+            URL: https://prostatevolumecalc.com/tools/prostate-cancer-life-expectancy-estimator/ (Strong disclaimers essential).
+        Risk of Biochemical Recurrence (BCR) Calculator:
+            URL: https://prostatevolumecalc.com/tools/biochemical-recurrence-risk-calculator/
+        Adjuvant Therapy Benefit Estimator:
+            URL: https://prostatevolumecalc.com/tools/adjuvant-therapy-benefit-estimator/
+        Prostate Cancer Staging Calculator (Simplified):
+            URL: https://prostatevolumecalc.com/tools/prostate-cancer-staging-calculator/
+    C. Supporting Articles (under /education/ or /blog/):
+        https://prostatevolumecalc.com/education/understanding-gleason-score
+        https://prostatevolumecalc.com/education/prostate-cancer-treatment-options-overview (This could link to your /bph-treatment-options if that page covers cancer too, or be distinct. Your current /bph-treatment-options suggests it's BPH specific).
+
+V. Silo 3: BPH & Lower Urinary Tract Symptoms (LUTS)
+
+    A. Pillar Page / Sub-Hub:
+        Your existing: https://prostatevolumecalc.com/bph-assessment-tools/ (This is a good candidate for the pillar page of this silo).
+        Title: BPH & LUTS Assessment Tools & Symptom Checkers | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Content: Overview of BPH, LUTS, and how to assess symptoms. Links to all calculators and education pages in this silo.
+        Link to your existing educational pages: /bph-education/, /benign-prostatic-hyperplasia/, /lower-urinary-tract-symptoms/ from here.
+    B. Calculator Pages:
+        IPSS Assessment (International Prostate Symptom Score):
+            Your Existing: https://prostatevolumecalc.com/ipss-assessment/ (Keep this URL).
+            Your Existing SEO Term Page: https://prostatevolumecalc.com/international-prostate-symptom-score (This should ideally 301 redirect to /ipss-assessment/ or be an article about IPSS linking to the tool).
+            Title: IPSS Calculator for BPH & LUTS Symptom Severity | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Voiding Diary Analyzer/Calculator:
+            URL: https://prostatevolumecalc.com/bph-assessment-tools/voiding-diary-analyzer/
+        Bladder Capacity Estimator:
+            URL: https://prostatevolumecalc.com/bph-assessment-tools/bladder-capacity-estimator/
+        Post-Void Residual (PVR) Volume Significance Calculator:
+            URL: https://prostatevolumecalc.com/bph-assessment-tools/pvr-significance-calculator/
+        Urgency Score Calculator:
+            URL: https://prostatevolumecalc.com/bph-assessment-tools/urinary-urgency-score/
+        Incontinence Episode Frequency Calculator:
+            URL: https://prostatevolumecalc.com/bph-assessment-tools/incontinence-frequency-calculator/
+        Overactive Bladder (OAB) Symptom Score Calculator:
+            URL: https://prostatevolumecalc.com/bph-assessment-tools/oab-symptom-score/
+    C. Supporting Educational Content (Leverage your existing structure):
+        Main Education Hub: https://prostatevolumecalc.com/education/ (Priority 0.8) - This should be a central pillar for all educational content, linking out to sub-categories like BPH, Cancer, etc.
+        BPH Education Hub: https://prostatevolumecalc.com/bph-education/ (Priority 0.7) - Links to detailed articles.
+            https://prostatevolumecalc.com/benign-prostatic-hyperplasia/ (Detailed article, good)
+            https://prostatevolumecalc.com/lower-urinary-tract-symptoms/ (Detailed article, good)
+            https://prostatevolumecalc.com/bph-treatment-options/ (Detailed article, good)
+            New Article: https://prostatevolumecalc.com/bph-education/managing-luts-lifestyle-changes/
+            New Article: https://prostatevolumecalc.com/bph-education/when-to-see-doctor-for-bph/
+
+VI. Silo 4: General Men's Urological & Sexual Health
+
+    A. Pillar Page / Sub-Hub:
+        URL: https://prostatevolumecalc.com/tools/mens-urological-sexual-health/
+        Title: Men's Urological & Sexual Health Calculators | https://www.google.com/search?q=ProstateVolumeCalc.com
+    B. Calculator Pages:
+        Erectile Dysfunction (ED) Severity Score Calculator (SHIM/IIEF-5):
+            URL: https://prostatevolumecalc.com/tools/ed-severity-score-calculator/
+        Testosterone Deficiency (Low T) Symptom Score Calculator (ADAM):
+            URL: https://prostatevolumecalc.com/tools/low-testosterone-symptom-score/
+        Free Testosterone Calculator:
+            URL: https://prostatevolumecalc.com/tools/free-testosterone-calculator/
+        Bioavailable Testosterone Calculator:
+            URL: https://prostatevolumecalc.com/tools/bioavailable-testosterone-calculator/
+    C. Supporting Articles (under /education/ or /blog/):
+        https://prostatevolumecalc.com/education/erectile-dysfunction-causes-treatments
+        https://prostatevolumecalc.com/education/understanding-low-testosterone
+
+VII. Silo 5: General Health & Lifestyle (Supporting Role)
+
+    A. Pillar Page / Sub-Hub:
+        URL: https://prostatevolumecalc.com/tools/general-health-lifestyle/
+        Title: General Health & Lifestyle Calculators for Men | https://www.google.com/search?q=ProstateVolumeCalc.com
+    B. Calculator Pages:
+        Body Mass Index (BMI) Calculator:
+            URL: https://prostatevolumecalc.com/tools/bmi-calculator/
+        Waist-to-Hip Ratio Calculator:
+            URL: https://prostatevolumecalc.com/tools/waist-hip-ratio-calculator/
+        Basal Metabolic Rate (BMR) Calculator:
+            URL: https://prostatevolumecalc.com/tools/bmr-calculator/
+        Daily Calorie Needs Calculator:
+            URL: https://prostatevolumecalc.com/tools/daily-calorie-needs-calculator/
+        Kidney Function Estimator (eGFR from Creatinine):
+            URL: https://prostatevolumecalc.com/tools/egfr-kidney-function-calculator/
+        Kidney Stone Risk Factor Score (Simplified):
+            URL: https://prostatevolumecalc.com/tools/kidney-stone-risk-calculator/
+        Cardiovascular Disease Risk Calculator (Simplified):
+            URL: https://prostatevolumecalc.com/tools/cardiovascular-risk-calculator/
+        Metabolic Syndrome Assessment Calculator:
+            URL: https://prostatevolumecalc.com/tools/metabolic-syndrome-calculator/
+        Bone Health/Osteoporosis Risk Calculator (Simplified):
+            URL: https://prostatevolumecalc.com/tools/bone-health-risk-calculator/
+    C. Supporting Articles (under /education/ or /blog/):
+        https://prostatevolumecalc.com/education/lifestyle-impact-on-prostate-health
+        Existing SEO Term Page to convert to article: https://prostatevolumecalc.com/transrectal-ultrasound-volume - This should be an educational article explaining TRUS and its use in volume measurement, linking to the Prostate Volume Calculator.
+
+VIII. Clinical Resources & Information
+
+    A. Main Resources Hub (Existing):
+        URL: https://prostatevolumecalc.com/resources/ (Priority 0.8) - This should be a pillar page linking to specific resource types.
+        Title: Clinical Resources & Prostate Health Information | https://www.google.com/search?q=ProstateVolumeCalc.com
+        Content: Overview of resources available for patients and clinicians.
+    B. Sub-Sections:
+        Clinical Guidelines (Existing):
+            URL: https://prostatevolumecalc.com/clinical-guidelines/ (Priority 0.7)
+            Content: Summaries of/links to key clinical guidelines (e.g., AUA, EAU) regarding prostate cancer screening, BPH management, etc.
+        Case Studies (Existing):
+            URL: https://prostatevolumecalc.com/case-studies/ (Priority 0.8)
+            Consolidate: https://prostatevolumecalc.com/clinical-cases should 301 redirect to https://prostatevolumecalc.com/case-studies/.
+            Content: Hypothetical or anonymized case studies illustrating the use of calculators and decision-making processes.
+        Glossary of Medical Terms:
+            URL: https://prostatevolumecalc.com/resources/medical-terms-glossary/
+            Content: Definitions of common terms used throughout the site. Your "SEO-friendly Medical Terms" pages can be individual entries or inspire this section.
+
+IX. Blog
+
+    Main Blog Hub (Existing):
+        URL: https://prostatevolumecalc.com/blog/ (Priority 0.8, daily changefreq is good if you post daily).
+        Consolidate: https://prostatevolumecalc.com/medical-blog should 301 redirect to https://prostatevolumecalc.com/blog/.
+        Content: Chronological listing of all blog posts/articles, with categorization and search. Articles will support all the silos.
+    Blog Categories (mirroring silos where appropriate):
+        https://prostatevolumecalc.com/blog/category/psa-insights/
+        https://prostatevolumecalc.com/blog/category/prostate-cancer/
+        https://prostatevolumecalc.com/blog/category/bph-luts/
+        https://prostatevolumecalc.com/blog/category/mens-health/
+        https://prostatevolumecalc.com/blog/category/lifestyle/
+
+X. FAQ Section
+
+    Main FAQ Hub (Existing):
+        URL: https://prostatevolumecalc.com/faq/ (Priority 0.7)
+        Consolidate: https://prostatevolumecalc.com/medical-faq should 301 redirect to https://prostatevolumecalc.com/faq/.
+        Content: Categorized FAQs. Questions could be grouped by topic (e.g., "FAQs about Prostate Volume," "FAQs about PSA Tests," "FAQs about BPH"). Each calculator page should also have its own specific FAQs.
+
+XI. Core Website Pages (Non-Silo, but Essential)
+
+    About Us:
+        URL: https://prostatevolumecalc.com/about/ (Create if not existing)
+    Contact Us:
+        URL: https://prostatevolumecalc.com/contact/ (Create if not existing)
+    Privacy Policy:
+        URL: https://prostatevolumecalc.com/privacy-policy/ (Ensure it exists)
+    Terms of Service/Use:
+        URL: https://prostatevolumecalc.com/terms-of-service/ (Ensure it exists)
+    Disclaimer:
+        URL: https://prostatevolumecalc.com/disclaimer/ (Ensure it exists and is prominent)
+    Sitemap (HTML):
+        URL: https://prostatevolumecalc.com/sitemap/ (This should be an HTML sitemap for users)
+    XML Sitemap: The one you provided, but updated with the new canonical URLs and structure. Remove deprecated tags like <mobile:mobile/>.
+
+Key Actions Based on This Updated Structure:
+
+    Canonicalization: Decide on ONE primary URL for each piece of content.
+    301 Redirects: Implement 301 redirects for all alternative/redundant URLs to their chosen canonical versions. This is critical.
+    Internal Linking:
+        Homepage (Prostate Volume Calc) should link to /tools/, /education/, /blog/, /resources/.
+        /tools/ (Main Calculator Hub) links to all individual calculator pages and relevant silo sub-hubs (e.g., /tools/prostate-psa-insights/).
+        Silo sub-hubs (e.g., /tools/prostate-psa-insights/, /bph-assessment-tools/) link to all calculators within their specific domain and to key supporting articles in /education/ or /blog/.
+        Individual calculator pages link back to their silo sub-hub/pillar page and to closely related calculators or articles.
+        Educational articles (/education/, /blog/) link contextually to relevant calculators and other articles.
+        Resources, FAQ, Case Studies should be interlinked with relevant calculators and articles.
+    Content for New Calculators: Develop the actual calculator tools and the detailed explanatory content for each new calculator page.
+    Review Existing "SEO-Friendly Medical Term" Pages:
+        https://prostatevolumecalc.com/prostate-volume-measurement
+        https://prostatevolumecalc.com/bph-volume-calculator
+        https://prostatevolumecalc.com/transrectal-ultrasound-volume
+        https://prostatevolumecalc.com/psa-density
+        https://prostatevolumecalc.com/prostate-specific-antigen-density
+        https://prostatevolumecalc.com/international-prostate-symptom-score
+        Decide if these should be:
+            301 redirected to a canonical calculator page.
+            Kept as is IF they are already substantial articles that link to the calculators (good for targeting long-tail keywords).
+            Expanded into full articles if they are currently thin content.
