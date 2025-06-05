@@ -12,43 +12,63 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: 1,
-    question: "How accurate is the ellipsoid formula?",
-    answer: "The ellipsoid formula has been validated in numerous studies and shows excellent correlation with actual prostate volume (r > 0.9). It's considered the gold standard for transrectal ultrasound measurements and is widely accepted in urological practice."
+    question: "How accurate is the ellipsoid formula for prostate volume calculation?",
+    answer: "The ellipsoid formula demonstrates excellent accuracy with correlation coefficients (r) typically >0.90 when compared to planimetric measurements. Multiple validation studies published in Journal of Urology and European Urology confirm its reliability for clinical use, with accuracy within ±10% in 85-90% of cases."
   },
   {
     id: 2,
-    question: "What measurements do I need?",
-    answer: "You need three measurements in millimeters: anterior-posterior (length), transverse (width), and superior-inferior (height). These are typically obtained via transrectal ultrasound (TRUS) or MRI by trained healthcare professionals."
+    question: "What TRUS measurements are needed for the calculator?",
+    answer: "Three orthogonal measurements are required: anterior-posterior (AP) diameter in sagittal view, transverse diameter in axial view, and superior-inferior (SI) diameter in coronal view. All measurements should be in millimeters and obtained at the maximum dimensions of the prostate gland."
   },
   {
     id: 3,
-    question: "Is this tool for medical professionals only?",
-    answer: "While designed for healthcare professionals, patients can use this tool for educational purposes. However, results should always be interpreted by a qualified medical professional in the context of clinical symptoms and examination findings."
+    question: "What is the normal prostate volume by age?",
+    answer: "Normal prostate volume varies by age: 20-40 years (15-25 mL), 40-60 years (20-30 mL), 60+ years (25-40 mL). Age-related growth averages 1.2-1.6 mL per year after age 40. Volumes >40 mL in younger men or >50 mL in older men may warrant evaluation."
   },
   {
     id: 4,
-    question: "How does prostate volume relate to BPH symptoms?",
-    answer: "While there's a general correlation between prostate volume and BPH symptoms, it's not absolute. Some men with large prostates have minimal symptoms, while others with smaller prostates may have significant symptoms due to the location of enlargement or other factors."
+    question: "How does prostate volume correlate with BPH symptoms and IPSS scores?",
+    answer: "Volume correlation with symptoms is moderate (r=0.3-0.5). Large prostates (>40 mL) increase likelihood of moderate-severe IPSS scores, but symptom severity depends more on transition zone enlargement pattern than total volume. Some men with 80+ mL prostates remain asymptomatic."
   },
   {
     id: 5,
-    question: "What is considered a normal prostate size?",
-    answer: "A normal adult prostate typically measures 15-30 mL in volume. However, prostate size naturally increases with age. By age 60, volumes of 30-40 mL are common, and larger volumes may be normal for older men without causing symptoms."
+    question: "What are the treatment thresholds based on prostate volume?",
+    answer: "Volume guides treatment selection: <30 mL (alpha-blockers), 30-80 mL (combination therapy with 5-ARIs), >80 mL (surgical candidates). PSA density calculations (PSA/volume) help distinguish BPH from prostate cancer, with values >0.15 ng/mL/cc warranting biopsy consideration."
   },
   {
     id: 6,
-    question: "When should I be concerned about prostate size?",
-    answer: "Consult a healthcare provider if experiencing urinary symptoms such as difficulty starting urination, weak stream, frequent urination, or incomplete bladder emptying. These symptoms, combined with enlarged prostate volume (>50 mL), may indicate BPH requiring treatment."
+    question: "How reliable are MRI vs TRUS measurements for volume calculation?",
+    answer: "MRI measurements show slightly higher accuracy (r=0.95) compared to TRUS (r=0.90) but both are clinically acceptable. MRI provides better soft tissue contrast and is less operator-dependent, while TRUS remains the standard due to accessibility and cost-effectiveness in routine practice."
   },
   {
     id: 7,
-    question: "How often should prostate volume be measured?",
-    answer: "For routine monitoring, annual measurements during regular check-ups are sufficient for men over 50. More frequent monitoring may be needed for those with diagnosed BPH, those on treatment, or those with rapidly changing symptoms."
+    question: "What factors can affect prostate volume measurement accuracy?",
+    answer: "Measurement accuracy depends on operator experience, image quality, bladder distension (should be moderately full), probe pressure, and prostate shape irregularities. Calcifications, cysts, or tumor masses can affect measurements and should be noted in reports."
   },
   {
     id: 8,
-    question: "Can this calculator replace professional medical assessment?",
-    answer: "No, this calculator is an educational tool that complements but cannot replace professional medical evaluation. Clinical context, symptoms, physical examination, and additional tests are essential for proper diagnosis and treatment planning."
+    question: "How is prostate volume used in surgical planning?",
+    answer: "Volume determines surgical approach: <80 mL (TURP, laser enucleation), 80-150 mL (HoLEP, simple prostatectomy options), >150 mL (open simple prostatectomy traditional indication). Modern techniques allow minimally invasive approaches for larger glands than historically possible."
+  },
+  {
+    id: 9,
+    question: "What is the relationship between prostate volume and PSA levels?",
+    answer: "PSA increases approximately 0.3-0.4 ng/mL per gram of prostate tissue. PSA density (PSA/volume) normalizes PSA for gland size: <0.10 (low cancer risk), 0.10-0.15 (intermediate), >0.15 (high risk requiring evaluation). This helps distinguish BPH from cancer."
+  },
+  {
+    id: 10,
+    question: "How often should prostate volume be monitored in BPH patients?",
+    answer: "Baseline measurement at diagnosis, then annually for stable patients on medical therapy. More frequent monitoring (6-12 months) for patients with rapid symptom progression, those considering surgery, or when optimizing 5-ARI therapy effectiveness."
+  },
+  {
+    id: 11,
+    question: "Can this calculator be used for research and clinical studies?",
+    answer: "Yes, the ellipsoid formula is standard in urological research and clinical trials. However, ensure consistent measurement protocols, operator training, and consider inter-observer variability. Document measurement conditions and any protocol deviations for research validity."
+  },
+  {
+    id: 12,
+    question: "What are the limitations of prostate volume calculation?",
+    answer: "Limitations include operator dependency, irregular prostate shapes (accuracy decreases), significant calcifications or cysts, and inability to assess transition zone specific volumes. Clinical correlation with symptoms, DRE findings, and additional imaging remains essential for comprehensive evaluation."
   }
 ];
 

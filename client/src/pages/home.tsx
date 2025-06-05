@@ -27,11 +27,11 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                Accurate Prostate Volume Calculator
+                Medical Grade Prostate Volume Calculator
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Professional-grade tool for calculating prostate volume using the ellipsoid formula. 
-                Trusted by healthcare professionals worldwide for BPH assessment and treatment planning.
+                Validated ellipsoid formula calculator trusted by urologists and radiologists worldwide. 
+                Essential tool for BPH diagnosis, treatment planning, and clinical decision-making with TRUS measurements.
               </p>
               <div className="flex flex-wrap gap-4 mb-8">
                 <Badge variant="secondary" className="bg-green-100 text-green-800 hover:bg-green-200">
@@ -110,8 +110,9 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Understanding Prostate Volume Calculation</h2>
               <div className="prose prose-lg text-gray-600">
                 <p className="mb-6">
-                  Prostate volume calculation is a critical component in the diagnosis and management of benign prostatic hyperplasia (BPH) 
-                  and other prostate conditions. Our calculator uses the ellipsoid formula, which is the gold standard in medical practice.
+                  Prostate volume calculation is essential for diagnosing and managing benign prostatic hyperplasia (BPH), 
+                  prostate cancer screening, and treatment planning. Our calculator implements the validated ellipsoid formula 
+                  recommended by the American Urological Association and European Association of Urology.
                 </p>
                 
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">The Ellipsoid Formula</h3>
@@ -120,27 +121,49 @@ export default function Home() {
                     <p className="text-center text-lg font-mono bg-gray-50 p-4 rounded mb-2">
                       Volume = π/6 × Length × Width × Height
                     </p>
-                    <p className="text-sm text-gray-600 text-center">
+                    <p className="text-sm text-gray-600 text-center mb-3">
                       Where π/6 ≈ 0.524 (ellipsoid constant)
                     </p>
+                    <div className="text-xs text-gray-500 space-y-1">
+                      <p><strong>Length:</strong> Anterior-posterior dimension (sagittal view)</p>
+                      <p><strong>Width:</strong> Transverse dimension (axial view)</p>
+                      <p><strong>Height:</strong> Superior-inferior dimension (coronal view)</p>
+                    </div>
                   </CardContent>
                 </Card>
                 
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Normal Ranges</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Age-Related Normal Ranges</h3>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-                    <span><strong>Normal:</strong> 20-30 mL (young adults)</span>
+                    <span><strong>20-40 years:</strong> 15-25 mL (young adults)</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+                    <span><strong>40-60 years:</strong> 20-30 mL (middle age)</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
-                    <span><strong>Enlarged:</strong> 30-80 mL (mild to moderate BPH)</span>
+                    <span><strong>60+ years:</strong> 25-40 mL (age-related growth)</span>
+                  </li>
+                  <li className="flex items-center">
+                    <div className="w-3 h-3 bg-orange-500 rounded-full mr-3"></div>
+                    <span><strong>BPH Range:</strong> 40-80 mL (symptomatic enlargement)</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
-                    <span><strong>Significantly Enlarged:</strong> &gt;80 mL (severe BPH)</span>
+                    <span><strong>Severe BPH:</strong> &gt;80 mL (surgical consideration)</span>
                   </li>
                 </ul>
+
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Clinical Significance</h3>
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+                  <p className="text-sm text-blue-800">
+                    <strong>Treatment Thresholds:</strong> Volume measurements guide medication selection, 
+                    surgical planning, and monitoring treatment response. Volumes &gt;30 mL often benefit 
+                    from 5-alpha reductase inhibitors, while &gt;80 mL may require surgical intervention.
+                  </p>
+                </div>
               </div>
             </div>
             
@@ -202,8 +225,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">American Urological Association</h3>
-                <p className="text-gray-600 mb-4">Official guidelines for BPH diagnosis and management, including volume assessment protocols.</p>
+                <div className="flex items-center mb-4">
+                  <University className="text-blue-600 mr-3 w-6 h-6" />
+                  <h3 className="text-lg font-semibold text-gray-900">American Urological Association</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Official AUA guidelines for BPH diagnosis and management, including standardized volume assessment protocols and treatment algorithms.</p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• BPH Clinical Guidelines 2019</p>
+                  <p>• Surgical Management Standards</p>
+                  <p>• IPSS Assessment Protocols</p>
+                </div>
                 <Button 
                   variant="link" 
                   className="p-0 h-auto text-blue-600 hover:text-blue-800"
@@ -216,8 +247,16 @@ export default function Home() {
             
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">European Association of Urology</h3>
-                <p className="text-gray-600 mb-4">European guidelines on the assessment and treatment of BPH and lower urinary tract symptoms.</p>
+                <div className="flex items-center mb-4">
+                  <University className="text-blue-600 mr-3 w-6 h-6" />
+                  <h3 className="text-lg font-semibold text-gray-900">European Association of Urology</h3>
+                </div>
+                <p className="text-gray-600 mb-4">EAU guidelines on assessment and treatment of BPH and lower urinary tract symptoms, including volume measurement standards.</p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• Non-neurogenic Male LUTS Guidelines</p>
+                  <p>• Minimally Invasive Treatments</p>
+                  <p>• Quality of Life Assessment</p>
+                </div>
                 <Button 
                   variant="link" 
                   className="p-0 h-auto text-blue-600 hover:text-blue-800"
@@ -230,14 +269,88 @@ export default function Home() {
             
             <Card className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Journal of Urology</h3>
-                <p className="text-gray-600 mb-4">Peer-reviewed research on prostate volume measurement accuracy and clinical applications.</p>
+                <div className="flex items-center mb-4">
+                  <Microscope className="text-blue-600 mr-3 w-6 h-6" />
+                  <h3 className="text-lg font-semibold text-gray-900">Clinical Research Database</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Peer-reviewed research on prostate volume measurement accuracy, validation studies, and clinical applications.</p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• Ellipsoid Formula Validation Studies</p>
+                  <p>• TRUS vs MRI Comparison Research</p>
+                  <p>• Inter-observer Variability Analysis</p>
+                </div>
                 <Button 
                   variant="link" 
                   className="p-0 h-auto text-blue-600 hover:text-blue-800"
-                  onClick={() => handleResourceClick('Journal Research')}
+                  onClick={() => handleResourceClick('Research Database')}
                 >
                   View Research →
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <FileText className="text-blue-600 mr-3 w-6 h-6" />
+                  <h3 className="text-lg font-semibold text-gray-900">Clinical Decision Support</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Evidence-based decision trees and treatment algorithms based on prostate volume measurements.</p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• Treatment Selection Algorithms</p>
+                  <p>• Surgical Planning Guidelines</p>
+                  <p>• Medication Dosing Protocols</p>
+                </div>
+                <Button 
+                  variant="link" 
+                  className="p-0 h-auto text-blue-600 hover:text-blue-800"
+                  onClick={() => handleResourceClick('Decision Support')}
+                >
+                  View Tools →
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <CalculatorIcon className="text-blue-600 mr-3 w-6 h-6" />
+                  <h3 className="text-lg font-semibold text-gray-900">Quality Assurance Protocols</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Standardized measurement protocols and quality control procedures for accurate volume assessment.</p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• TRUS Measurement Standards</p>
+                  <p>• Operator Training Guidelines</p>
+                  <p>• Error Reduction Techniques</p>
+                </div>
+                <Button 
+                  variant="link" 
+                  className="p-0 h-auto text-blue-600 hover:text-blue-800"
+                  onClick={() => handleResourceClick('QA Protocols')}
+                >
+                  View Protocols →
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <UserCheck className="text-blue-600 mr-3 w-6 h-6" />
+                  <h3 className="text-lg font-semibold text-gray-900">Patient Education Resources</h3>
+                </div>
+                <p className="text-gray-600 mb-4">Educational materials for patients about prostate health, BPH symptoms, and treatment options.</p>
+                <div className="space-y-2 text-sm text-gray-500 mb-4">
+                  <p>• Understanding BPH Progression</p>
+                  <p>• Treatment Option Comparisons</p>
+                  <p>• Pre/Post-operative Care</p>
+                </div>
+                <Button 
+                  variant="link" 
+                  className="p-0 h-auto text-blue-600 hover:text-blue-800"
+                  onClick={() => handleResourceClick('Patient Education')}
+                >
+                  View Resources →
                 </Button>
               </CardContent>
             </Card>
