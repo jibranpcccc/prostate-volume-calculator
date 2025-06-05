@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Breadcrumb from "@/components/breadcrumb";
 import Calculator from "@/components/calculator";
 import FAQ from "@/components/faq";
 import { Card, CardContent } from "@/components/ui/card";
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
+      <Breadcrumb />
       
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">

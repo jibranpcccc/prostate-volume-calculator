@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import Breadcrumb from "@/components/breadcrumb";
 import PSACalculator from "@/components/psa-calculator";
 import TreatmentGuide from "@/components/treatment-guide";
 import IPSSQuestionnaire from "@/components/ipss-questionnaire";
@@ -32,6 +33,7 @@ export default function AdvancedTools() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
+      <Breadcrumb />
       
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-indigo-600 to-purple-800 text-white py-16">
