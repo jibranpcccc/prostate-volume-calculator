@@ -1,0 +1,685 @@
+Keyword Usage and Visual Elements Plan
+
+This document outlines the comprehensive keyword strategy and visual elements plan for the prostage volume calculator main page and supporting pages.
+
+Primary and Secondary Keywords
+
+Primary Keywords
+
+1.
+prostage volume calculator
+
+2.
+prostate volume calculator
+
+3.
+prostate size calculator
+
+4.
+PSA density calculator
+
+5.
+calculate prostate volume
+
+Secondary Keywords
+
+1.
+prostate measurement
+
+2.
+normal prostate volume
+
+3.
+prostate volume formula
+
+4.
+ellipsoid prostate calculation
+
+5.
+bullet prostate calculation
+
+6.
+prostate volume by age
+
+7.
+PSA density calculation
+
+8.
+prostate volume MRI
+
+9.
+prostate volume ultrasound
+
+10.
+prostate volume CT
+
+Long-tail Keywords
+
+1.
+how to calculate prostate volume from MRI
+
+2.
+what is normal prostate volume by age
+
+3.
+prostate volume calculator for PSA density
+
+4.
+prostate volume measurement techniques
+
+5.
+prostate volume and cancer risk
+
+6.
+prostate volume calculator for BPH
+
+7.
+prostate volume changes over time
+
+8.
+prostate volume and treatment planning
+
+9.
+prostate volume calculator for radiologists
+
+10.
+prostate volume calculator with report generation
+
+Keyword Placement Strategy for Main Page
+
+URL Structure
+
+•
+Main page: /prostage-volume-calculator/
+
+•
+Clean, keyword-focused URL with hyphens
+
+Page Title (≤ 60 characters)
+
+"Prostage Volume Calculator | Accurate Prostate Size & PSA Density Tool"
+
+Meta Description (≤ 155 characters)
+
+"Calculate prostate volume and PSA density with our accurate prostage volume calculator. Evidence-based formulas for radiologists, urologists, and healthcare providers."
+
+H1 Heading
+
+"Prostage Volume Calculator: Accurate Prostate Size & PSA Density Tool"
+
+•
+Includes primary keyword at beginning
+
+•
+Describes key benefit and function
+
+First 100 Words
+
+•
+Include exact match "prostage volume calculator" within first sentence
+
+•
+Include 2-3 secondary keywords naturally
+
+•
+Address user intent immediately (what the calculator does and why it's useful)
+
+•
+Mention target audience (radiologists, urologists, healthcare providers)
+
+H2 Headings
+
+1.
+"Interactive Prostage Volume Calculator Tool" (primary keyword)
+
+2.
+"What Is Prostage Volume?" (primary keyword variation)
+
+3.
+"How to Calculate Prostage Volume" (primary keyword variation + action)
+
+4.
+"Understanding PSA Density" (secondary keyword)
+
+5.
+"Clinical Applications" (topical relevance)
+
+6.
+"Step-by-Step Guide to Using This Calculator" (user intent)
+
+7.
+"Advanced Features" (differentiator)
+
+8.
+"Frequently Asked Questions About Prostage Volume" (primary keyword + FAQ)
+
+9.
+"Research and Evidence" (authority signal)
+
+10.
+"Conclusion & Final Tips" (standard practice)
+
+H3 Headings
+
+•
+Include secondary and long-tail keywords
+
+•
+Focus on specific aspects of calculation, measurement, and interpretation
+
+•
+Address specific user questions and needs
+
+Image Alt Text Strategy
+
+•
+Include primary or secondary keywords in alt text where relevant
+
+•
+Ensure alt text is descriptive and useful for accessibility
+
+•
+Format: [Keyword] + descriptive text
+
+•
+Example: "Prostage volume calculator measurement diagram showing length, width, and height dimensions"
+
+Visual Elements Plan for Main Page
+
+1. Interactive Calculator Interface
+
+•
+Type: Interactive web form with real-time calculation
+
+•
+Location: Top section of page, above the fold
+
+•
+Features:
+
+•
+Clean, medical-professional design with blue/white color scheme
+
+•
+Clearly labeled input fields with measurement unit toggles
+
+•
+Interactive 3D prostate model that updates with input values
+
+•
+Color-coded results display with normal range indicators
+
+•
+Mobile-responsive design that works on all devices
+
+
+
+2. Measurement Guidance Visualization
+
+•
+Type: Interactive diagram or infographic
+
+•
+Location: Within "How to Calculate Prostage Volume" section
+
+•
+Features:
+
+•
+Anatomical illustration showing proper measurement planes
+
+•
+Toggle between MRI, ultrasound, and CT visualization
+
+•
+Labeled measurement points with "do's and don'ts"
+
+•
+Clickable hotspots revealing measurement tips
+
+
+
+3. Normal Range Chart
+
+•
+Type: Interactive data visualization
+
+•
+Location: Within "What Is Prostage Volume?" section
+
+•
+Features:
+
+•
+Age-stratified normal range chart
+
+•
+User's calculated value plotted on chart (when available)
+
+•
+Color-coded zones (normal, borderline, abnormal)
+
+•
+Responsive design that works on all screen sizes
+
+
+
+4. PSA Density Threshold Visualization
+
+•
+Type: Interactive slider or gauge
+
+•
+Location: Within "Understanding PSA Density" section
+
+•
+Features:
+
+•
+Visual representation of PSA density thresholds
+
+•
+User's calculated value indicated on scale (when available)
+
+•
+Color-coded risk zones
+
+•
+Tooltip explanations of threshold significance
+
+
+
+5. Video Tutorial
+
+•
+Type: Embedded instructional video
+
+•
+Location: Within "Step-by-Step Guide" section
+
+•
+Features:
+
+•
+Professional-quality 2-3 minute tutorial
+
+•
+Demonstrates measurement technique on actual imaging
+
+•
+Closed captions for accessibility
+
+•
+Downloadable transcript
+
+
+
+6. Clinical Decision Flowchart
+
+•
+Type: Interactive flowchart or decision tree
+
+•
+Location: Within "Clinical Applications" section
+
+•
+Features:
+
+•
+Visual representation of clinical decision-making
+
+•
+Branches for different prostate volume scenarios
+
+•
+Clickable nodes revealing detailed information
+
+•
+Downloadable PDF version
+
+
+
+7. FAQ Accordion
+
+•
+Type: Expandable accordion interface
+
+•
+Location: Within "Frequently Asked Questions" section
+
+•
+Features:
+
+•
+Structured with FAQ schema markup
+
+•
+Expandable/collapsible questions
+
+•
+Search functionality for questions
+
+•
+"Ask a question" feature
+
+
+
+8. Evidence Infographic
+
+•
+Type: Static or interactive infographic
+
+•
+Location: Within "Research and Evidence" section
+
+•
+Features:
+
+•
+Visual summary of key research findings
+
+•
+Comparison of calculation methods
+
+•
+Statistical visualization of accuracy
+
+•
+Citations with DOI links
+
+
+
+Keyword and Visual Elements Plan for Supporting Pages
+
+1. /prostage-volume-calculator/measurement-guide/
+
+Page Title: "Complete Prostate Measurement Guide for Volume Calculation | Prostage Calculator"
+
+H1: "Complete Guide to Accurate Prostate Measurement for Volume Calculation"
+
+Primary Visual Elements:
+
+•
+Step-by-step measurement tutorial videos for each imaging modality
+
+•
+Annotated imaging examples showing correct measurement technique
+
+•
+Common errors visualization with side-by-side comparison
+
+•
+Printable measurement worksheet with anatomical landmarks
+
+•
+Interactive measurement simulator
+
+2. /prostage-volume-calculator/psa-density-explained/
+
+Page Title: "PSA Density Explained: Comprehensive Guide & Calculator | Prostage Volume"
+
+H1: "PSA Density Explained: Comprehensive Guide to Interpretation and Clinical Use"
+
+Primary Visual Elements:
+
+•
+PSA density calculation formula visualization
+
+•
+Interactive threshold visualization tool
+
+•
+Clinical significance infographic
+
+•
+Case example gallery with interpretation
+
+•
+Decision-making framework flowchart
+
+3. /prostage-volume-calculator/normal-vs-abnormal/
+
+Page Title: "Normal vs. Abnormal Prostate Volume: Age-Specific Guidelines | Prostage Calculator"
+
+H1: "Normal vs. Abnormal Prostate Volume: Age-Specific Guidelines and Clinical Implications"
+
+Primary Visual Elements:
+
+•
+Interactive age-specific normal range calculator
+
+•
+Comparative size visualization tool
+
+•
+Symptoms correlation chart
+
+•
+Treatment options decision tree
+
+•
+Progression visualization for BPH
+
+4. /prostage-volume-calculator/clinical-applications/
+
+Page Title: "Clinical Applications of Prostate Volume Measurement | Prostage Calculator"
+
+H1: "Clinical Applications of Prostate Volume Measurement: From Diagnosis to Treatment"
+
+Primary Visual Elements:
+
+•
+Clinical pathway visualization
+
+•
+BPH management protocol flowchart
+
+•
+Cancer risk assessment matrix
+
+•
+Treatment selection guide
+
+•
+Interactive case studies with imaging
+
+5. /prostage-volume-calculator/for-patients/
+
+Page Title: "Patient's Guide to Prostate Volume: Understanding Your Results | Prostage Calculator"
+
+H1: "Patient's Guide to Prostate Volume: Understanding Your Results"
+
+Primary Visual Elements:
+
+•
+Simple prostate anatomy illustration
+
+•
+Patient-friendly results interpretation guide
+
+•
+Symptoms and size correlation visualization
+
+•
+Treatment options comparison chart
+
+•
+Questions to ask your doctor checklist
+
+6. /prostage-volume-calculator/for-healthcare-providers/
+
+Page Title: "Healthcare Provider's Guide to Prostate Volume Assessment | Prostage Calculator"
+
+H1: "Healthcare Provider's Guide to Prostate Volume Assessment and Documentation"
+
+Primary Visual Elements:
+
+•
+Clinical workflow integration diagram
+
+•
+Documentation templates
+
+•
+Coding and billing reference chart
+
+•
+Patient communication scripts
+
+•
+Implementation checklist for different settings
+
+7. /prostage-volume-calculator/research-center/
+
+Page Title: "Prostate Volume Research Center: Latest Studies & Evidence | Prostage Calculator"
+
+H1: "Prostate Volume Research Center: Latest Studies and Evidence-Based Practices"
+
+Primary Visual Elements:
+
+•
+Research timeline visualization
+
+•
+Methodology comparison chart
+
+•
+Key findings infographic
+
+•
+Future directions roadmap
+
+•
+Interactive research database
+
+8. /prostage-volume-calculator/faq/
+
+Page Title: "Prostate Volume Calculator FAQ: Answers to Common Questions | Prostage Calculator"
+
+H1: "Frequently Asked Questions About Prostate Volume Calculation and PSA Density"
+
+Primary Visual Elements:
+
+•
+Categorized FAQ navigation
+
+•
+Video answer thumbnails
+
+•
+Troubleshooting decision tree
+
+•
+Interactive question submission form
+
+•
+Related questions visualization
+
+Technical SEO and Schema Implementation
+
+Schema Markup Types
+
+1.
+Calculator Tool: Schema.org/SoftwareApplication with calculatorType property
+
+2.
+FAQ Section: Schema.org/FAQPage
+
+3.
+How-To Guide: Schema.org/HowTo for measurement instructions
+
+4.
+Medical Information: Schema.org/MedicalWebPage
+
+5.
+Video Content: Schema.org/VideoObject for tutorials
+
+Rich Results Optimization
+
+•
+Implement FAQ schema for featured snippets
+
+•
+Structure how-to content for rich results
+
+•
+Include review schema for calculator tool
+
+•
+Implement breadcrumb schema for navigation path
+
+•
+Use VideoObject schema for video tutorials
+
+Mobile Optimization for Visuals
+
+•
+Ensure all interactive elements are touch-friendly
+
+•
+Provide simplified versions of complex visualizations for mobile
+
+•
+Use responsive design for all charts and graphs
+
+•
+Implement lazy loading for images and videos
+
+•
+Ensure calculator interface works seamlessly on mobile devices
+
+Content Enhancement Recommendations
+
+Interactive Elements
+
+•
+Save calculation history feature (requires user account)
+
+•
+Comparison tool for multiple measurements
+
+•
+Print-friendly results page
+
+•
+Email results functionality
+
+•
+Social sharing options (for healthcare professionals)
+
+Accessibility Considerations
+
+•
+High contrast mode for visuals
+
+•
+Screen reader compatibility for all interactive elements
+
+•
+Keyboard navigation support
+
+•
+Text alternatives for all visual content
+
+•
+Adjustable text size options
+
+Engagement Features
+
+•
+User feedback collection on calculator accuracy
+
+•
+"Was this helpful?" rating system
+
+•
+Case submission form for unusual cases
+
+•
+Newsletter signup for research updates
+
+•
+Community forum for healthcare professionals
+
+
+

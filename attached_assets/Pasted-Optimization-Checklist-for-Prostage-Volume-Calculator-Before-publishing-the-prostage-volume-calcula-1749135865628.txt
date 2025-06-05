@@ -1,0 +1,348 @@
+Optimization Checklist for Prostage Volume Calculator
+
+Before publishing the prostage volume calculator page and supporting content, ensure all of the following items are checked and optimized:
+
+On-Page SEO Checklist
+
+Title & Meta Elements
+
+
+Title: ≤ 60 characters, includes primary keyword "prostage volume calculator"
+
+
+Meta Description: ≤ 155 characters, compelling with call to action
+
+
+URL: Clean, short, contains the primary keyword (e.g., /prostage-volume-calculator/)
+
+
+Canonical tag: Properly implemented to avoid duplicate content issues
+
+
+Meta robots: Set to index, follow (unless specific pages should be noindexed)
+
+Content Structure
+
+
+H1: Contains primary keyword, appears only once on the page
+
+
+H2s & H3s: Hierarchical, keyword-optimized, and descriptive
+
+
+Paragraphs: Short, scannable, with varied sentence lengths
+
+
+First 100 words: Include primary keyword naturally
+
+
+Word Count: At least as long as the average of top 10 competitors (aim for 2000+ words)
+
+
+Content Quality: Original, comprehensive, and addresses user intent
+
+Keyword Implementation
+
+
+Primary keyword appears in:
+
+
+Page title
+
+
+H1
+
+
+First 100 words
+
+
+At least one H2 or H3
+
+
+URL
+
+
+Image alt text (at least once)
+
+
+
+
+Secondary keywords distributed naturally throughout content
+
+
+Long-tail keywords incorporated into subheadings and body text
+
+
+Keyword density appropriate (2-3% for primary keyword)
+
+
+No keyword stuffing or unnatural phrasing
+
+Images & Media
+
+
+All images have descriptive, keyword-rich alt text
+
+
+Images are compressed and optimized for web
+
+
+Custom images created for key concepts (not stock photos)
+
+
+File names are descriptive and include keywords where appropriate
+
+
+Responsive images that display properly on all devices
+
+
+Videos have transcripts and proper schema markup
+
+Technical Elements
+
+
+Schema markup implemented:
+
+
+Calculator tool schema
+
+
+FAQ schema
+
+
+HowTo schema
+
+
+Medical information schema
+
+
+Video schema (if applicable)
+
+
+
+
+Internal links to relevant pages with descriptive anchor text
+
+
+External links to authoritative sources with proper attributes
+
+
+No broken links or images
+
+
+Proper heading hierarchy (H1 → H2 → H3)
+
+
+Table of contents for long-form content
+
+User Experience Checklist
+
+Calculator Functionality
+
+
+Calculator loads quickly and functions properly
+
+
+Input fields are clearly labeled and validated
+
+
+Error messages are helpful and user-friendly
+
+
+Results display clearly and are easy to understand
+
+
+Save/print/export functionality works as expected
+
+
+All interactive elements are intuitive to use
+
+Mobile Optimization
+
+
+Fully responsive design that works on all devices
+
+
+Touch-friendly interface elements (buttons, inputs)
+
+
+No horizontal scrolling required
+
+
+Font sizes readable on mobile without zooming
+
+
+Interactive elements properly spaced for touch
+
+
+Calculator functions properly on mobile devices
+
+Accessibility
+
+
+Color contrast meets WCAG standards
+
+
+All interactive elements accessible via keyboard
+
+
+Proper ARIA labels for interactive elements
+
+
+Alt text for all images and visual elements
+
+
+Form fields have associated labels
+
+
+Content structure makes sense when read by screen readers
+
+Page Performance
+
+
+Page loads in under 3 seconds
+
+
+Images and media properly optimized
+
+
+CSS and JavaScript minified
+
+
+Browser caching enabled
+
+
+Lazy loading implemented for below-the-fold content
+
+
+Core Web Vitals metrics meet or exceed standards
+
+Content Quality Checklist
+
+Educational Content
+
+
+Information is medically accurate and up-to-date
+
+
+Content reviewed by medical professional
+
+
+References and citations included for medical claims
+
+
+Complex concepts explained in clear, accessible language
+
+
+Content addresses different knowledge levels (basic to advanced)
+
+
+Visual aids complement and enhance text content
+
+Trust Signals
+
+
+Clear authorship information
+
+
+Author credentials displayed (if applicable)
+
+
+Last updated date visible
+
+
+References and citations to credible sources
+
+
+Disclaimer about medical information
+
+
+Privacy policy regarding calculator data
+
+
+Contact information for questions or support
+
+Engagement Elements
+
+
+Clear calls to action throughout content
+
+
+Interactive elements encourage engagement
+
+
+Related content suggestions
+
+
+User feedback mechanism
+
+
+Social sharing options (if appropriate)
+
+
+Newsletter or follow-up options
+
+Final Verification
+
+Cross-Browser Testing
+
+
+Functions correctly in Chrome
+
+
+Functions correctly in Firefox
+
+
+Functions correctly in Safari
+
+
+Functions correctly in Edge
+
+
+Functions correctly on iOS devices
+
+
+Functions correctly on Android devices
+
+Content Review
+
+
+Spelling and grammar checked
+
+
+Medical terminology used correctly
+
+
+No duplicate content issues
+
+
+All claims supported by evidence
+
+
+Tone appropriate for target audience
+
+
+All sections from content plan included
+
+Legal Compliance
+
+
+Medical disclaimer included
+
+
+Terms of use clear
+
+
+Privacy policy addresses calculator data
+
+
+GDPR compliance (if applicable)
+
+
+Cookie consent implemented (if applicable)
+
+
+Accessibility statement included
+
+
+
