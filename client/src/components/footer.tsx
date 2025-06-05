@@ -78,63 +78,68 @@ export default function Footer() {
             </ul>
           </div>
           
-          {/* Medical Information */}
+          {/* Educational Content */}
           <div>
-            <h3 className="font-semibold mb-4">Medical Info</h3>
+            <h3 className="font-semibold mb-4">Educational Content</h3>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <button 
-                  onClick={() => handleLinkClick('medical_info', 'bph_information')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/education"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('education', 'bph_education')}
                 >
-                  BPH Information
-                </button>
+                  BPH Education Center
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleLinkClick('medical_info', 'treatment_options')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/resources"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('education', 'clinical_resources')}
                 >
-                  Treatment Options
-                </button>
+                  Clinical Resources
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleLinkClick('medical_info', 'clinical_guidelines')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/case-studies"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('education', 'case_studies')}
                 >
-                  Clinical Guidelines
-                </button>
+                  Clinical Case Studies
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => handleLinkClick('medical_info', 'research_papers')}
-                  className="hover:text-white transition-colors text-left"
+                <a 
+                  href="/blog"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('education', 'medical_blog')}
                 >
-                  Research Papers
-                </button>
+                  Medical Articles
+                </a>
               </li>
             </ul>
           </div>
           
-          {/* Legal */}
+          {/* Support & Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Legal & Privacy</h3>
+            <h3 className="font-semibold mb-4">Support & Legal</h3>
             <ul className="space-y-2 text-sm text-gray-400">
+              <li>
+                <a 
+                  href="/faq"
+                  className="hover:text-white transition-colors"
+                  onClick={() => handleLinkClick('support', 'medical_faq')}
+                >
+                  Medical FAQ
+                </a>
+              </li>
               <li>
                 <button 
                   onClick={() => handleLinkClick('legal', 'privacy_policy')}
                   className="hover:text-white transition-colors text-left"
                 >
                   Privacy Policy
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => handleLinkClick('legal', 'terms_of_service')}
-                  className="hover:text-white transition-colors text-left"
-                >
-                  Terms of Service
                 </button>
               </li>
               <li>
@@ -150,7 +155,7 @@ export default function Footer() {
                   onClick={() => handleLinkClick('legal', 'contact')}
                   className="hover:text-white transition-colors text-left"
                 >
-                  Contact Us
+                  Contact Support
                 </button>
               </li>
             </ul>

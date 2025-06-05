@@ -105,33 +105,50 @@ export default function Header() {
                 onClick={() => handleNavClick('calculator')}
                 className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
               >
-                Calculator
+                Volume Calculator
               </button>
               <Link
                 href="/tools"
                 className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Advanced Tools
+                Clinical Tools
               </Link>
-              <button
-                onClick={() => handleNavClick('about')}
+              <Link
+                href="/education"
                 className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                About
-              </button>
-              <button
-                onClick={() => handleNavClick('faq')}
+                BPH Education
+              </Link>
+              <Link
+                href="/faq"
                 className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                FAQ
-              </button>
-              <button
-                onClick={() => handleNavClick('resources')}
+                Medical FAQ
+              </Link>
+              <Link
+                href="/resources"
                 className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                Resources
-              </button>
+                Clinical Resources
+              </Link>
+              <Link
+                href="/blog"
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/case-studies"
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Case Studies
+              </Link>
             </div>
           </div>
         )}

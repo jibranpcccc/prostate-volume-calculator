@@ -234,6 +234,21 @@ export default function Home() {
                   recommended by the American Urological Association and European Association of Urology.
                 </p>
                 
+                <div className="flex flex-wrap gap-3 mb-6">
+                  <Link href="/education">
+                    <Button variant="outline" size="sm" className="text-blue-600 border-blue-600 hover:bg-blue-50">
+                      <University className="w-4 h-4 mr-2" />
+                      Learn More About BPH
+                    </Button>
+                  </Link>
+                  <Link href="/resources">
+                    <Button variant="outline" size="sm" className="text-green-600 border-green-600 hover:bg-green-50">
+                      <FileText className="w-4 h-4 mr-2" />
+                      Clinical Guidelines
+                    </Button>
+                  </Link>
+                </div>
+                
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">The Ellipsoid Formula</h3>
                 <Card className="mb-6">
                   <CardContent className="p-6">
@@ -374,6 +389,9 @@ export default function Home() {
                     <strong>IPSS Correlation:</strong> Moderate-severe symptoms (IPSS &gt;19) more 
                     common with volumes &gt;40 mL but not absolute.
                   </p>
+                  <Link href="/tools" className="text-blue-600 hover:text-blue-800 text-sm font-medium inline-flex items-center mt-2">
+                    Take IPSS Assessment <ArrowRight className="w-3 h-3 ml-1" />
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -397,6 +415,9 @@ export default function Home() {
                     <strong>&gt;80 mL:</strong> Surgical intervention consideration (TURP, HoLEP, 
                     simple prostatectomy) based on symptoms and medical fitness.
                   </p>
+                  <Link href="/tools" className="text-orange-600 hover:text-orange-800 text-sm font-medium inline-flex items-center mt-2">
+                    Access Treatment Guide <ArrowRight className="w-3 h-3 ml-1" />
+                  </Link>
                 </div>
               </CardContent>
             </Card>
