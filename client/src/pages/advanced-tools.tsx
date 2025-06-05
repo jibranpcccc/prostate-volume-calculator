@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import PSACalculator from "@/components/psa-calculator";
 import TreatmentGuide from "@/components/treatment-guide";
 import IPSSQuestionnaire from "@/components/ipss-questionnaire";
+import MedicalCharts from "@/components/medical-charts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -15,7 +16,8 @@ import {
   FileText,
   Brain,
   Target,
-  Activity
+  Activity,
+  BarChart3
 } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 
@@ -77,7 +79,7 @@ export default function AdvancedTools() {
           </Alert>
 
           <Tabs defaultValue="psa-density" onValueChange={handleTabChange} className="w-full">
-            <TabsList className="grid w-full grid-cols-1 md:grid-cols-4 h-auto">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-5 h-auto">
               <TabsTrigger value="psa-density" className="flex items-center gap-2 p-4">
                 <TrendingUp className="w-4 h-4" />
                 <span>PSA Density</span>
@@ -89,6 +91,10 @@ export default function AdvancedTools() {
               <TabsTrigger value="treatment-guide" className="flex items-center gap-2 p-4">
                 <FileText className="w-4 h-4" />
                 <span>Treatment Guide</span>
+              </TabsTrigger>
+              <TabsTrigger value="medical-charts" className="flex items-center gap-2 p-4">
+                <BarChart3 className="w-4 h-4" />
+                <span>Medical Charts</span>
               </TabsTrigger>
               <TabsTrigger value="risk-calculator" className="flex items-center gap-2 p-4">
                 <Calculator className="w-4 h-4" />

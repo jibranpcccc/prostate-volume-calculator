@@ -2,9 +2,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calculator, Menu, X } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { Link, useLocation } from "wouter";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -12,6 +14,10 @@ export default function Header() {
   };
 
   const handleNavClick = (section: string) => {
+    if (location !== '/') {
+      window.location.href = `/#${section}`;
+      return;
+    }
     const element = document.getElementById(section);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -25,7 +31,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo and Brand */}
-          <div className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
               <Calculator className="text-white w-6 h-6" />
             </div>
@@ -33,16 +39,22 @@ export default function Header() {
               <h1 className="text-xl font-bold text-blue-600">ProstateVolumeCalc</h1>
               <p className="text-xs text-gray-600">Medical Grade Calculator</p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => handleNavClick('calculator')}
-              className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
+              className={`text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium ${location === '/' ? 'border-b-2 border-blue-600 text-blue-600' : ''}`}
             >
               Calculator
             </button>
+            <Link
+              href="/tools"
+              className={`text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium ${location === '/tools' || location === '/advanced-tools' ? 'border-b-2 border-blue-600 text-blue-600' : ''}`}
+            >
+              Advanced Tools
+            </Link>
             <button
               onClick={() => handleNavClick('about')}
               className="text-gray-700 hover:text-blue-600 transition-colors px-3 py-2 text-sm font-medium"
@@ -90,6 +102,13 @@ export default function Header() {
               >
                 Calculator
               </button>
+              <Link
+                href="/tools"
+                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Advanced Tools
+              </Link>
               <button
                 onClick={() => handleNavClick('about')}
                 className="block w-full text-left px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors"

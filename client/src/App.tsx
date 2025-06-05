@@ -7,6 +7,8 @@ import { useEffect } from "react";
 import { initGA } from "./lib/analytics";
 import { useAnalytics } from "./hooks/use-analytics";
 import Home from "@/pages/home";
+import AdvancedTools from "@/pages/advanced-tools";
+import NotFound from "@/pages/not-found";
 
 function Router() {
   // Track page views when routes change
@@ -16,6 +18,9 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/home" component={Home} />
+      <Route path="/tools" component={AdvancedTools} />
+      <Route path="/advanced-tools" component={AdvancedTools} />
+      <Route component={NotFound} />
     </Switch>
   );
 }
