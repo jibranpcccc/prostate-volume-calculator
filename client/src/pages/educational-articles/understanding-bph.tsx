@@ -165,7 +165,7 @@ export default function UnderstandingBPH() {
                         <li><strong>African Americans:</strong> Higher prevalence and earlier onset</li>
                         <li><strong>Asian populations:</strong> Lower rates, later onset</li>
                         <li><strong>Mediterranean diet:</strong> Potential protective effect</li>
-                        <li><strong>Obesity correlation:</strong> Increased risk with BMI >30</li>
+                        <li><strong>Obesity correlation:</strong> Increased risk with BMI &gt;30</li>
                       </ul>
                     </div>
                   </div>

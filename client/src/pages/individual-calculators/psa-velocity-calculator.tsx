@@ -57,7 +57,7 @@ export default function PSAVelocityCalculatorPage() {
             <Alert className="mb-8 border-purple-300 bg-purple-50">
               <AlertTriangle className="h-5 w-5 text-purple-600" />
               <AlertDescription className="text-purple-800">
-                <strong>Clinical Significance:</strong> PSA velocity >0.75 ng/mL/year may indicate 
+                <strong>Clinical Significance:</strong> PSA velocity &gt;0.75 ng/mL/year may indicate 
                 cancer progression and warrant further evaluation, especially during active surveillance.
               </AlertDescription>
             </Alert>

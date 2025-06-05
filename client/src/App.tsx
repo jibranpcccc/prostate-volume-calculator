@@ -26,7 +26,11 @@ import NotFound from "@/pages/not-found";
 // Individual Calculator Pages
 import PSADensityCalculator from "@/pages/individual-calculators/psa-density-calculator";
 import PSAVelocityCalculator from "@/pages/individual-calculators/psa-velocity-calculator";
+import PSADoublingTimeCalculator from "@/pages/individual-calculators/psa-doubling-time-calculator";
+import FreePSARatioCalculator from "@/pages/individual-calculators/free-psa-ratio-calculator";
+import AgeSpecificPSACalculator from "@/pages/individual-calculators/age-specific-psa-calculator";
 import ErectileDysfunctionCalculator from "@/pages/individual-calculators/erectile-dysfunction-calculator";
+import TestosteroneDeficiencyCalculator from "@/pages/individual-calculators/testosterone-deficiency-calculator";
 
 // Educational Articles
 import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
@@ -62,14 +66,14 @@ function Router() {
       <Route path="/psa-calculators" component={PSACalculators} />
       <Route path="/psa-calculators/psa-density-calculator" component={PSADensityCalculator} />
       <Route path="/psa-calculators/psa-velocity-calculator" component={PSAVelocityCalculator} />
-      <Route path="/psa-calculators/psa-doubling-time-calculator" component={PSACalculators} />
-      <Route path="/psa-calculators/free-psa-ratio-calculator" component={PSACalculators} />
-      <Route path="/psa-calculators/age-specific-psa-calculator" component={PSACalculators} />
+      <Route path="/psa-calculators/psa-doubling-time-calculator" component={PSADoublingTimeCalculator} />
+      <Route path="/psa-calculators/free-psa-ratio-calculator" component={FreePSARatioCalculator} />
+      <Route path="/psa-calculators/age-specific-psa-calculator" component={AgeSpecificPSACalculator} />
       
       {/* Men's Health Calculators */}
       <Route path="/mens-health-calculators" component={MensHealthCalculators} />
       <Route path="/mens-health-calculators/erectile-dysfunction-calculator" component={ErectileDysfunctionCalculator} />
-      <Route path="/mens-health-calculators/testosterone-deficiency-calculator" component={MensHealthCalculators} />
+      <Route path="/mens-health-calculators/testosterone-deficiency-calculator" component={TestosteroneDeficiencyCalculator} />
       <Route path="/mens-health-calculators/free-testosterone-calculator" component={MensHealthCalculators} />
       <Route path="/mens-health-calculators/cardiovascular-risk-calculator" component={MensHealthCalculators} />
       <Route path="/mens-health-calculators/bmi-calculator" component={MensHealthCalculators} />
