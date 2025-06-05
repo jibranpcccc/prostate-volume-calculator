@@ -4,6 +4,7 @@ import PSACalculator from "@/components/psa-calculator";
 import TreatmentGuide from "@/components/treatment-guide";
 import IPSSQuestionnaire from "@/components/ipss-questionnaire";
 import MedicalCharts from "@/components/medical-charts";
+import ComprehensiveCalculator from "@/components/comprehensive-calculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -144,48 +145,30 @@ export default function AdvancedTools() {
               </Card>
             </TabsContent>
 
+            <TabsContent value="medical-charts" className="mt-8">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <BarChart3 className="w-6 h-6 text-indigo-600" />
+                    Clinical Data Visualization & Analytics
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <MedicalCharts />
+                </CardContent>
+              </Card>
+            </TabsContent>
+
             <TabsContent value="risk-calculator" className="mt-8">
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3">
-                    <Calculator className="w-6 h-6 text-orange-600" />
+                    <Brain className="w-6 h-6 text-orange-600" />
                     Comprehensive Risk Assessment
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-6">
-                    <div className="text-center py-12">
-                      <Brain className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">Integrated Risk Calculator</h3>
-                      <p className="text-gray-600 max-w-2xl mx-auto">
-                        Comprehensive risk assessment tool combining prostate volume, PSA density, IPSS scores, 
-                        and patient demographics for personalized treatment recommendations.
-                      </p>
-                      <div className="mt-8 grid md:grid-cols-3 gap-6">
-                        <div className="p-6 bg-blue-50 rounded-lg border border-blue-200">
-                          <Target className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-                          <h4 className="font-semibold text-gray-900 mb-2">Cancer Risk Stratification</h4>
-                          <p className="text-sm text-gray-600">
-                            Combines PSA, volume, age, and family history for personalized cancer risk assessment
-                          </p>
-                        </div>
-                        <div className="p-6 bg-green-50 rounded-lg border border-green-200">
-                          <Activity className="w-8 h-8 text-green-600 mx-auto mb-3" />
-                          <h4 className="font-semibold text-gray-900 mb-2">Progression Prediction</h4>
-                          <p className="text-sm text-gray-600">
-                            Estimates likelihood of BPH progression requiring surgical intervention
-                          </p>
-                        </div>
-                        <div className="p-6 bg-orange-50 rounded-lg border border-orange-200">
-                          <FileText className="w-8 h-8 text-orange-600 mx-auto mb-3" />
-                          <h4 className="font-semibold text-gray-900 mb-2">Treatment Optimization</h4>
-                          <p className="text-sm text-gray-600">
-                            Personalized treatment recommendations based on patient-specific factors
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <ComprehensiveCalculator />
                 </CardContent>
               </Card>
             </TabsContent>
