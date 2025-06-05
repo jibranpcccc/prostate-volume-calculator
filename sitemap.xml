@@ -81,4 +81,170 @@
     <mobile:mobile/>
   </url>
 
+  <!-- Educational Content -->
+  <url>
+    <loc>https://prostatevolumecalc.com/education</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/bph-education</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/benign-prostatic-hyperplasia</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/lower-urinary-tract-symptoms</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <!-- Clinical Resources -->
+  <url>
+    <loc>https://prostatevolumecalc.com/resources</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/clinical-resources</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/clinical-guidelines</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://prostatevolumecalc.com/faq</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/medical-faq</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <mobile:mobile/>
+  </url>
+
+  <!-- Case Studies -->
+  <url>
+    <loc>https://prostatevolumecalc.com/case-studies</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/clinical-cases</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://prostatevolumecalc.com/blog</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/medical-blog</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <mobile:mobile/>
+  </url>
+
+  <!-- SEO-friendly Medical Terms -->
+  <url>
+    <loc>https://prostatevolumecalc.com/prostate-volume-measurement</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/bph-volume-calculator</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/transrectal-ultrasound-volume</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/psa-density</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/prostate-specific-antigen-density</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/international-prostate-symptom-score</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
+  <url>
+    <loc>https://prostatevolumecalc.com/bph-treatment-options</loc>
+    <lastmod>2024-12-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <mobile:mobile/>
+  </url>
+
 </urlset>

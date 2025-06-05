@@ -13,6 +13,7 @@ import FAQPage from "@/pages/faq-page";
 import Resources from "@/pages/resources";
 import Blog from "@/pages/blog";
 import CaseStudy from "@/pages/casestudy";
+import PSACalculators from "@/pages/psa-calculators";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -38,6 +39,15 @@ function Router() {
       <Route path="/treatment-guide" component={AdvancedTools} />
       <Route path="/bph-assessment-tools" component={AdvancedTools} />
       <Route path="/comprehensive-calculator" component={AdvancedTools} />
+      
+      {/* PSA Calculator Suite */}
+      <Route path="/psa-calculators" component={PSACalculators} />
+      <Route path="/psa-velocity-calculator" component={PSACalculators} />
+      <Route path="/psa-doubling-time-calculator" component={PSACalculators} />
+      <Route path="/free-psa-ratio-calculator" component={PSACalculators} />
+      <Route path="/psa-velocity" component={PSACalculators} />
+      <Route path="/psa-doubling-time" component={PSACalculators} />
+      <Route path="/free-psa-ratio" component={PSACalculators} />
       
       {/* Educational Content Routes */}
       <Route path="/education" component={Education} />
