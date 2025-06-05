@@ -197,7 +197,7 @@ export default function UnderstandingBPH() {
                           <ul className="space-y-1 text-sm">
                             <li>• Urinary frequency</li>
                             <li>• Urgency and urge incontinence</li>
-                            <li>• Nocturia (>2 episodes/night)</li>
+                            <li>• Nocturia (&gt;2 episodes/night)</li>
                             <li>• Dysuria</li>
                             <li>• Bladder pain or discomfort</li>
                           </ul>
@@ -212,7 +212,7 @@ export default function UnderstandingBPH() {
                         clinical endpoints:
                       </p>
                       <ul className="list-disc list-inside space-y-2">
-                        <li><strong>Symptom progression:</strong> IPSS increase >4 points</li>
+                        <li><strong>Symptom progression:</strong> IPSS increase &gt;4 points</li>
                         <li><strong>Acute urinary retention:</strong> 1-2% annual incidence</li>
                         <li><strong>Need for surgery:</strong> 2-3% annual rate</li>
                         <li><strong>Renal insufficiency:</strong> Rare but serious complication</li>
@@ -235,7 +235,7 @@ export default function UnderstandingBPH() {
                         <li>• Medical history and IPSS questionnaire</li>
                         <li>• Digital rectal examination</li>
                         <li>• Urinalysis and serum creatinine</li>
-                        <li>• PSA measurement (if life expectancy >10 years)</li>
+                        <li>• PSA measurement (if life expectancy &gt;10 years)</li>
                         <li>• Post-void residual measurement</li>
                       </ul>
                     </div>
