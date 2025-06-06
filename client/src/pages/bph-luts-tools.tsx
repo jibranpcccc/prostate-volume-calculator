@@ -105,9 +105,9 @@ export default function BPHLUTSTools() {
   return (
     <>
       <EnhancedSEOHead
-        title="BPH & LUTS Assessment Tools | Bladder Function and Symptom Evaluation"
-        description="Comprehensive suite of BPH and lower urinary tract symptom assessment tools including IPSS questionnaire, voiding diary analyzer, and bladder function calculators."
-        canonical="/bph-luts-tools/"
+        title="The Ultimate Guide to BPH & LUTS Assessment Tools | ProstateVolumeCalc"
+        description="Comprehensive BPH and lower urinary tract symptom evaluation tools including IPSS questionnaire, voiding diary analyzer, bladder capacity calculator, and post-void residual assessment."
+        canonical="https://prostatevolumecalc.com/bph-luts-tools/"
         keywords={[
           "BPH assessment tools",
           "LUTS evaluation",
@@ -135,11 +135,10 @@ export default function BPHLUTSTools() {
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                BPH & LUTS Assessment Tools
+                The Ultimate Guide to BPH & LUTS Assessment Tools
               </h1>
               <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-                Comprehensive evaluation tools for benign prostatic hyperplasia and lower urinary tract symptoms. 
-                Evidence-based assessments for clinical decision-making and patient care.
+                A comprehensive overview of benign prostatic hyperplasia (BPH) and lower urinary tract symptoms (LUTS) evaluation. BPH affects over 50% of men over age 60, causing urinary symptoms that significantly impact quality of life. Our assessment suite includes the International Prostate Symptom Score (IPSS), voiding diary analysis, bladder capacity calculations, and post-void residual measurements.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Badge className="bg-white/20 text-white border-white/30">
