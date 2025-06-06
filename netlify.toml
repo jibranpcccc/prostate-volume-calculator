@@ -1,6 +1,6 @@
 [build]
   publish = "dist/public"
-  command = "npm ci && NODE_ENV=production npm run build"
+  command = "npm ci && node build-static.js"
 
 [build.environment]
   NODE_VERSION = "18"
