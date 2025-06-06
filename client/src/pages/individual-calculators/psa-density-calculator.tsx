@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Breadcrumb from "@/components/breadcrumb";
 import SEOHead from "@/components/seo-head";
+import SchemaMarkup from "@/components/schema-markup";
 import PSACalculator from "@/components/psa-calculator";
 import InternalLinks from "@/components/internal-links";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -17,6 +18,13 @@ export default function PSADensityCalculator() {
         description="Free and accurate PSA Density (PSAd) calculator. Input your PSA and prostate volume to assess your risk. Learn how to interpret your PSAd score."
         canonical="https://prostatevolumecalc.com/psa-calculators/psa-density-calculator/"
         keywords={["PSA density calculator", "calculate PSAd", "prostate specific antigen density", "normal PSAd range", "what is PSA density"]}
+        medicalCondition="Prostate Cancer Screening"
+      />
+      <SchemaMarkup
+        pageType="calculator"
+        title="PSA Density (PSAd) Calculator | Calculate Your Prostate Specific Antigen Density"
+        description="Free and accurate PSA Density (PSAd) calculator. Input your PSA and prostate volume to assess your risk. Learn how to interpret your PSAd score."
+        calculatorType="PSA Density Calculator"
         medicalCondition="Prostate Cancer Screening"
       />
       <div className="min-h-screen bg-gray-50">

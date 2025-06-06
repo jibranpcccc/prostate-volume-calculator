@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Breadcrumb from "@/components/breadcrumb";
 import SEOHead from "@/components/seo-head";
+import SchemaMarkup from "@/components/schema-markup";
 import FreePSARatioCalculator from "@/components/free-psa-ratio-calculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -17,6 +18,13 @@ export default function FreePSARatioCalculatorPage() {
         description="Free PSA Ratio calculator to assess prostate cancer risk. Calculate the percentage of free PSA to total PSA and interpret cancer probability based on ratio."
         canonical="https://prostatevolumecalc.com/psa-calculators/free-psa-ratio-calculator/"
         keywords={["free PSA ratio calculator", "free PSA percentage", "PSA ratio", "prostate cancer risk", "free to total PSA"]}
+        medicalCondition="Prostate Cancer Screening"
+      />
+      <SchemaMarkup
+        pageType="calculator"
+        title="Free PSA Ratio Calculator | Calculate Free to Total PSA Percentage"
+        description="Free PSA Ratio calculator to assess prostate cancer risk. Calculate the percentage of free PSA to total PSA and interpret cancer probability based on ratio."
+        calculatorType="Free PSA Ratio Calculator"
         medicalCondition="Prostate Cancer Screening"
       />
       <div className="min-h-screen bg-gray-50">

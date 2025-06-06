@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Breadcrumb from "@/components/breadcrumb";
 import SEOHead from "@/components/seo-head";
+import SchemaMarkup from "@/components/schema-markup";
 import PSAVelocityCalculator from "@/components/psa-velocity-calculator";
 import PSADoublingTimeCalculator from "@/components/psa-doubling-time-calculator";
 import FreePSARatioCalculator from "@/components/free-psa-ratio-calculator";
@@ -19,6 +20,12 @@ export default function PSACalculators() {
         title="The Ultimate Guide to PSA Calculators & Interpretation | ProstateVolumeCalc"
         description="Comprehensive PSA analysis tools including density, velocity, doubling time, and free PSA ratio calculators. Professional-grade tools for prostate cancer screening and monitoring."
         canonical="https://prostatevolumecalc.com/psa-calculators/"
+      />
+      <SchemaMarkup
+        pageType="pillar"
+        title="The Ultimate Guide to PSA Calculators & Interpretation | ProstateVolumeCalc"
+        description="Comprehensive PSA analysis tools including density, velocity, doubling time, and free PSA ratio calculators. Professional-grade tools for prostate cancer screening and monitoring."
+        medicalCondition="Prostate Cancer Screening"
       />
       <div className="min-h-screen bg-gray-50">
         <Header />

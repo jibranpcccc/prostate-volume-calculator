@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Breadcrumb from "@/components/breadcrumb";
 import SEOHead from "@/components/seo-head";
+import SchemaMarkup from "@/components/schema-markup";
 import PSAVelocityCalculator from "@/components/psa-velocity-calculator";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -17,6 +18,13 @@ export default function PSAVelocityCalculatorPage() {
         description="Free PSA Velocity calculator to track PSA rate of change. Calculate PSAV with multiple PSA readings and assess prostate cancer risk based on velocity trends."
         canonical="https://prostatevolumecalc.com/psa-calculators/psa-velocity-calculator/"
         keywords={["PSA velocity calculator", "PSAV", "PSA rate of change", "PSA trend analysis", "prostate cancer screening"]}
+        medicalCondition="Prostate Cancer Screening"
+      />
+      <SchemaMarkup
+        pageType="calculator"
+        title="PSA Velocity (PSAV) Calculator | Track PSA Rate of Change Over Time"
+        description="Free PSA Velocity calculator to track PSA rate of change. Calculate PSAV with multiple PSA readings and assess prostate cancer risk based on velocity trends."
+        calculatorType="PSA Velocity Calculator"
         medicalCondition="Prostate Cancer Screening"
       />
       <div className="min-h-screen bg-gray-50">
