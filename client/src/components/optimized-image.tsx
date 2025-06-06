@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 interface OptimizedImageProps {
   src: string;
@@ -14,28 +14,30 @@ interface OptimizedImageProps {
 export default function OptimizedImage({
   src,
   alt,
-  width,
-  height,
+  width = 800,
+  height = 600,
   className = "",
   priority = false,
   sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
-  quality = 85
+  quality = 75
 }: OptimizedImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
 
-  // Generate responsive image sources
-  const generateSrcSet = (baseSrc: string) => {
-    const formats = ['webp', 'jpg'];
-    const sizes = [320, 640, 768, 1024, 1280, 1600];
-    
-    return formats.map(format => {
-      const srcSet = sizes.map(size => 
-        `${baseSrc.replace(/\.[^/.]+$/, '')}-${size}w.${format} ${size}w`
-      ).join(', ');
-      return { format, srcSet };
-    });
-  };
+  // Optimize Unsplash URLs with proper parameters
+  const optimizedSrc = useMemo(() => {
+    if (src.includes('unsplash.com')) {
+      const url = new URL(src);
+      url.searchParams.set('w', width.toString());
+      url.searchParams.set('h', height.toString());
+      url.searchParams.set('q', quality.toString());
+      url.searchParams.set('fm', 'webp');
+      url.searchParams.set('fit', 'crop');
+      url.searchParams.set('auto', 'format');
+      return url.toString();
+    }
+    return src;
+  }, [src, width, height, quality]);
 
   const handleLoad = () => {
     setIsLoaded(true);
@@ -48,8 +50,12 @@ export default function OptimizedImage({
   if (hasError) {
     return (
       <div 
-        className={`bg-gray-200 flex items-center justify-center ${className}`}
-        style={{ width: width || 'auto', height: height || 'auto' }}
+        className={`bg-gray-200 dark:bg-gray-700 flex items-center justify-center ${className}`}
+        style={{ 
+          width: `${width}px`, 
+          height: `${height}px`,
+          aspectRatio: `${width}/${height}`
+        }}
         role="img"
         aria-label={alt}
       >
@@ -59,36 +65,34 @@ export default function OptimizedImage({
   }
 
   return (
-    <picture>
-      {/* WebP format for modern browsers */}
-      <source
-        srcSet={generateSrcSet(src)[0]?.srcSet}
-        sizes={sizes}
-        type="image/webp"
-      />
-      
-      {/* Fallback JPEG format */}
-      <source
-        srcSet={generateSrcSet(src)[1]?.srcSet}
-        sizes={sizes}
-        type="image/jpeg"
-      />
-      
-      {/* Main image element */}
+    <div className={`relative ${className}`}>
+      {!isLoaded && (
+        <div 
+          className="absolute inset-0 bg-gray-200 dark:bg-gray-700 animate-pulse rounded"
+          style={{ 
+            aspectRatio: `${width}/${height}`,
+            width: '100%',
+            height: 'auto'
+          }}
+        />
+      )}
       <img
-        src={src}
+        src={optimizedSrc}
         alt={alt}
         width={width}
         height={height}
-        className={`${className} ${!isLoaded ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
+        className={`w-full h-auto object-cover transition-opacity duration-300 ${
+          isLoaded ? 'opacity-100' : 'opacity-0'
+        }`}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         onLoad={handleLoad}
         onError={handleError}
         style={{
-          aspectRatio: width && height ? `${width}/${height}` : undefined
+          aspectRatio: `${width}/${height}`,
+          maxWidth: '100%'
         }}
       />
-    </picture>
+    </div>
   );
 }
