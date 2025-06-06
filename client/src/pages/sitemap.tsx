@@ -64,6 +64,12 @@ export default function Sitemap() {
       icon: Calculator,
       pages: [
         {
+          title: "PSA Density Calculator",
+          url: "/psa-calculators/psa-density-calculator/",
+          description: "Enhanced prostate cancer detection through PSA density calculation",
+          priority: "high"
+        },
+        {
           title: "PSA Velocity Calculator",
           url: "/psa-calculators/psa-velocity-calculator/",
           description: "Calculate PSA rate of change over time for cancer surveillance",
@@ -93,6 +99,12 @@ export default function Sitemap() {
       title: "BPH & LUTS Assessment",
       icon: Calculator,
       pages: [
+        {
+          title: "IPSS Questionnaire",
+          url: "/bph-luts-tools/ipss-questionnaire/",
+          description: "International Prostate Symptom Score assessment for BPH severity",
+          priority: "high"
+        },
         {
           title: "Post-Void Residual Calculator",
           url: "/bph-luts-tools/post-void-residual-calculator/",

@@ -51,6 +51,13 @@
 
   <!-- PSA Calculators Silo - Actually Implemented -->
   <url>
+    <loc>https://prostatevolumecalc.com/psa-calculators/psa-density-calculator/</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://prostatevolumecalc.com/psa-calculators/psa-velocity-calculator/</loc>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -80,6 +87,13 @@
 
   <!-- BPH & LUTS Tools Silo - Actually Implemented -->
   <url>
+    <loc>https://prostatevolumecalc.com/bph-luts-tools/ipss-questionnaire/</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://prostatevolumecalc.com/bph-luts-tools/post-void-residual-calculator/</loc>
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -106,6 +120,13 @@
     <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://prostatevolumecalc.com/prostate-cancer-tools/treatment-decision-guide/</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Men's Health Calculators Silo - Actually Implemented -->
