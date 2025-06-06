@@ -3,65 +3,69 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { useEffect } from "react";
+import { useEffect, lazy, Suspense } from "react";
 import { initGA } from "./lib/analytics";
 import { useAnalytics } from "./hooks/use-analytics";
+import { usePerformanceOptimization } from "@/components/performance-optimizer";
+import { LoadingSkeleton } from "@/components/lazy-components";
+import CriticalCSS from "@/components/critical-css";
 import Home from "@/pages/home";
-import AdvancedTools from "@/pages/advanced-tools";
-import Education from "@/pages/education";
-import FAQPage from "@/pages/faq-page";
-import Resources from "@/pages/resources";
-import Blog from "@/pages/blog";
-import CaseStudy from "@/pages/casestudy";
-import PSACalculators from "@/pages/psa-calculators";
-import MensHealthCalculators from "@/pages/mens-health-calculators";
-import BPHLUTSTools from "@/pages/bph-luts-tools";
-import ProstateCancerTools from "@/pages/prostate-cancer-tools";
-import About from "@/pages/about";
-import Contact from "@/pages/contact";
-import PrivacyPolicy from "@/pages/privacy-policy";
-import TermsOfService from "@/pages/terms-of-service";
-import Disclaimer from "@/pages/disclaimer";
-import Sitemap from "@/pages/sitemap";
-import NotFound from "@/pages/not-found";
+// Lazy load non-critical pages
+const AdvancedTools = lazy(() => import("@/pages/advanced-tools"));
+const Education = lazy(() => import("@/pages/education"));
+const FAQPage = lazy(() => import("@/pages/faq-page"));
+const Resources = lazy(() => import("@/pages/resources"));
+const Blog = lazy(() => import("@/pages/blog"));
+const CaseStudy = lazy(() => import("@/pages/casestudy"));
+const PSACalculators = lazy(() => import("@/pages/psa-calculators"));
+const MensHealthCalculators = lazy(() => import("@/pages/mens-health-calculators"));
+const BPHLUTSTools = lazy(() => import("@/pages/bph-luts-tools"));
+const ProstateCancerTools = lazy(() => import("@/pages/prostate-cancer-tools"));
+const About = lazy(() => import("@/pages/about"));
+const Contact = lazy(() => import("@/pages/contact"));
+const PrivacyPolicy = lazy(() => import("@/pages/privacy-policy"));
+const TermsOfService = lazy(() => import("@/pages/terms-of-service"));
+const Disclaimer = lazy(() => import("@/pages/disclaimer"));
+const Sitemap = lazy(() => import("@/pages/sitemap"));
+const NotFound = lazy(() => import("@/pages/not-found"));
 
-// Individual Calculator Pages
-import PSADensityCalculator from "@/pages/individual-calculators/psa-density-calculator";
-import PSAVelocityCalculator from "@/pages/individual-calculators/psa-velocity-calculator";
-import PSADoublingTimeCalculator from "@/pages/individual-calculators/psa-doubling-time-calculator";
-import FreePSARatioCalculator from "@/pages/individual-calculators/free-psa-ratio-calculator";
-import AgeSpecificPSACalculator from "@/pages/individual-calculators/age-specific-psa-calculator";
-import ErectileDysfunctionCalculator from "@/pages/individual-calculators/erectile-dysfunction-calculator";
-import TestosteroneDeficiencyCalculator from "@/pages/individual-calculators/testosterone-deficiency-calculator";
-import FreeTestosteroneCalculator from "@/pages/individual-calculators/free-testosterone-calculator";
-import CardiovascularRiskCalculator from "@/pages/individual-calculators/cardiovascular-risk-calculator";
-import BMICalculator from "@/pages/individual-calculators/bmi-calculator";
-import WaistHipRatioCalculator from "@/pages/individual-calculators/waist-hip-ratio-calculator";
-import PostVoidResidualCalculator from "@/pages/individual-calculators/post-void-residual-calculator";
-import VoidingDiaryAnalyzer from "@/pages/individual-calculators/voiding-diary-analyzer";
-import BladderCapacityCalculator from "@/pages/individual-calculators/bladder-capacity-calculator";
-import ProstateCancerRiskCalculatorPage from "@/pages/individual-calculators/prostate-cancer-risk-calculator";
-import IPSSQuestionnairePage from "@/pages/individual-calculators/ipss-questionnaire";
+// Lazy load individual calculator pages
+const PSADensityCalculator = lazy(() => import("@/pages/individual-calculators/psa-density-calculator"));
+const PSAVelocityCalculator = lazy(() => import("@/pages/individual-calculators/psa-velocity-calculator"));
+const PSADoublingTimeCalculator = lazy(() => import("@/pages/individual-calculators/psa-doubling-time-calculator"));
+const FreePSARatioCalculator = lazy(() => import("@/pages/individual-calculators/free-psa-ratio-calculator"));
+const AgeSpecificPSACalculator = lazy(() => import("@/pages/individual-calculators/age-specific-psa-calculator"));
+const ErectileDysfunctionCalculator = lazy(() => import("@/pages/individual-calculators/erectile-dysfunction-calculator"));
+const TestosteroneDeficiencyCalculator = lazy(() => import("@/pages/individual-calculators/testosterone-deficiency-calculator"));
+const FreeTestosteroneCalculator = lazy(() => import("@/pages/individual-calculators/free-testosterone-calculator"));
+const CardiovascularRiskCalculator = lazy(() => import("@/pages/individual-calculators/cardiovascular-risk-calculator"));
+const BMICalculator = lazy(() => import("@/pages/individual-calculators/bmi-calculator"));
+const WaistHipRatioCalculator = lazy(() => import("@/pages/individual-calculators/waist-hip-ratio-calculator"));
+const PostVoidResidualCalculator = lazy(() => import("@/pages/individual-calculators/post-void-residual-calculator"));
+const VoidingDiaryAnalyzer = lazy(() => import("@/pages/individual-calculators/voiding-diary-analyzer"));
+const BladderCapacityCalculator = lazy(() => import("@/pages/individual-calculators/bladder-capacity-calculator"));
+const ProstateCancerRiskCalculatorPage = lazy(() => import("@/pages/individual-calculators/prostate-cancer-risk-calculator"));
+const IPSSQuestionnairePage = lazy(() => import("@/pages/individual-calculators/ipss-questionnaire"));
 
-// Educational Articles
-import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
-import ProstateVolumeMeasurementTechniques from "@/pages/educational-articles/prostate-volume-measurement-techniques";
-import PSADensityCliniclPractice from "@/pages/educational-articles/psa-density-clinical-practice";
-import IPSSScoringInterpretation from "@/pages/educational-articles/ipss-scoring-interpretation";
-import MedicalManagementBPH from "@/pages/educational-articles/medical-management-bph";
-import SurgicalOptionsBPH from "@/pages/educational-articles/surgical-options-bph";
-import AdvancedImagingProstate from "@/pages/educational-articles/advanced-imaging-prostate";
-import MachineLearningUrology from "@/pages/educational-articles/machine-learning-urology";
+// Lazy load educational articles
+const UnderstandingBPH = lazy(() => import("@/pages/educational-articles/understanding-bph"));
+const ProstateVolumeMeasurementTechniques = lazy(() => import("@/pages/educational-articles/prostate-volume-measurement-techniques"));
+const PSADensityCliniclPractice = lazy(() => import("@/pages/educational-articles/psa-density-clinical-practice"));
+const IPSSScoringInterpretation = lazy(() => import("@/pages/educational-articles/ipss-scoring-interpretation"));
+const MedicalManagementBPH = lazy(() => import("@/pages/educational-articles/medical-management-bph"));
+const SurgicalOptionsBPH = lazy(() => import("@/pages/educational-articles/surgical-options-bph"));
+const AdvancedImagingProstate = lazy(() => import("@/pages/educational-articles/advanced-imaging-prostate"));
+const MachineLearningUrology = lazy(() => import("@/pages/educational-articles/machine-learning-urology"));
 
-// Blog Posts
-import ProstateVolumeMeasurementGuide from "@/pages/blog-posts/prostate-volume-measurement-guide";
-import PSADensityCalculatorGuide from "@/pages/blog-posts/psa-density-calculator-guide";
-import IPSSAssessmentGuide from "@/pages/blog-posts/ipss-assessment-guide";
-import BPHTreatmentAlgorithms from "@/pages/blog-posts/bph-treatment-algorithms";
-import AgeRelatedProstateGrowth from "@/pages/blog-posts/age-related-prostate-growth";
-import MinimallyInvasiveBPHProcedures from "@/pages/blog-posts/minimally-invasive-bph-procedures";
-import MachineLearningProstateAssessment from "@/pages/blog-posts/machine-learning-prostate-assessment";
-import VolumeAdjustedPSAScreening from "@/pages/blog-posts/volume-adjusted-psa-screening";
+// Lazy load blog posts
+const ProstateVolumeMeasurementGuide = lazy(() => import("@/pages/blog-posts/prostate-volume-measurement-guide"));
+const PSADensityCalculatorGuide = lazy(() => import("@/pages/blog-posts/psa-density-calculator-guide"));
+const IPSSAssessmentGuide = lazy(() => import("@/pages/blog-posts/ipss-assessment-guide"));
+const BPHTreatmentAlgorithms = lazy(() => import("@/pages/blog-posts/bph-treatment-algorithms"));
+const AgeRelatedProstateGrowth = lazy(() => import("@/pages/blog-posts/age-related-prostate-growth"));
+const MinimallyInvasiveBPHProcedures = lazy(() => import("@/pages/blog-posts/minimally-invasive-bph-procedures"));
+const MachineLearningProstateAssessment = lazy(() => import("@/pages/blog-posts/machine-learning-prostate-assessment"));
+const VolumeAdjustedPSAScreening = lazy(() => import("@/pages/blog-posts/volume-adjusted-psa-screening"));
 
 function Router() {
   // Track page views when routes change

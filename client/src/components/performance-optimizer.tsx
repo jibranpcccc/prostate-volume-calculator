@@ -234,9 +234,24 @@ export const optimizeBundleSize = () => {
   // Lazy load non-critical modules
   const lazyLoadModules = async () => {
     // Load analytics only when needed
-    if (typeof window !== 'undefined' && !window.gtag) {
-      const { default: loadAnalytics } = await import('../utils/analytics');
-      loadAnalytics();
+    if (typeof window !== 'undefined' && !window.gtag && import.meta.env.VITE_GA_MEASUREMENT_ID) {
+      try {
+        // Dynamically load Google Analytics
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${import.meta.env.VITE_GA_MEASUREMENT_ID}`;
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        const gtag = (...args: any[]) => {
+          window.dataLayer.push(arguments);
+        };
+        gtag('js', new Date());
+        gtag('config', import.meta.env.VITE_GA_MEASUREMENT_ID);
+        window.gtag = gtag;
+      } catch (e) {
+        console.debug('Analytics loading failed');
+      }
     }
   };
 

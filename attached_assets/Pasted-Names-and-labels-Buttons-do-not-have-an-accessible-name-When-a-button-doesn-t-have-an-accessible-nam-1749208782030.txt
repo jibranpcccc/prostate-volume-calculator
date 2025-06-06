@@ -1,0 +1,85 @@
+Names and labels
+Buttons do not have an accessible name
+When a button doesn't have an accessible name, screen readers announce it as "button", making it unusable for users who rely on screen readers. Learn how to make buttons more accessible.
+Failing Elements
+nav.max-w-7xl > div.flex > div.md:hidden > button.inline-flex
+<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm fo…">
+These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader.
+Best practices
+[user-scalable="no"] is used in the <meta name="viewport"> element or the [maximum-scale] attribute is less than 5.
+Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. Learn more about the viewport meta tag.
+Failing Elements
+head > meta
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+These items highlight common accessibility best practices.
+Contrast
+Background and foreground colors do not have a sufficient contrast ratio.
+Low-contrast text is difficult or impossible for many users to read. Learn how to provide sufficient color contrast.
+Failing Elements
+Clinical Decision Support
+<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-se…">
+Treatment Guide Evidence-based treatment recommendations tailored to patient-s…
+<div class="rounded-lg border text-card-foreground shadow-sm hover:shadow-lg transitio…">
+Integrated Assessment
+<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-se…">
+Comprehensive Risk Multi-factor risk assessment combining clinical, imaging, a…
+<div class="rounded-lg border text-card-foreground shadow-sm hover:shadow-lg transitio…">
+Clinical Guidelines
+<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm fo…">
+Access Treatment Guide
+<a href="/tools" class="text-orange-600 hover:text-orange-800 text-sm font-medium inline-flex item…">
+Treatment Strategy <30 mL: Alpha-blockers (tamsulosin, alfuzosin) for symptom …
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm border-orange-200">
+View Clinical Case Studies
+<button class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm fo…">
+2023 Meta-Analysis: Ellipsoid formula accuracy confirmed across 15 studies (n=3…
+<p>
+2023 Meta-Analysis: Ellipsoid formula accuracy confirmed across 15 studies (n=3…
+<div class="bg-blue-50 p-3 rounded">
+2023 Meta-Analysis:
+<strong>
+2023 Meta-Analysis: Ellipsoid formula accuracy confirmed across 15 studies (n=3…
+<div class="bg-blue-50 p-3 rounded">
+Reassurance
+<span class="text-xs text-green-600 font-medium">
+<0.10 ng/mL/cc: Low cancer risk Reassurance
+<div class="flex items-center justify-between p-3 bg-green-50 rounded border-l-4 borde…">
+Consider biopsy
+<span class="text-xs text-yellow-600 font-medium">
+0.10-0.15 ng/mL/cc: Intermediate risk Consider biopsy
+<div class="flex items-center justify-between p-3 bg-yellow-50 rounded border-l-4 bord…">
+Biopsy indicated
+<span class="text-xs text-red-600 font-medium">
+>0.15 ng/mL/cc: High cancer risk Biopsy indicated
+<div class="flex items-center justify-between p-3 bg-red-50 rounded border-l-4 border-…">
+This calculator is for educational and informational purposes only. Results sho…
+<p class="text-blue-100 text-sm">
+Professional Consultation Required This calculator is for educational and info…
+<div class="rounded-lg border text-card-foreground shadow-sm bg-white bg-opacity-10 bo…">
+Important Medical Disclaimer Professional Consultation Required This calculato…
+<section class="py-12 bg-blue-600 text-white">
+Always consult with a qualified healthcare provider before making any medical d…
+<p class="text-blue-100 text-sm">
+Professional Consultation Required This calculator is for educational and info…
+<div class="rounded-lg border text-card-foreground shadow-sm bg-white bg-opacity-10 bo…">
+Important Medical Disclaimer Professional Consultation Required This calculato…
+<section class="py-12 bg-blue-600 text-white">
+Last Updated: January 2024 | This tool follows current medical guidelines and p…
+<p class="text-xs text-blue-100 text-center">
+Professional Consultation Required This calculator is for educational and info…
+<div class="rounded-lg border text-card-foreground shadow-sm bg-white bg-opacity-10 bo…">
+Important Medical Disclaimer Professional Consultation Required This calculato…
+<section class="py-12 bg-blue-600 text-white">
+© 2024 ProstateVolumeCalc.com
+<p>
+ProstateVolumeCalc Professional-grade prostate volume calculator trusted by he…
+<footer class="bg-gray-900 text-white py-12">
+For educational purposes only
+<p>
+ProstateVolumeCalc Professional-grade prostate volume calculator trusted by he…
+<footer class="bg-gray-900 text-white py-12">
+Always consult with qualified healthcare professionals for medical advice.
+<p class="text-gray-500 text-xs mt-2">
+ProstateVolumeCalc Professional-grade prostate volume calculator trusted by he…
+<footer class="bg-gray-900 text-white py-12">
+These are opportunities to improve the legibility of your content.

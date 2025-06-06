@@ -90,14 +90,13 @@ export default function CriticalCSS() {
     document.head.appendChild(style);
 
     // Preload main CSS file asynchronously
-    const link = document.createElement('link');
+    const link = document.createElement('link') as HTMLLinkElement;
     link.rel = 'preload';
     link.as = 'style';
     link.href = '/assets/index.css';
-    link.onload = function() {
-      this.onload = null;
-      this.rel = 'stylesheet';
-    };
+    link.addEventListener('load', function() {
+      link.rel = 'stylesheet';
+    });
     document.head.appendChild(link);
 
     // Cleanup function
