@@ -4,7 +4,6 @@ import Breadcrumb from "@/components/breadcrumb";
 import Calculator from "@/components/calculator";
 import FAQ from "@/components/faq";
 import SEOHead from "@/components/seo-head";
-import OptimizedImage from "@/components/optimized-image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -303,13 +302,10 @@ export default function Home() {
             </div>
             
             <div className="space-y-6">
-              <OptimizedImage 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8" 
+              <img 
+                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                 alt="Medical ultrasound showing prostate measurements" 
-                width={800}
-                height={600}
-                priority={true}
-                className="rounded-xl shadow-lg"
+                className="rounded-xl shadow-lg w-full h-auto"
               />
               
               <Card>
