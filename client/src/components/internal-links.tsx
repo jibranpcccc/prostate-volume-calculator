@@ -50,6 +50,38 @@ export default function InternalLinks({
       priority: "high"
     },
     {
+      title: "PSA Velocity Calculator",
+      href: "/psa-calculators/psa-velocity-calculator/",
+      description: "Track PSA rate of change over time for cancer detection",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "PSA Doubling Time Calculator",
+      href: "/psa-calculators/psa-doubling-time-calculator/",
+      description: "Monitor PSA growth rate and assess cancer progression risk",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "Free PSA Ratio Calculator",
+      href: "/psa-calculators/free-psa-ratio-calculator/",
+      description: "Calculate free to total PSA percentage for improved specificity",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "Age-Specific PSA Calculator",
+      href: "/psa-calculators/age-specific-psa-calculator/",
+      description: "Age-adjusted PSA reference ranges for accurate screening",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
       title: "BPH & LUTS Tools",
       href: "/bph-luts-tools/",
       description: "Assessment tools for benign prostatic hyperplasia and lower urinary tract symptoms",
@@ -66,6 +98,30 @@ export default function InternalLinks({
       priority: "high"
     },
     {
+      title: "Post-Void Residual Calculator",
+      href: "/bph-luts-tools/post-void-residual-calculator/",
+      description: "Assess bladder emptying efficiency and clinical significance",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "Bladder Capacity Calculator",
+      href: "/bph-luts-tools/bladder-capacity-calculator/",
+      description: "Calculate functional and estimated bladder capacity",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "Voiding Diary Analyzer",
+      href: "/bph-luts-tools/voiding-diary-analyzer/",
+      description: "24-hour voiding pattern analysis and LUTS assessment",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
       title: "Prostate Cancer Tools",
       href: "/prostate-cancer-tools/",
       description: "Risk assessment and diagnostic tools for prostate cancer",
@@ -74,9 +130,57 @@ export default function InternalLinks({
       priority: "high"
     },
     {
+      title: "Prostate Cancer Risk Calculator",
+      href: "/prostate-cancer-tools/risk-calculator/",
+      description: "Multi-factor prostate cancer risk assessment using PCPT algorithm",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
       title: "Men's Health Calculators",
       href: "/mens-health-calculators/", 
       description: "Specialized calculators for erectile dysfunction, testosterone deficiency, and more",
+      category: "calculators",
+      icon: Calculator,
+      priority: "medium"
+    },
+    {
+      title: "Erectile Dysfunction Calculator",
+      href: "/mens-health-calculators/erectile-dysfunction-calculator/",
+      description: "IIEF-5 assessment for erectile dysfunction severity",
+      category: "calculators",
+      icon: Calculator,
+      priority: "medium"
+    },
+    {
+      title: "Testosterone Deficiency Calculator",
+      href: "/mens-health-calculators/testosterone-deficiency-calculator/",
+      description: "ADAM questionnaire for testosterone deficiency screening",
+      category: "calculators",
+      icon: Calculator,
+      priority: "medium"
+    },
+    {
+      title: "Free Testosterone Calculator",
+      href: "/mens-health-calculators/free-testosterone-calculator/",
+      description: "Calculate free and bioavailable testosterone levels",
+      category: "calculators",
+      icon: Calculator,
+      priority: "medium"
+    },
+    {
+      title: "BMI Calculator",
+      href: "/mens-health-calculators/bmi-calculator/",
+      description: "Body Mass Index calculator with health risk assessment",
+      category: "calculators",
+      icon: Calculator,
+      priority: "medium"
+    },
+    {
+      title: "Cardiovascular Risk Calculator",
+      href: "/mens-health-calculators/cardiovascular-risk-calculator/",
+      description: "10-year cardiovascular disease risk assessment",
       category: "calculators",
       icon: Calculator,
       priority: "medium"
