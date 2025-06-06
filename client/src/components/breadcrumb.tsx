@@ -238,18 +238,29 @@ export default function Breadcrumb() {
         </div>
       </nav>
 
-      {/* BreadcrumbList Schema */}
+      {/* Enhanced BreadcrumbList Schema with Rich Markup */}
       <script 
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
+            "name": "Site Navigation",
+            "description": "Navigation path through the medical calculator website",
             "itemListElement": breadcrumbs.map((item, index) => ({
               "@type": "ListItem",
               "position": index + 1,
               "name": item.label,
-              "item": `https://prostatevolumecalc.com${item.href}`
+              "item": {
+                "@type": "WebPage",
+                "@id": `https://prostatevolumecalc.com${item.href}`,
+                "url": `https://prostatevolumecalc.com${item.href}`,
+                "name": item.label,
+                "potentialAction": {
+                  "@type": "ViewAction",
+                  "target": `https://prostatevolumecalc.com${item.href}`
+                }
+              }
             }))
           })
         }}
