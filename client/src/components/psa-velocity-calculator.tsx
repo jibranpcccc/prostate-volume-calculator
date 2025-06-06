@@ -289,50 +289,6 @@ export default function PSAVelocityCalculator() {
           </div>
         </div>
       </div>
-
-      {/* Educational Content */}
-      <div className="bg-white border border-gray-200 rounded-lg p-6">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Understanding PSA Velocity</h3>
-        <div className="prose prose-sm max-w-none">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Clinical Significance</h4>
-              <p className="text-gray-700 text-sm mb-4">
-                PSA velocity measures the rate of PSA increase over time and is a valuable tool for prostate cancer detection. 
-                Studies show that men with PSA velocity &gt;0.75 ng/mL/year have a higher risk of prostate cancer, 
-                even when total PSA is within normal limits.
-              </p>
-              
-              <h4 className="font-semibold text-gray-900 mb-3">Key Advantages</h4>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>• Improves cancer detection in men with PSA 2.5-10 ng/mL</li>
-                <li>• Helps identify aggressive cancers earlier</li>
-                <li>• Useful when PSA is in borderline range</li>
-                <li>• Independent predictor of cancer-specific mortality</li>
-              </ul>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Clinical Considerations</h4>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>• Requires minimum 2 years of PSA measurements</li>
-                <li>• Most accurate with 3+ PSA values</li>
-                <li>• Should use same laboratory assay when possible</li>
-                <li>• Consider biological variation (±20-30%)</li>
-                <li>• Affected by prostatitis, BPH progression, and medications</li>
-              </ul>
-
-              <h4 className="font-semibold text-gray-900 mb-3 mt-4">When to Use</h4>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>• Active surveillance monitoring</li>
-                <li>• Borderline PSA levels (4-10 ng/mL)</li>
-                <li>• Post-treatment monitoring</li>
-                <li>• Risk stratification for biopsy decisions</li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 }
