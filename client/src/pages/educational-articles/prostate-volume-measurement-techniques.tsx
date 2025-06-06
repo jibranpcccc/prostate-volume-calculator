@@ -155,7 +155,7 @@ export default function ProstateVolumeMeasurementTechniques() {
                     <h4 className="font-semibold mb-3">Clinical Accuracy</h4>
                     <p className="text-gray-700 mb-3">
                       TRUS ellipsoid formula demonstrates 85-90% correlation with actual prostate weight, 
-                      with systematic underestimation of 10-15% in prostates greater than 80g. Measurement precision 
+                      with systematic underestimation of 10-15% in prostates above 80g. Measurement precision 
                       improves with standardized imaging protocols and experienced operators.
                     </p>
                   </div>
@@ -195,7 +195,7 @@ export default function ProstateVolumeMeasurementTechniques() {
                         Advantages
                       </h4>
                       <ul className="space-y-2 text-sm">
-                        <li>• Highest accuracy (>95% correlation)</li>
+                        <li>• Highest accuracy (over 95% correlation)</li>
                         <li>• Excellent soft tissue contrast</li>
                         <li>• Accounts for irregular shapes</li>
                         <li>• Multiplanar assessment capability</li>
