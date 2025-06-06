@@ -24,8 +24,8 @@ export default function PerformanceMonitor() {
       // Basic timing metrics
       const basicMetrics: PerformanceMetrics = {
         ttfb: navigation.responseStart - navigation.requestStart,
-        domContentLoaded: navigation.domContentLoadedEventEnd - navigation.navigationStart,
-        loadComplete: navigation.loadEventEnd - navigation.navigationStart,
+        domContentLoaded: navigation.domContentLoadedEventEnd - navigation.fetchStart,
+        loadComplete: navigation.loadEventEnd - navigation.fetchStart,
       };
 
       // Web Vitals using PerformanceObserver

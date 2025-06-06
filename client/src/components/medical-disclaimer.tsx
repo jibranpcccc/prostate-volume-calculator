@@ -26,7 +26,7 @@ export default function MedicalDisclaimer() {
                 <BookOpen className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium mb-1">Evidence-Based Calculations</p>
-                  <p>Calculations are based on peer-reviewed medical literature and validated formulas from leading urological journals. The ellipsoid formula (L×W×H×0.52) has been extensively validated with correlation coefficients &gt;0.90 in multiple studies.</p>
+                  <p>Calculations are based on peer-reviewed medical literature and validated formulas from leading urological journals. The ellipsoid formula (L×W×H×0.52) has been extensively validated with correlation coefficients greater than 0.90 in multiple studies.</p>
                 </div>
               </div>
               
