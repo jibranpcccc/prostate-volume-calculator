@@ -134,6 +134,12 @@ export default function Sitemap() {
           url: "/prostate-cancer-tools/risk-calculator/",
           description: "Multi-parameter cancer risk assessment and biopsy recommendations",
           priority: "high"
+        },
+        {
+          title: "Treatment Decision Guide",
+          url: "/prostate-cancer-tools/treatment-decision-guide/",
+          description: "Evidence-based treatment recommendations for prostate cancer",
+          priority: "medium"
         }
       ]
     },
@@ -205,6 +211,114 @@ export default function Sitemap() {
           title: "Case Studies",
           url: "/case-studies",
           description: "Real-world clinical applications and decision-making examples",
+          priority: "medium"
+        }
+      ]
+    },
+    {
+      title: "Educational Articles",
+      icon: BookOpen,
+      pages: [
+        {
+          title: "Understanding BPH",
+          url: "/education/understanding-bph",
+          description: "Comprehensive guide to benign prostatic hyperplasia pathophysiology",
+          priority: "medium"
+        },
+        {
+          title: "Prostate Volume Measurement Techniques",
+          url: "/education/prostate-volume-measurement-techniques",
+          description: "Clinical methods for accurate prostate volume assessment",
+          priority: "medium"
+        },
+        {
+          title: "PSA Density in Clinical Practice",
+          url: "/education/psa-density-clinical-practice",
+          description: "Evidence-based applications of PSA density for cancer detection",
+          priority: "medium"
+        },
+        {
+          title: "IPSS Scoring and Interpretation",
+          url: "/education/ipss-scoring-interpretation",
+          description: "Complete guide to International Prostate Symptom Score assessment",
+          priority: "medium"
+        },
+        {
+          title: "Medical Management of BPH",
+          url: "/education/medical-management-bph",
+          description: "Current pharmacological approaches to BPH treatment",
+          priority: "medium"
+        },
+        {
+          title: "Surgical Options for BPH",
+          url: "/education/surgical-options-bph",
+          description: "Comprehensive overview of surgical interventions for BPH",
+          priority: "medium"
+        },
+        {
+          title: "Advanced Prostate Imaging",
+          url: "/education/advanced-imaging-prostate",
+          description: "Modern imaging techniques for prostate assessment",
+          priority: "low"
+        },
+        {
+          title: "Machine Learning in Urology",
+          url: "/education/machine-learning-urology",
+          description: "AI applications in urological diagnosis and treatment",
+          priority: "low"
+        }
+      ]
+    },
+    {
+      title: "Blog Articles",
+      icon: BookOpen,
+      pages: [
+        {
+          title: "Prostate Volume Measurement Guide",
+          url: "/blog/prostate-volume-measurement-guide",
+          description: "Step-by-step guide to accurate prostate volume calculation",
+          priority: "medium"
+        },
+        {
+          title: "PSA Density Calculator Guide",
+          url: "/blog/psa-density-calculator-guide",
+          description: "How to use PSA density for improved cancer detection",
+          priority: "medium"
+        },
+        {
+          title: "IPSS Assessment Guide",
+          url: "/blog/ipss-assessment-guide",
+          description: "Clinical applications of IPSS scoring in practice",
+          priority: "medium"
+        },
+        {
+          title: "BPH Treatment Algorithms",
+          url: "/blog/bph-treatment-algorithms",
+          description: "Evidence-based decision trees for BPH management",
+          priority: "medium"
+        },
+        {
+          title: "Age-Related Prostate Growth",
+          url: "/blog/age-related-prostate-growth",
+          description: "Understanding normal vs. pathological prostate enlargement",
+          priority: "low"
+        },
+        {
+          title: "Minimally Invasive BPH Procedures",
+          url: "/blog/minimally-invasive-bph-procedures",
+          description: "Latest advances in minimally invasive BPH treatments",
+          priority: "medium"
+        },
+        {
+          title: "Machine Learning in Prostate Assessment",
+          url: "/blog/machine-learning-prostate-assessment",
+          description: "AI applications in prostate health evaluation",
+          priority: "low"
+        },
+        {
+          title: "Volume-Adjusted PSA Screening",
+          url: "/blog/volume-adjusted-psa-screening",
+          description: "Optimizing PSA screening with volume considerations",
           priority: "medium"
         }
       ]
