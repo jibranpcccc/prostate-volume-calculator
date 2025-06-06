@@ -42,6 +42,13 @@ import ProstateCancerRiskCalculatorPage from "@/pages/individual-calculators/pro
 
 // Educational Articles
 import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
+import ProstateVolumeMeasurementTechniques from "@/pages/educational-articles/prostate-volume-measurement-techniques";
+import PSADensityCliniclPractice from "@/pages/educational-articles/psa-density-clinical-practice";
+import IPSSScoringInterpretation from "@/pages/educational-articles/ipss-scoring-interpretation";
+import MedicalManagementBPH from "@/pages/educational-articles/medical-management-bph";
+import SurgicalOptionsBPH from "@/pages/educational-articles/surgical-options-bph";
+import AdvancedImagingProstate from "@/pages/educational-articles/advanced-imaging-prostate";
+import MachineLearningUrology from "@/pages/educational-articles/machine-learning-urology";
 
 // Blog Posts
 import ProstateVolumeMeasurementGuide from "@/pages/blog-posts/prostate-volume-measurement-guide";
@@ -105,13 +112,13 @@ function Router() {
       
       {/* Educational Articles */}
       <Route path="/education/understanding-bph" component={UnderstandingBPH} />
-      <Route path="/education/prostate-volume-measurement-techniques" component={Education} />
-      <Route path="/education/psa-density-clinical-practice" component={Education} />
-      <Route path="/education/ipss-scoring-interpretation" component={Education} />
-      <Route path="/education/medical-management-bph" component={Education} />
-      <Route path="/education/surgical-options-bph" component={Education} />
-      <Route path="/education/advanced-imaging-prostate" component={Education} />
-      <Route path="/education/machine-learning-urology" component={Education} />
+      <Route path="/education/prostate-volume-measurement-techniques" component={ProstateVolumeMeasurementTechniques} />
+      <Route path="/education/psa-density-clinical-practice" component={PSADensityCliniclPractice} />
+      <Route path="/education/ipss-scoring-interpretation" component={IPSSScoringInterpretation} />
+      <Route path="/education/medical-management-bph" component={MedicalManagementBPH} />
+      <Route path="/education/surgical-options-bph" component={SurgicalOptionsBPH} />
+      <Route path="/education/advanced-imaging-prostate" component={AdvancedImagingProstate} />
+      <Route path="/education/machine-learning-urology" component={MachineLearningUrology} />
       
       {/* Blog Posts */}
       <Route path="/blog/prostate-volume-measurement-guide" component={ProstateVolumeMeasurementGuide} />
