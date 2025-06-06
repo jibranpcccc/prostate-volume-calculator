@@ -243,7 +243,7 @@ export const optimizeBundleSize = () => {
         document.head.appendChild(script);
         
         window.dataLayer = window.dataLayer || [];
-        const gtag = (...args: any[]) => {
+        const gtag = function(...args: any[]) {
           window.dataLayer.push(arguments);
         };
         gtag('js', new Date());

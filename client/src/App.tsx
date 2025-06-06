@@ -72,7 +72,8 @@ function Router() {
   useAnalytics();
   
   return (
-    <Switch>
+    <Suspense fallback={<LoadingSkeleton />}>
+      <Switch>
       {/* Homepage Routes */}
       <Route path="/" component={Home} />
       <Route path="/home" component={Home} />
@@ -387,11 +388,15 @@ function Router() {
 
       {/* 404 Not Found */}
       <Route component={NotFound} />
-    </Switch>
+      </Switch>
+    </Suspense>
   );
 }
 
 function App() {
+  // Initialize performance optimizations
+  usePerformanceOptimization();
+  
   // Initialize Google Analytics when app loads
   useEffect(() => {
     // Verify required environment variable is present
@@ -405,6 +410,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <CriticalCSS />
         <Router />
         <Toaster />
       </TooltipProvider>
