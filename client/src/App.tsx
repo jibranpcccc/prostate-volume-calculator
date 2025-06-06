@@ -9,6 +9,8 @@ import { useAnalytics } from "./hooks/use-analytics";
 import { usePerformanceOptimization } from "@/components/performance-optimizer";
 import { LoadingSkeleton } from "@/components/lazy-components";
 import CriticalCSS from "@/components/critical-css";
+import { useDOMOptimization, DOMMetrics } from "@/components/dom-optimizer";
+import { useCSSOptimization, CSSMetrics } from "@/components/css-optimizer";
 import Home from "@/pages/home";
 // Lazy load non-critical pages
 const AdvancedTools = lazy(() => import("@/pages/advanced-tools"));
@@ -394,8 +396,10 @@ function Router() {
 }
 
 function App() {
-  // Initialize performance optimizations
+  // Initialize comprehensive performance optimizations
   usePerformanceOptimization();
+  useDOMOptimization();
+  useCSSOptimization();
   
   // Initialize Google Analytics when app loads
   useEffect(() => {
@@ -411,6 +415,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <CriticalCSS />
+        <DOMMetrics />
+        <CSSMetrics />
         <Router />
         <Toaster />
       </TooltipProvider>
