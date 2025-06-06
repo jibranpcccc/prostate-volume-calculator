@@ -1,0 +1,154 @@
+Diagnostics
+Reduce unused JavaScript Est savings of 265 KiB
+Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. Learn how to reduce unused JavaScript.LCPFCP
+URL
+	
+Transfer Size
+	
+Est Savings
+prostatevolumecalc.com
+1st party
+	341.2 KiB
+	265.2 KiB
+/assets/index-CMPf6RbD.js(prostatevolumecalc.com)
+	
+341.2 KiB
+	
+265.2 KiB
+Largest Contentful Paint element 3,650 ms
+This is the largest contentful element painted within the viewport. Learn more about the Largest Contentful Paint elementLCP
+Element
+Validated ellipsoid formula calculator trusted by urologists and radiologists w…
+<p class="text-xl mb-8 text-blue-100">
+Phase
+	
+% of LCP
+	
+Timing
+TTFB
+	
+22%
+	
+790 ms
+Load Delay
+	
+0%
+	
+0 ms
+Load Time
+	
+0%
+	
+0 ms
+Render Delay
+	
+78%
+	
+2,860 ms
+Eliminate render-blocking resources Est savings of 150 ms
+Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. Learn how to eliminate render-blocking resources.LCPFCP
+URL
+	
+Transfer Size
+	
+Est Savings
+prostatevolumecalc.com
+1st party
+	15.8 KiB
+	310 ms
+/assets/index-D6RgEEQ8.css(prostatevolumecalc.com)
+	
+15.8 KiB
+	
+310 ms
+Reduce unused CSS Est savings of 12 KiB
+Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. Learn how to reduce unused CSS.LCPFCP
+URL
+	
+Transfer Size
+	
+Est Savings
+prostatevolumecalc.com
+1st party
+	15.1 KiB
+	12.2 KiB
+/assets/index-D6RgEEQ8.css(prostatevolumecalc.com)
+	
+15.1 KiB
+	
+12.2 KiB
+Avoid an excessive DOM size 1,035 elements
+A large DOM will increase memory usage, cause longer style calculations, and produce costly layout reflows. Learn how to avoid an excessive DOM size.TBT
+Statistic
+	
+Element
+	
+Value
+Total DOM Elements
+		
+1,035
+Maximum DOM Depth
+	
+button#ellipsoid > span.flex > svg.lucide > circle
+<circle cx="12" cy="12" r="10">
+	
+16
+Maximum Child Elements
+	
+ProstateVolumeCalc Medical Grade Calculator Medical Grade Prostate Volume Cal…
+<div id="root">
+	
+23
+Image elements do not have explicit width and height
+Set an explicit width and height on image elements to reduce layout shifts and improve CLS. Learn how to set image dimensionsCLS
+	
+URL
+unsplash.com
+	
+Medical ultrasound showing prostate measurements
+<img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&amp;i…" alt="Medical ultrasound showing prostate measurements" class="rounded-xl shadow-lg w-full h-auto">
+	
+/photo-155…?ixlib=…(images.unsplash.com)
+Properly size images Est savings of 11 KiB
+Serve images that are appropriately-sized to save cellular data and improve load time. Learn how to size images.LCPFCP
+	
+URL
+	
+Resource Size
+	
+Est Savings
+unsplash.com
+		36.6 KiB
+	11.3 KiB
+Medical ultrasound showing prostate measurements
+<img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&amp;i…" alt="Medical ultrasound showing prostate measurements" class="rounded-xl shadow-lg w-full h-auto">
+	
+/photo-155…?ixlib=…(images.unsplash.com)
+	
+36.6 KiB
+	
+11.3 KiB
+Avoid serving legacy JavaScript to modern browsers Est savings of 0 KiB
+Polyfills and transforms enable legacy browsers to use new JavaScript features. However, many aren't necessary for modern browsers. Consider modifying your JavaScript build process to not transpile Baseline features, unless you know you must support legacy browsers. Learn why most sites can deploy ES6+ code without transpilingLCPFCP
+URL
+	
+	
+Est Savings
+prostatevolumecalc.com
+1st party
+		0.5 KiB
+/assets/index-CMPf6RbD.js(prostatevolumecalc.com)
+		
+0.5 KiB
+/assets/index-CMPf6RbD.js:417:38072(prostatevolumecalc.com)
+	
+
+@babel/plugin-transform-classes
+
+	
+/assets/index-CMPf6RbD.js:428:64973(prostatevolumecalc.com)
+	
+
+@babel/plugin-transform-spread
+
+	
