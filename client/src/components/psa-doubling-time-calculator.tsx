@@ -56,41 +56,31 @@ export default function PSADoublingTimeCalculator() {
       return;
     }
 
-    // Use linear regression approach for multiple points
-    const n = validReadings.length;
-    let sumT = 0, sumLogPSA = 0, sumTLogPSA = 0, sumT2 = 0;
+    // Calculate using exponential growth model
+    const firstReading = validReadings[0];
+    const lastReading = validReadings[validReadings.length - 1];
     
-    const baseDate = new Date(validReadings[0].date).getTime();
-    
-    for (let i = 0; i < n; i++) {
-      const timeYears = (new Date(validReadings[i].date).getTime() - baseDate) / (1000 * 60 * 60 * 24 * 365.25);
-      const logPSA = Math.log(validReadings[i].value);
-      
-      sumT += timeYears;
-      sumLogPSA += logPSA;
-      sumTLogPSA += timeYears * logPSA;
-      sumT2 += timeYears * timeYears;
-    }
+    const firstDate = new Date(firstReading.date);
+    const lastDate = new Date(lastReading.date);
+    const timeSpanYears = (lastDate.getTime() - firstDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25);
 
-    // Calculate slope (k) from linear regression of ln(PSA) vs time
-    const slope = (n * sumTLogPSA - sumT * sumLogPSA) / (n * sumT2 - sumT * sumT);
-    
-    if (slope <= 0) {
-      alert("PSA doubling time cannot be calculated - PSA is not increasing over time.");
+    if (timeSpanYears <= 0) {
+      alert("Invalid date sequence. Please ensure dates are in chronological order.");
       return;
     }
 
-    // PSA doubling time = ln(2) / slope
-    const doublingTimeYears = Math.log(2) / slope;
-    const doublingTimeMonths = doublingTimeYears * 12;
-    
-    // Calculate PSA velocity for additional context
-    const firstReading = validReadings[0];
-    const lastReading = validReadings[validReadings.length - 1];
-    const timeSpanYears = (new Date(lastReading.date).getTime() - new Date(firstReading.date).getTime()) / (1000 * 60 * 60 * 24 * 365.25);
-    const velocity = (lastReading.value - firstReading.value) / timeSpanYears;
+    if (lastReading.value <= firstReading.value) {
+      alert("PSA doubling time requires rising PSA values over time.");
+      return;
+    }
 
-    // Determine risk level based on doubling time
+    // Calculate velocity and doubling time
+    const velocity = (lastReading.value - firstReading.value) / timeSpanYears;
+    const growthRate = Math.log(lastReading.value / firstReading.value) / timeSpanYears;
+    const doublingTimeYears = Math.log(2) / growthRate;
+    const doublingTimeMonths = doublingTimeYears * 12;
+
+    // Determine risk level and interpretation
     let riskLevel: string;
     let riskClass: string;
     let interpretation: string;
@@ -133,24 +123,15 @@ export default function PSADoublingTimeCalculator() {
   };
 
   return (
-    <div className="space-y-8">
-      <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">PSA Doubling Time Calculator</h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Calculate the time required for PSA to double. PSA doubling time &lt;12 months may indicate aggressive disease requiring urgent evaluation.
-        </p>
-      </div>
-
-      <div className="grid lg:grid-cols-2 gap-8">
+    <div className="space-y-6">
+      <div className="grid lg:grid-cols-2 gap-6">
         {/* Input Section */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <Calendar className="mr-2 w-5 h-5 text-blue-600" />
-              PSA Measurements
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Enter PSA Measurements</h3>
+            <p className="text-sm text-gray-600">Add at least 2 PSA readings to calculate doubling time.</p>
+          </div>
+          <div className="space-y-4">
             <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
               <h4 className="text-sm font-medium text-blue-800 mb-2">Clinical Context</h4>
               <ul className="text-sm text-blue-700 space-y-1">
@@ -212,61 +193,56 @@ export default function PSADoublingTimeCalculator() {
                 className="flex-1"
               >
                 <Plus className="mr-2 w-4 h-4" />
-                Add Measurement
+                Add Reading
               </Button>
               <Button
                 onClick={calculatePSADT}
                 className="flex-1 bg-blue-600 hover:bg-blue-700"
               >
                 <Calculator className="mr-2 w-4 h-4" />
-                Calculate PSADT
+                Calculate Doubling Time
               </Button>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
         {/* Results Section */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <Clock className="mr-2 w-5 h-5 text-orange-600" />
-              Doubling Time Results
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">PSA Doubling Time Results</h3>
+          </div>
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
             {result ? (
               <div className="space-y-6">
                 {/* Main Result */}
-                <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-lg">
-                  <div className="text-3xl font-bold text-orange-600 mb-2">
+                <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg">
+                  <div className="text-3xl font-bold text-purple-600 mb-2">
                     {result.doublingTimeMonths.toFixed(1)} months
                   </div>
-                  <div className="text-lg text-gray-600 mb-3">
-                    ({result.doublingTime.toFixed(2)} years)
+                  <div className="text-lg text-gray-700 mb-2">
+                    ({result.doublingTime.toFixed(1)} years)
                   </div>
                   <Badge 
-                    variant={result.riskClass === 'low' ? 'secondary' : 
-                            result.riskClass === 'intermediate' ? 'default' : 
-                            result.riskClass === 'high' ? 'destructive' : 'destructive'}
+                    variant={result.riskClass === 'low' ? 'secondary' : result.riskClass === 'intermediate' ? 'default' : 'destructive'}
                     className="text-sm"
                   >
                     {result.riskLevel}
                   </Badge>
                 </div>
 
-                {/* Additional Metrics */}
+                {/* Detailed Metrics */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <div className="text-lg font-semibold text-gray-900">
-                      {result.velocity.toFixed(2)}
+                      {result.velocity.toFixed(2)} ng/mL/yr
                     </div>
-                    <div className="text-sm text-gray-600">PSA Velocity (ng/mL/yr)</div>
+                    <div className="text-sm text-gray-600">PSA Velocity</div>
                   </div>
                   <div className="text-center p-4 bg-gray-50 rounded-lg">
                     <div className="text-lg font-semibold text-gray-900">
-                      {result.timeSpan.toFixed(1)}
+                      {result.timeSpan.toFixed(1)} years
                     </div>
-                    <div className="text-sm text-gray-600">Follow-up (years)</div>
+                    <div className="text-sm text-gray-600">Time Span</div>
                   </div>
                 </div>
 
@@ -283,11 +259,11 @@ export default function PSADoublingTimeCalculator() {
                   </div>
                 </div>
 
-                {/* Risk Stratification */}
+                {/* Risk Thresholds */}
                 <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
-                  <h4 className="text-sm font-medium text-yellow-800 mb-2">PSADT Risk Stratification</h4>
+                  <h4 className="text-sm font-medium text-yellow-800 mb-2">PSA Doubling Time Thresholds</h4>
                   <div className="text-sm text-yellow-700 space-y-1">
-                    <div>• ≥24 months: Low risk (indolent)</div>
+                    <div>• &gt;24 months: Low risk (indolent)</div>
                     <div>• 12-24 months: Intermediate risk</div>
                     <div>• 6-12 months: High risk (aggressive)</div>
                     <div>• &lt;6 months: Very high risk (urgent)</div>
@@ -301,8 +277,8 @@ export default function PSADoublingTimeCalculator() {
                     <div>
                       <h4 className="text-sm font-medium text-red-800 mb-1">Medical Disclaimer</h4>
                       <p className="text-sm text-red-700">
-                        PSADT should be interpreted in clinical context. Factors like PSA assay variation, 
-                        lab changes, and intercurrent illness can affect results. Consult oncology for treatment decisions.
+                        This calculator is for educational purposes only. PSA doubling time should be interpreted in clinical context. 
+                        Always consult with a qualified healthcare provider for medical advice and treatment decisions.
                       </p>
                     </div>
                   </div>
@@ -312,59 +288,12 @@ export default function PSADoublingTimeCalculator() {
               <div className="text-center py-12">
                 <Clock className="w-16 h-16 text-gray-300 mx-auto mb-4" />
                 <h3 className="text-lg font-medium text-gray-900 mb-2">No Results Yet</h3>
-                <p className="text-gray-600">Enter PSA measurements to calculate doubling time</p>
+                <p className="text-gray-600">Enter your PSA measurements and dates to calculate doubling time</p>
               </div>
             )}
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Educational Content */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Understanding PSA Doubling Time</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Clinical Applications</h4>
-              <ul className="text-sm text-gray-700 space-y-1 mb-4">
-                <li>• Post-prostatectomy biochemical recurrence</li>
-                <li>• Post-radiation therapy monitoring</li>
-                <li>• Active surveillance decision-making</li>
-                <li>• Treatment response assessment</li>
-                <li>• Prognosis estimation</li>
-              </ul>
-              
-              <h4 className="font-semibold text-gray-900 mb-3">Prognostic Significance</h4>
-              <p className="text-gray-700 text-sm">
-                PSADT is a strong predictor of cancer-specific mortality. Shorter doubling times 
-                (&lt;3 months) are associated with metastatic progression and poor survival, 
-                while longer times (&gt;15 months) suggest indolent disease.
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Important Considerations</h4>
-              <ul className="text-sm text-gray-700 space-y-1 mb-4">
-                <li>• Requires exponential PSA rise pattern</li>
-                <li>• Most accurate with 3+ measurements</li>
-                <li>• Consider PSA assay variability (±20%)</li>
-                <li>• Account for intercurrent medical conditions</li>
-                <li>• Use consistent laboratory when possible</li>
-              </ul>
-
-              <h4 className="font-semibold text-gray-900 mb-3">Treatment Implications</h4>
-              <ul className="text-sm text-gray-700 space-y-1">
-                <li>• &lt;6 months: Consider immediate systemic therapy</li>
-                <li>• 6-12 months: May benefit from early intervention</li>
-                <li>• &gt;12 months: Observation may be appropriate</li>
-                <li>• Consider patient age and comorbidities</li>
-              </ul>
-            </div>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 }

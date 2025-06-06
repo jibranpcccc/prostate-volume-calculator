@@ -309,8 +309,8 @@ export default function InternalLinks({
           {filteredLinks.map((link) => {
             const IconComponent = link.icon;
             return (
-              <Link key={link.href} href={link.href}>
-                <div className="group bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md hover:border-blue-300 transition-all cursor-pointer">
+              <Link key={link.href} href={link.href} className="block">
+                <a className="group bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md hover:border-blue-300 transition-all cursor-pointer block no-underline">
                   <div className="flex items-start gap-3">
                     <div className="p-2 bg-blue-50 rounded-lg group-hover:bg-blue-100 transition-colors">
                       <IconComponent className="w-5 h-5 text-blue-600" />
@@ -330,7 +330,7 @@ export default function InternalLinks({
                       </Badge>
                     </div>
                   </div>
-                </div>
+                </a>
               </Link>
             );
           })}
