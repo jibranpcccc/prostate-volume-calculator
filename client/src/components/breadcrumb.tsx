@@ -15,93 +15,178 @@ export default function Breadcrumb() {
       { label: "Home", href: "/" }
     ];
 
-    // Clinical Tools Routes
-    if (location === "/tools" || location === "/advanced-tools" || location === "/clinical-tools") {
+    // PSA Calculators Section
+    if (location === "/psa-calculators/") {
+      breadcrumbs.push({ 
+        label: "PSA Calculators", 
+        href: "/psa-calculators/", 
+        current: true 
+      });
+    } else if (location.startsWith("/psa-calculators/")) {
+      breadcrumbs.push({ label: "PSA Calculators", href: "/psa-calculators/" });
+      
+      if (location === "/psa-calculators/psa-density-calculator/") {
+        breadcrumbs.push({ label: "PSA Density Calculator", href: "/psa-calculators/psa-density-calculator/", current: true });
+      } else if (location === "/psa-calculators/psa-velocity-calculator/") {
+        breadcrumbs.push({ label: "PSA Velocity Calculator", href: "/psa-calculators/psa-velocity-calculator/", current: true });
+      } else if (location === "/psa-calculators/psa-doubling-time-calculator/") {
+        breadcrumbs.push({ label: "PSA Doubling Time Calculator", href: "/psa-calculators/psa-doubling-time-calculator/", current: true });
+      } else if (location === "/psa-calculators/free-psa-ratio-calculator/") {
+        breadcrumbs.push({ label: "Free PSA Ratio Calculator", href: "/psa-calculators/free-psa-ratio-calculator/", current: true });
+      } else if (location === "/psa-calculators/age-specific-psa-calculator/") {
+        breadcrumbs.push({ label: "Age-Specific PSA Calculator", href: "/psa-calculators/age-specific-psa-calculator/", current: true });
+      }
+    }
+    
+    // BPH & LUTS Tools Section
+    else if (location === "/bph-luts-tools/") {
+      breadcrumbs.push({ 
+        label: "BPH & LUTS Tools", 
+        href: "/bph-luts-tools/", 
+        current: true 
+      });
+    } else if (location.startsWith("/bph-luts-tools/")) {
+      breadcrumbs.push({ label: "BPH & LUTS Tools", href: "/bph-luts-tools/" });
+      
+      if (location === "/bph-luts-tools/ipss-questionnaire/") {
+        breadcrumbs.push({ label: "IPSS Questionnaire", href: "/bph-luts-tools/ipss-questionnaire/", current: true });
+      } else if (location === "/bph-luts-tools/post-void-residual-calculator/") {
+        breadcrumbs.push({ label: "Post-Void Residual Calculator", href: "/bph-luts-tools/post-void-residual-calculator/", current: true });
+      } else if (location === "/bph-luts-tools/bladder-capacity-calculator/") {
+        breadcrumbs.push({ label: "Bladder Capacity Calculator", href: "/bph-luts-tools/bladder-capacity-calculator/", current: true });
+      } else if (location === "/bph-luts-tools/voiding-diary-analyzer/") {
+        breadcrumbs.push({ label: "Voiding Diary Analyzer", href: "/bph-luts-tools/voiding-diary-analyzer/", current: true });
+      }
+    }
+    
+    // Prostate Cancer Tools Section
+    else if (location === "/prostate-cancer-tools/") {
+      breadcrumbs.push({ 
+        label: "Prostate Cancer Tools", 
+        href: "/prostate-cancer-tools/", 
+        current: true 
+      });
+    } else if (location.startsWith("/prostate-cancer-tools/")) {
+      breadcrumbs.push({ label: "Prostate Cancer Tools", href: "/prostate-cancer-tools/" });
+      
+      if (location === "/prostate-cancer-tools/risk-calculator/") {
+        breadcrumbs.push({ label: "Risk Calculator", href: "/prostate-cancer-tools/risk-calculator/", current: true });
+      } else if (location === "/prostate-cancer-tools/treatment-decision-guide/") {
+        breadcrumbs.push({ label: "Treatment Decision Guide", href: "/prostate-cancer-tools/treatment-decision-guide/", current: true });
+      }
+    }
+    
+    // Men's Health Calculators Section
+    else if (location === "/mens-health-calculators/") {
+      breadcrumbs.push({ 
+        label: "Men's Health Calculators", 
+        href: "/mens-health-calculators/", 
+        current: true 
+      });
+    } else if (location.startsWith("/mens-health-calculators/")) {
+      breadcrumbs.push({ label: "Men's Health Calculators", href: "/mens-health-calculators/" });
+      
+      if (location === "/mens-health-calculators/erectile-dysfunction-calculator/") {
+        breadcrumbs.push({ label: "Erectile Dysfunction Calculator", href: "/mens-health-calculators/erectile-dysfunction-calculator/", current: true });
+      } else if (location === "/mens-health-calculators/testosterone-deficiency-calculator/") {
+        breadcrumbs.push({ label: "Testosterone Deficiency Calculator", href: "/mens-health-calculators/testosterone-deficiency-calculator/", current: true });
+      } else if (location === "/mens-health-calculators/free-testosterone-calculator/") {
+        breadcrumbs.push({ label: "Free Testosterone Calculator", href: "/mens-health-calculators/free-testosterone-calculator/", current: true });
+      } else if (location === "/mens-health-calculators/cardiovascular-risk-calculator/") {
+        breadcrumbs.push({ label: "Cardiovascular Risk Calculator", href: "/mens-health-calculators/cardiovascular-risk-calculator/", current: true });
+      } else if (location === "/mens-health-calculators/bmi-calculator/") {
+        breadcrumbs.push({ label: "BMI Calculator", href: "/mens-health-calculators/bmi-calculator/", current: true });
+      } else if (location === "/mens-health-calculators/waist-hip-ratio-calculator/") {
+        breadcrumbs.push({ label: "Waist-Hip Ratio Calculator", href: "/mens-health-calculators/waist-hip-ratio-calculator/", current: true });
+      }
+    }
+    
+    // Clinical Tools Routes (legacy)
+    else if (location === "/tools/" || location === "/advanced-tools" || location === "/clinical-tools") {
       breadcrumbs.push({ 
         label: "Clinical Tools", 
-        href: "/tools", 
-        current: true 
-      });
-    } else if (location.includes("/psa-density") || location === "/prostate-specific-antigen-density") {
-      breadcrumbs.push({ label: "Clinical Tools", href: "/tools" });
-      breadcrumbs.push({ 
-        label: "PSA Density Calculator", 
-        href: "/psa-density-calculator", 
-        current: true 
-      });
-    } else if (location.includes("/ipss") || location === "/international-prostate-symptom-score") {
-      breadcrumbs.push({ label: "Clinical Tools", href: "/tools" });
-      breadcrumbs.push({ 
-        label: "IPSS Assessment", 
-        href: "/ipss-assessment", 
-        current: true 
-      });
-    } else if (location.includes("/treatment") || location === "/bph-treatment-options") {
-      breadcrumbs.push({ label: "Clinical Tools", href: "/tools" });
-      breadcrumbs.push({ 
-        label: "Treatment Guide", 
-        href: "/treatment-decision-guide", 
-        current: true 
-      });
-    } else if (location === "/comprehensive-calculator") {
-      breadcrumbs.push({ label: "Clinical Tools", href: "/tools" });
-      breadcrumbs.push({ 
-        label: "Comprehensive Calculator", 
-        href: "/comprehensive-calculator", 
+        href: "/tools/", 
         current: true 
       });
     }
     
     // Educational Content Routes
-    else if (location === "/education" || location === "/bph-education" || location === "/medical-education" || location === "/benign-prostatic-hyperplasia" || location === "/lower-urinary-tract-symptoms") {
+    else if (location === "/education/") {
       breadcrumbs.push({ 
-        label: "BPH Education", 
-        href: "/education", 
+        label: "Education", 
+        href: "/education/", 
+        current: true 
+      });
+    } else if (location.startsWith("/education/")) {
+      breadcrumbs.push({ label: "Education", href: "/education/" });
+      
+      if (location === "/education/understanding-bph") {
+        breadcrumbs.push({ label: "Understanding BPH", href: "/education/understanding-bph", current: true });
+      } else if (location === "/education/prostate-volume-measurement-techniques") {
+        breadcrumbs.push({ label: "Prostate Volume Measurement Techniques", href: "/education/prostate-volume-measurement-techniques", current: true });
+      } else if (location === "/education/psa-density-clinical-practice") {
+        breadcrumbs.push({ label: "PSA Density in Clinical Practice", href: "/education/psa-density-clinical-practice", current: true });
+      } else if (location === "/education/ipss-scoring-interpretation") {
+        breadcrumbs.push({ label: "IPSS Scoring & Interpretation", href: "/education/ipss-scoring-interpretation", current: true });
+      } else if (location === "/education/medical-management-bph") {
+        breadcrumbs.push({ label: "Medical Management of BPH", href: "/education/medical-management-bph", current: true });
+      } else if (location === "/education/surgical-options-bph") {
+        breadcrumbs.push({ label: "Surgical Options for BPH", href: "/education/surgical-options-bph", current: true });
+      }
+    }
+    
+    // Blog Routes
+    else if (location === "/blog/") {
+      breadcrumbs.push({ 
+        label: "Blog", 
+        href: "/blog/", 
+        current: true 
+      });
+    } else if (location.startsWith("/blog/")) {
+      breadcrumbs.push({ label: "Blog", href: "/blog/" });
+      
+      if (location === "/blog/prostate-volume-measurement-guide") {
+        breadcrumbs.push({ label: "Prostate Volume Measurement Guide", href: "/blog/prostate-volume-measurement-guide", current: true });
+      } else if (location === "/blog/psa-density-calculator-guide") {
+        breadcrumbs.push({ label: "PSA Density Calculator Guide", href: "/blog/psa-density-calculator-guide", current: true });
+      } else if (location === "/blog/ipss-assessment-guide") {
+        breadcrumbs.push({ label: "IPSS Assessment Guide", href: "/blog/ipss-assessment-guide", current: true });
+      } else if (location === "/blog/bph-treatment-algorithms") {
+        breadcrumbs.push({ label: "BPH Treatment Algorithms", href: "/blog/bph-treatment-algorithms", current: true });
+      }
+    }
+    
+    // Case Studies Routes
+    else if (location === "/case-studies/") {
+      breadcrumbs.push({ 
+        label: "Case Studies", 
+        href: "/case-studies/", 
+        current: true 
+      });
+    } else if (location.startsWith("/case-studies/")) {
+      breadcrumbs.push({ label: "Case Studies", href: "/case-studies/" });
+      
+      if (location === "/case-studies/large-prostate-bph-management") {
+        breadcrumbs.push({ label: "Large Prostate BPH Management", href: "/case-studies/large-prostate-bph-management", current: true });
+      } else if (location === "/case-studies/psa-density-guided-biopsy") {
+        breadcrumbs.push({ label: "PSA Density Guided Biopsy", href: "/case-studies/psa-density-guided-biopsy", current: true });
+      }
+    }
+    
+    // Resources Routes
+    else if (location === "/resources/") {
+      breadcrumbs.push({ 
+        label: "Resources", 
+        href: "/resources/", 
         current: true 
       });
     }
     
     // FAQ Routes
-    else if (location === "/faq" || location === "/medical-faq" || location === "/frequently-asked-questions") {
+    else if (location === "/faq") {
       breadcrumbs.push({ 
-        label: "Medical FAQ", 
+        label: "FAQ", 
         href: "/faq", 
-        current: true 
-      });
-    }
-    
-    // Resources Routes
-    else if (location === "/resources" || location === "/clinical-resources" || location === "/medical-resources" || location === "/guidelines" || location === "/clinical-guidelines") {
-      breadcrumbs.push({ 
-        label: "Clinical Resources", 
-        href: "/resources", 
-        current: true 
-      });
-    }
-    
-    // Blog Routes
-    else if (location === "/blog" || location === "/articles" || location === "/medical-blog" || location === "/clinical-articles") {
-      breadcrumbs.push({ 
-        label: "Medical Articles", 
-        href: "/blog", 
-        current: true 
-      });
-    }
-    
-    // Case Studies Routes
-    else if (location === "/case-studies" || location === "/casestudy" || location === "/clinical-cases" || location === "/case-study") {
-      breadcrumbs.push({ 
-        label: "Clinical Case Studies", 
-        href: "/case-studies", 
-        current: true 
-      });
-    }
-    
-    // Calculator Routes
-    else if (location === "/calculator" || location === "/prostate-volume-calculator" || location === "/prostate-volume-measurement" || location === "/bph-volume-calculator" || location === "/transrectal-ultrasound-volume") {
-      breadcrumbs.push({ 
-        label: "Prostate Volume Calculator", 
-        href: "/calculator", 
         current: true 
       });
     }

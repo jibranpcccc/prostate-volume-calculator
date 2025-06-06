@@ -218,9 +218,57 @@ function Router() {
           return null;
         }}
       </Route>
+      <Route path="/testosterone-deficiency-calculator">
+        {() => {
+          window.location.replace('/mens-health-calculators/testosterone-deficiency-calculator/');
+          return null;
+        }}
+      </Route>
+      <Route path="/free-testosterone-calculator">
+        {() => {
+          window.location.replace('/mens-health-calculators/free-testosterone-calculator/');
+          return null;
+        }}
+      </Route>
+      <Route path="/cardiovascular-risk-calculator">
+        {() => {
+          window.location.replace('/mens-health-calculators/cardiovascular-risk-calculator/');
+          return null;
+        }}
+      </Route>
       <Route path="/bmi-calculator">
         {() => {
           window.location.replace('/mens-health-calculators/bmi-calculator/');
+          return null;
+        }}
+      </Route>
+      <Route path="/waist-hip-ratio-calculator">
+        {() => {
+          window.location.replace('/mens-health-calculators/waist-hip-ratio-calculator/');
+          return null;
+        }}
+      </Route>
+      <Route path="/post-void-residual-calculator">
+        {() => {
+          window.location.replace('/bph-luts-tools/post-void-residual-calculator/');
+          return null;
+        }}
+      </Route>
+      <Route path="/bladder-capacity-calculator">
+        {() => {
+          window.location.replace('/bph-luts-tools/bladder-capacity-calculator/');
+          return null;
+        }}
+      </Route>
+      <Route path="/voiding-diary-analyzer">
+        {() => {
+          window.location.replace('/bph-luts-tools/voiding-diary-analyzer/');
+          return null;
+        }}
+      </Route>
+      <Route path="/pvr-significance-calculator">
+        {() => {
+          window.location.replace('/bph-luts-tools/post-void-residual-calculator/');
           return null;
         }}
       </Route>

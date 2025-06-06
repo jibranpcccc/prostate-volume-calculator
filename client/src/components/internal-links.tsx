@@ -34,48 +34,96 @@ export default function InternalLinks({
       priority: "high"
     },
     {
-      title: "PSA Calculator Suite", 
-      href: "/psa-calculators",
+      title: "PSA Calculators", 
+      href: "/psa-calculators/",
       description: "Comprehensive PSA analysis tools including density, velocity, and doubling time",
       category: "calculators",
       icon: Calculator,
       priority: "high"
     },
     {
-      title: "Advanced Clinical Tools",
-      href: "/tools",
-      description: "Professional assessment suite including IPSS, treatment guides, and risk calculators",
+      title: "PSA Density Calculator",
+      href: "/psa-calculators/psa-density-calculator/",
+      description: "Calculate PSA density for improved diagnostic accuracy",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "BPH & LUTS Tools",
+      href: "/bph-luts-tools/",
+      description: "Assessment tools for benign prostatic hyperplasia and lower urinary tract symptoms",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "IPSS Questionnaire",
+      href: "/bph-luts-tools/ipss-questionnaire/",
+      description: "International Prostate Symptom Score assessment",
+      category: "calculators",
+      icon: Calculator,
+      priority: "high"
+    },
+    {
+      title: "Prostate Cancer Tools",
+      href: "/prostate-cancer-tools/",
+      description: "Risk assessment and diagnostic tools for prostate cancer",
       category: "calculators",
       icon: Calculator,
       priority: "high"
     },
     {
       title: "Men's Health Calculators",
-      href: "/mens-health-calculators", 
+      href: "/mens-health-calculators/", 
       description: "Specialized calculators for erectile dysfunction, testosterone deficiency, and more",
       category: "calculators",
       icon: Calculator,
       priority: "medium"
     },
     {
-      title: "BPH Education Center",
-      href: "/education",
+      title: "Clinical Tools",
+      href: "/tools/",
+      description: "Professional assessment suite including treatment guides and risk calculators",
+      category: "calculators",
+      icon: Calculator,
+      priority: "medium"
+    },
+    {
+      title: "Education",
+      href: "/education/",
       description: "Comprehensive educational resources on benign prostatic hyperplasia",
       category: "education",
       icon: BookOpen,
       priority: "high"
     },
     {
-      title: "Medical Blog",
-      href: "/blog",
+      title: "Understanding BPH",
+      href: "/education/understanding-bph",
+      description: "Complete guide to benign prostatic hyperplasia",
+      category: "education",
+      icon: BookOpen,
+      priority: "high"
+    },
+    {
+      title: "PSA Density in Clinical Practice",
+      href: "/education/psa-density-clinical-practice",
+      description: "Clinical applications and interpretation of PSA density",
+      category: "education",
+      icon: BookOpen,
+      priority: "medium"
+    },
+    {
+      title: "Blog",
+      href: "/blog/",
       description: "Latest research insights and clinical updates in urology",
       category: "education", 
       icon: FileText,
       priority: "medium"
     },
     {
-      title: "Clinical Resources",
-      href: "/resources",
+      title: "Resources",
+      href: "/resources/",
       description: "Professional medical resources, guidelines, and reference materials",
       category: "resources",
       icon: FileText,
@@ -83,14 +131,14 @@ export default function InternalLinks({
     },
     {
       title: "Case Studies",
-      href: "/case-studies",
+      href: "/case-studies/",
       description: "Real-world clinical applications and decision-making examples",
       category: "education",
       icon: Users,
       priority: "medium"
     },
     {
-      title: "Medical FAQ",
+      title: "FAQ",
       href: "/faq",
       description: "Frequently asked questions about prostate health and calculations",
       category: "support",
