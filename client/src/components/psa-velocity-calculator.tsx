@@ -122,24 +122,15 @@ export default function PSAVelocityCalculator() {
   };
 
   return (
-    <div className="space-y-8">
-      <div className="text-center">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">PSA Velocity Calculator</h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-          Calculate the rate of PSA change over time to assess prostate cancer risk. PSA velocity &gt;0.75 ng/mL/year may indicate increased cancer risk.
-        </p>
-      </div>
-
-      <div className="grid lg:grid-cols-2 gap-8">
+    <div className="space-y-6">
+      <div className="grid lg:grid-cols-2 gap-6">
         {/* Input Section */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <Calendar className="mr-2 w-5 h-5 text-blue-600" />
-              PSA Readings
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Enter PSA Readings</h3>
+            <p className="text-sm text-gray-600">Add at least 2 PSA readings with dates to calculate velocity.</p>
+          </div>
+          <div className="space-y-4">
             <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
               <h4 className="text-sm font-medium text-blue-800 mb-2">Clinical Guidelines</h4>
               <ul className="text-sm text-blue-700 space-y-1">
@@ -211,18 +202,15 @@ export default function PSAVelocityCalculator() {
                 Calculate Velocity
               </Button>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
         {/* Results Section */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <TrendingUp className="mr-2 w-5 h-5 text-green-600" />
-              PSA Velocity Results
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
+        <div>
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">PSA Velocity Results</h3>
+          </div>
+          <div className="bg-white border border-gray-200 rounded-lg p-6">
             {result ? (
               <div className="space-y-6">
                 {/* Main Result */}
@@ -298,16 +286,14 @@ export default function PSAVelocityCalculator() {
                 <p className="text-gray-600">Enter your PSA readings and dates to calculate velocity</p>
               </div>
             )}
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </div>
 
       {/* Educational Content */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Understanding PSA Velocity</CardTitle>
-        </CardHeader>
-        <CardContent className="prose prose-sm max-w-none">
+      <div className="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Understanding PSA Velocity</h3>
+        <div className="prose prose-sm max-w-none">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold text-gray-900 mb-3">Clinical Significance</h4>
