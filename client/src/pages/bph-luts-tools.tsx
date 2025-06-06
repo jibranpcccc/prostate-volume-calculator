@@ -6,7 +6,7 @@ import InternalLinks from "@/components/internal-links";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ClipboardList, Activity, BarChart3, Calendar, Droplets, Users } from "lucide-react";
+import { ClipboardList, Activity, BarChart3, Calendar, Droplets, Users, BookOpen } from "lucide-react";
 import { Link } from "wouter";
 
 interface BPHTool {
@@ -157,62 +157,184 @@ export default function BPHLUTSTools() {
             </div>
           </section>
 
-          {/* Tools Grid */}
-          <section className="py-16">
+          {/* BPH & LUTS Calculator Links Section */}
+          <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  Complete BPH & LUTS Evaluation Suite
-                </h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">BPH & LUTS Assessment Suite</h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Professional-grade assessment tools for comprehensive evaluation of benign prostatic hyperplasia 
-                  and lower urinary tract symptoms, supporting evidence-based clinical decisions.
+                  Professional-grade assessment tools for comprehensive evaluation of benign prostatic hyperplasia and lower urinary tract symptoms.
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {bphTools.map((tool, index) => {
-                  const IconComponent = tool.icon;
-                  return (
-                    <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-blue-200">
-                      <CardHeader className="pb-4">
-                        <div className="flex items-center justify-between mb-3">
-                          <div className="p-3 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
-                            <IconComponent className="h-6 w-6 text-blue-600" />
-                          </div>
-                          <Badge className={getDifficultyColor(tool.difficulty)}>
-                            {tool.difficulty}
-                          </Badge>
-                        </div>
-                        <CardTitle className="text-xl mb-2">{tool.title}</CardTitle>
-                        <CardDescription className="text-gray-600">
-                          {tool.description}
-                        </CardDescription>
-                      </CardHeader>
-                      <CardContent className="pt-0">
-                        <div className="mb-4">
-                          <div className="flex items-center text-sm text-gray-500 mb-3">
-                            <Activity className="h-4 w-4 mr-1" />
-                            Duration: {tool.duration}
-                          </div>
-                          <ul className="space-y-1">
-                            {tool.features.map((feature, featureIndex) => (
-                              <li key={featureIndex} className="text-sm text-gray-600 flex items-start">
-                                <span className="text-green-500 mr-2">•</span>
-                                {feature}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        <Link href={tool.url}>
-                          <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                            Start Assessment
-                          </Button>
-                        </Link>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
+                {/* IPSS Questionnaire */}
+                <Card className="hover:shadow-xl transition-all border-t-4 border-t-blue-600 group">
+                  <CardHeader className="pb-4">
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-blue-200 transition-colors">
+                      <ClipboardList className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <CardTitle className="text-xl">
+                      <Link href="/bph-luts-tools/ipss-questionnaire/" className="text-gray-900 hover:text-blue-600 transition-colors">
+                        IPSS Questionnaire
+                      </Link>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      International Prostate Symptom Score assessment for standardized BPH severity evaluation and quality of life impact.
+                    </p>
+                    <div className="space-y-2 text-sm text-gray-500 mb-4">
+                      <div>• Standardized symptom assessment</div>
+                      <div>• Quality of life evaluation</div>
+                      <div>• Treatment decision support</div>
+                      <div>• Progress monitoring</div>
+                    </div>
+                    <Link href="/bph-luts-tools/ipss-questionnaire/">
+                      <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                        Start IPSS Assessment
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+
+                {/* Post-Void Residual Calculator */}
+                <Card className="hover:shadow-xl transition-all border-t-4 border-t-green-600 group">
+                  <CardHeader className="pb-4">
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
+                      <Activity className="w-6 h-6 text-green-600" />
+                    </div>
+                    <CardTitle className="text-xl">
+                      <Link href="/bph-luts-tools/post-void-residual-calculator/" className="text-gray-900 hover:text-green-600 transition-colors">
+                        Post-Void Residual Calculator
+                      </Link>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      Clinical significance assessment of bladder emptying efficiency and residual urine volume interpretation.
+                    </p>
+                    <div className="space-y-2 text-sm text-gray-500 mb-4">
+                      <div>• PVR volume interpretation</div>
+                      <div>• Severity classification</div>
+                      <div>• Treatment recommendations</div>
+                      <div>• Risk stratification</div>
+                    </div>
+                    <Link href="/bph-luts-tools/post-void-residual-calculator/">
+                      <Button className="w-full bg-green-600 hover:bg-green-700">
+                        Calculate PVR Significance
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+
+                {/* Bladder Capacity Calculator */}
+                <Card className="hover:shadow-xl transition-all border-t-4 border-t-purple-600 group">
+                  <CardHeader className="pb-4">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-200 transition-colors">
+                      <BarChart3 className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <CardTitle className="text-xl">
+                      <Link href="/bph-luts-tools/bladder-capacity-calculator/" className="text-gray-900 hover:text-purple-600 transition-colors">
+                        Bladder Capacity Calculator
+                      </Link>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      Functional bladder capacity assessment with age-adjusted normal ranges and capacity optimization strategies.
+                    </p>
+                    <div className="space-y-2 text-sm text-gray-500 mb-4">
+                      <div>• Functional capacity assessment</div>
+                      <div>• Age-adjusted normal ranges</div>
+                      <div>• Capacity optimization</div>
+                      <div>• Treatment planning</div>
+                    </div>
+                    <Link href="/bph-luts-tools/bladder-capacity-calculator/">
+                      <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                        Calculate Bladder Capacity
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+
+                {/* Voiding Diary Analyzer */}
+                <Card className="hover:shadow-xl transition-all border-t-4 border-t-orange-600 group">
+                  <CardHeader className="pb-4">
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-200 transition-colors">
+                      <Calendar className="w-6 h-6 text-orange-600" />
+                    </div>
+                    <CardTitle className="text-xl">
+                      <Link href="/bph-luts-tools/voiding-diary-analyzer/" className="text-gray-900 hover:text-orange-600 transition-colors">
+                        Voiding Diary Analyzer
+                      </Link>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      Comprehensive analysis of voiding patterns, fluid intake, and bladder function based on detailed diary data.
+                    </p>
+                    <div className="space-y-2 text-sm text-gray-500 mb-4">
+                      <div>• Voiding pattern analysis</div>
+                      <div>• Fluid intake assessment</div>
+                      <div>• Frequency/urgency evaluation</div>
+                      <div>• Behavioral recommendations</div>
+                    </div>
+                    <Link href="/bph-luts-tools/voiding-diary-analyzer/">
+                      <Button className="w-full bg-orange-600 hover:bg-orange-700">
+                        Analyze Voiding Diary
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+
+          {/* Supporting Articles Section */}
+          <section className="py-16 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Supporting Educational Content</h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  Deepen your understanding with our comprehensive educational resources and clinical insights.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="flex items-center">
+                      <BookOpen className="w-6 h-6 text-blue-600 mr-3" />
+                      Understanding BPH
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      Comprehensive guide to benign prostatic hyperplasia, including causes, symptoms, and relationship to LUTS.
+                    </p>
+                    <Link href="/education/understanding-bph" className="text-blue-600 hover:text-blue-800 font-medium hover:underline">
+                      Learn about benign prostatic hyperplasia and its impact →
+                    </Link>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="flex items-center">
+                      <Users className="w-6 h-6 text-green-600 mr-3" />
+                      Minimally Invasive BPH Procedures
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      Explore modern treatment options for BPH including minimally invasive procedures and their outcomes.
+                    </p>
+                    <Link href="/blog/minimally-invasive-bph-procedures" className="text-green-600 hover:text-green-800 font-medium hover:underline">
+                      Discover modern minimally invasive BPH procedures →
+                    </Link>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </section>

@@ -41,6 +41,7 @@ import PostVoidResidualCalculator from "@/pages/individual-calculators/post-void
 import VoidingDiaryAnalyzer from "@/pages/individual-calculators/voiding-diary-analyzer";
 import BladderCapacityCalculator from "@/pages/individual-calculators/bladder-capacity-calculator";
 import ProstateCancerRiskCalculatorPage from "@/pages/individual-calculators/prostate-cancer-risk-calculator";
+import IPSSQuestionnairePage from "@/pages/individual-calculators/ipss-questionnaire";
 
 // Educational Articles
 import UnderstandingBPH from "@/pages/educational-articles/understanding-bph";
@@ -96,7 +97,7 @@ function Router() {
       
       {/* BPH & LUTS Tools Suite */}
       <Route path="/bph-luts-tools/" component={BPHLUTSTools} />
-      <Route path="/bph-luts-tools/ipss-questionnaire/" component={AdvancedTools} />
+      <Route path="/bph-luts-tools/ipss-questionnaire/" component={IPSSQuestionnairePage} />
       <Route path="/bph-luts-tools/post-void-residual-calculator/" component={PostVoidResidualCalculator} />
       <Route path="/bph-luts-tools/bladder-capacity-calculator/" component={BladderCapacityCalculator} />
       <Route path="/bph-luts-tools/voiding-diary-analyzer/" component={VoidingDiaryAnalyzer} />
