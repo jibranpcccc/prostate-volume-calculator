@@ -2,7 +2,6 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Breadcrumb from "@/components/breadcrumb";
 import Calculator from "@/components/calculator";
-import FAQ from "@/components/faq";
 import SEOHead from "@/components/seo-head";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -606,17 +605,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section id="faq" className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-gray-600">Common questions about prostate volume calculation and BPH assessment</p>
-          </div>
-          
-          <FAQ />
-        </div>
-      </section>
+
 
       {/* Resources Section */}
       <section id="resources" className="py-16 bg-gray-50">
