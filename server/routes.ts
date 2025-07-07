@@ -20,8 +20,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       return res.status(404).send('ads.txt not found');
     }
     
-    // Set proper content-type for ads.txt
+    // Set proper headers for ads.txt as per IAB standard
     res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.setHeader('Cache-Control', 'public, max-age=86400'); // 24 hours cache
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     
     // Send the ads.txt file
     res.sendFile(adsPath);
