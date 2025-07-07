@@ -11,12 +11,26 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // use storage to perform CRUD operations on the storage interface
   // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
 
-  // Serve ads.txt file directly from root
+  // Serve ads.txt file directly from root - support both dev and production paths
   app.get('/ads.txt', (req, res) => {
-    const adsPath = path.resolve(import.meta.dirname, '..', 'client', 'ads.txt');
+    // Try multiple possible paths for ads.txt file
+    const possiblePaths = [
+      path.resolve(import.meta.dirname, '..', 'client', 'ads.txt'),        // Development path
+      path.resolve(import.meta.dirname, '..', 'client', 'public', 'ads.txt'), // Public assets path
+      path.resolve(import.meta.dirname, '..', 'dist', 'public', 'ads.txt'), // Build output path
+      path.resolve(import.meta.dirname, 'ads.txt'),                        // Same directory as server
+      path.resolve('ads.txt'),                                             // Root directory
+    ];
     
-    // Check if ads.txt file exists
-    if (!fs.existsSync(adsPath)) {
+    let adsPath = null;
+    for (const testPath of possiblePaths) {
+      if (fs.existsSync(testPath)) {
+        adsPath = testPath;
+        break;
+      }
+    }
+    
+    if (!adsPath) {
       return res.status(404).send('ads.txt not found');
     }
     
